@@ -1,0 +1,25 @@
+.container {
+   
+    margin-bottom:4rem;
+}
+
+.title{
+    margin-bottom: 2rem;
+}
+.title h1{
+
+font-size: 7vw; 
+    line-height: 0.9rem;
+    font-weight: 400;
+
+}
+
+
+.sub_title h5{
+    line-height: 0.7rem;
+    padding: 0.1rem 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: lighter;
+    font-size: 1rem;
+}

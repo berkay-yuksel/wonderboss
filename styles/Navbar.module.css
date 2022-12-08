@@ -1,0 +1,27 @@
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 0.3rem;
+margin-bottom: 9.5rem;
+
+}
+
+.container h1{
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    
+}
+
+.nav a{
+    padding-left: 2rem;
+    font-size: 1vw;
+    font-weight: lighter;
+}
