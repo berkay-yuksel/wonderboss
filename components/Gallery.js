@@ -9,25 +9,25 @@ const Gallery = () => {
 <div>
 <Image alt="leeerob" src={deneme} placeholder="blur" />
 <h5>LEMKUS</h5>
-<p>00-1</p>
+<p>1-00</p>
 </div>
 
 <div>
 <Image alt="leeerob" src={deneme}  placeholder="blur" />
 <h5>LEMKUS</h5>
-<p>00-2</p>
+<p>2-00</p>
 </div>
 
 <div>
 <Image alt="leeerob" src={deneme}  placeholder="blur" />
 <h5>LEMKUS</h5>
-<p>00-3</p>
+<p>3-00</p>
 </div>
 
 <div>
 <Image alt="leeerob" src={deneme}  placeholder="blur" />
 <h5>LEMKUS</h5>
-<p>00-4</p>
+<p>4-00</p>
 </div>
 
 
