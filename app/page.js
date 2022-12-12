@@ -1,3 +1,4 @@
+"use client";
 import '../styles/globals.css';
 
 import Navbar from '../components/Navbar.js'
@@ -10,19 +11,32 @@ import Faq from '../components/Faq.js'
 import Story from '../components/Story.js'
 import Footer from '../components/Footer.js'
 
+import {motion, useScroll, useTransform} from 'framer-motion';
+import {useRef} from 'react'
+
 const Home = () => {
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end end"]
+  })
+  
+
   return (
-    <div>
-<Navbar/>
-<Hero/>
-<Gallery/>
-<About/>
-<Roadmap/>
-<Featured/>
-<Faq/>
-<Story/>
-<Footer/>
-    </div>
+    <motion.div >
+<Navbar  />
+<Hero />
+<Gallery />
+<About />
+<motion.div 
+ref={ref}
+style={{ scaleX: scrollYProgress }} 
+><Roadmap  /></motion.div>
+<Featured />
+<Faq />
+<Story />
+<Footer />
+    </motion.div>
   )
 }
 
