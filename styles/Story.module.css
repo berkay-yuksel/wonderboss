@@ -1,18 +1,21 @@
 .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    margin-bottom: 10rem;
-    overflow: scroll; 
+    width: 60rem;
+    height: 200vw;
+    overflow-y: scroll;
+    padding-top: 75%;
+    padding-bottom: 30vw;
+    transform: rotate(-90deg);
+    scale: 0.7;
+   
 }
 .container img{
-    margin-right: 1rem;
-    display: flex;
-    flex-direction: row;
-    height: 40rem;
-    width: auto;
-    object-fit: cover;
+    width: 63rem;
+
+    object-fit: scale-down;
+  margin-top: -10rem;
+   background-image: none !important;
+    
+    transform: rotate(90deg);
 }
 
  .container::-webkit-scrollbar {
