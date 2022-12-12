@@ -30,7 +30,8 @@ const Home = () => {
 <About />
 <motion.div 
 ref={ref}
-style={{ scaleX: scrollYProgress }} 
+
+style={{ scale: scrollYProgress }} 
 ><Roadmap  /></motion.div>
 <Featured />
 <Faq />
