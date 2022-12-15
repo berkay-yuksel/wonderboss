@@ -1,51 +1,50 @@
-import featured from '../styles/Featured.module.css'
+import featured from "../styles/Featured.module.css";
+import Image from "next/image";
+import deneme from "../assets/deneme.jpg";
+import Link from "next/link";
 
-import Image from 'next/image';
-import brand from '../assets/brand.png'
-
-const Featured = () => {
+const Featured = ({
+  justLeave,
+  textEnter,
+  onMouseEnter,
+  onMouseLeave,
+  lockedEnter,
+}) => {
   return (
     <div className={featured.container}>
-<h2>FEATURED CLIENTS</h2>
-     <div className={featured.text_container}>
-
-     <div>
-     <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
-        <p> Lemkus reached out to us to create a new design system and conduct an overhaul of the brand’s digital experience. The objective was to provide customers with seamless purchasing journeys and we did this by combining robust user experience with strong and engaging content.
-        </p>
-        <button>VIEW CASE STUDY</button>
+      <div onMouseEnter={textEnter} onMouseLeave={justLeave}>
+        <Link href="/mint-info">
+          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <h5>Mint Information</h5>
+        </Link>
+        <p>1-00</p>
       </div>
 
+      <div  onMouseEnter={lockedEnter} onMouseLeave={justLeave}>
+        <Link href="/staking">
+          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <h5>Staking</h5>
+        </Link>
+        <p>2-00</p>
+      </div>
 
       <div>
-      <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
-        <p> Lemkus reached out to us to create a new design system and conduct an overhaul of the brand’s digital experience. The objective was to provide customers with seamless purchasing journeys and we did this by combining robust user experience with strong and engaging content.
-        </p>
-        <button>VIEW CASE STUDY</button>
+        <Link href="/roadmap">
+          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <h5>Roadmap</h5>
+        </Link>
+        <p>3-00</p>
       </div>
-
 
       <div>
-      <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
-        <p> Lemkus reached out to us to create a new design system and conduct an overhaul of the brand’s digital experience. The objective was to provide customers with seamless purchasing journeys and we did this by combining robust user experience with strong and engaging content.
-        </p>
-        <button>VIEW CASE STUDY</button>
+        <Link href="/gallery">
+          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <h5>Gallery</h5>
+        </Link>
+        <p>4-00</p>
       </div>
-
-
-      <div>
-      <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
-        <p> Lemkus reached out to us to create a new design system and conduct an overhaul of the brand’s digital experience. The objective was to provide customers with seamless purchasing journeys and we did this by combining robust user experience with strong and engaging content.
-        </p>
-        <button>VIEW CASE STUDY</button>
-      </div>
-
-
-     </div>
-
-  
     </div>
-  )
-}
+  );
+};
 
-export default Featured
+export default Featured;

@@ -42,3 +42,21 @@ p{
   margin-block-start: 0em;
 
 }
+
+.cursor{
+  background-color: #111;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 1rem;
+  border: 0px solid black;
+}

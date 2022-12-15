@@ -1,27 +1,36 @@
-import Link, {link} from 'next/link'
-import navbar from '../styles/Navbar.module.css'
+import Link from "next/link";
+import navbar from "../styles/Navbar.module.css";
 
-const Navbar = () => {
+const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
   return (
     <div className={navbar.container}>
-<h1>FOMO SAPIENS</h1>
-<div className={navbar.nav}>
-<Link href="/">
-  CASE STUDIES
-</Link>
-<Link href="/">
-WORK
-</Link>
-<Link href="/">
-ABOUT
-</Link>
-<Link href="/">
-CONTACT
-</Link>
-</div>
-
+      <h1 onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+        FOMO SAPIENS
+      </h1>
+      <div className={navbar.nav}>
+        <Link href="/">
+          <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+            CASE STUDIES
+          </span>
+        </Link>
+        <Link href="/">
+          <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+            WORK
+          </span>
+        </Link>
+        <Link href="/">
+          <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+            ABOUT
+          </span>
+        </Link>
+        <Link href="/">
+          <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+            CONTACT
+          </span>
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
