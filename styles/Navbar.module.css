@@ -23,3 +23,25 @@
   font-size: 1vw;
   font-weight: lighter;
 }
+@media screen and (min-width: 1920px) {
+  .container {
+    margin: 2rem -7rem 10rem -7rem;
+  }
+  .nav a {
+    font-size:1.5rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+ 
+    margin-bottom: 10vw;
+  }
+  .container h1 {
+    font-size: 2vw;
+  
+  }
+  .nav a {
+    font-size: 2vw;
+  }
+}

@@ -39,3 +39,31 @@ width: 33rem;
     color: white;
     background-color:#2a2a2a;
 }
+
+@media screen and (min-width: 1920px) {
+  
+    .container{
+        padding-top: 5rem;
+    }
+    .text_container p{
+font-size: 2rem;
+width: 45vw;
+margin-right: 6.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 690px) {
+    .container{
+  
+        margin-bottom: -7rem;
+    }
+
+    .text_container{
+      flex-direction: column;
+    }
+    .text_container p{
+        margin-top: 2rem;
+         
+        }
+  }
+  

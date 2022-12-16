@@ -23,3 +23,22 @@
   }
 
    
+  @media screen and (max-width: 690px) {
+    .container{
+      width: 30rem;
+      padding-top: 125%;
+  }
+  .container img{
+    width: 30rem;
+    margin-top: -35rem;
+    
+  }
+    
+  }
+  @media screen and (min-width: 1920px) {
+    .container{
+
+      padding-top: 90%;
+  }
+  }
+  

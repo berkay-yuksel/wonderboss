@@ -1,25 +1,46 @@
 .container {
-   
-    margin-bottom:4rem;
+  margin-bottom: 4rem;
 }
 
-.title{
-    margin-bottom: 2rem;
+.title {
+  margin-bottom: 2rem;
 }
-.title h1{
-
-font-size: 7vw; 
-    line-height: 0.9rem;
-    font-weight: 400;
-
+.title h1 {
+  font-size: 7rem;
+  line-height: 0.9rem;
+  font-weight: 400;
 }
 
+.sub_title h5 {
+  line-height: 0.7rem;
+  padding: 0.1rem 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+@media screen and (min-width: 1920px) {
+  .title h1 {
+    font-size: 8rem;
+  }
+  .title {
+    margin-bottom: 3rem;
+  }
+  .sub_title h5 {
+    font-size: 2rem;
+    line-height: 1.7rem;
+  }
+}
 
-.sub_title h5{
-    line-height: 0.7rem;
-    padding: 0.1rem 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    font-weight: lighter;
-    font-size: 1rem;
+@media screen and (max-width: 700px) {
+  .title h1 {
+    font-size: 7vw;
+  }
+  .title {
+    margin-bottom: 2.5vw;
+  }
+  .sub_title h5 {
+    font-size: 2.5vw;
+    line-height: 2vw;
+  }
 }

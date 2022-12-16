@@ -18,3 +18,9 @@ background-size: contain;
     height: 40rem;
 }
 
+@media screen and (min-width: 1920px) {
+    .container{
+        margin-top: 20rem;
+    }
+  }
+  

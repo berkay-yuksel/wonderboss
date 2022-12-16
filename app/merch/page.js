@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Roadmap = () => {
+const Merch = () => {
   return (
     <div>Roadmap RoadmapRoadmapRoadmap </div>
   )
 }
 
-export default Roadmap
+export default Merch

@@ -10,22 +10,22 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <div className={navbar.nav}>
         <Link href="/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            CASE STUDIES
+            MAGIC EDEN
           </span>
         </Link>
         <Link href="/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            WORK
+            TWITTER
           </span>
         </Link>
         <Link href="/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            ABOUT
+            DİSCORD
           </span>
         </Link>
         <Link href="/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            CONTACT
+            MINT PAGE
           </span>
         </Link>
       </div>

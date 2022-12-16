@@ -1,40 +1,63 @@
-.container{
-    
-    margin-bottom: -40rem;
+.container {
+  padding-top: 10rem;
+  margin-bottom: -70rem;
 }
-.container h4{
-    font-size: 2.5rem;
-    margin-block-start:0 ;
-    margin-block-end: 0;
-    margin-bottom: 1.3rem;
-}
-
-.container table{
-    width: 100%;
-}
-.container div{
-    display: flex;
-    justify-content: space-between;
-   
-    border-bottom: 1px solid #dddddd;
-    text-align: left;
-    line-height: 4rem;
-
+.container h4 {
+  font-size: 2.5rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 1.3rem;
 }
 
+.container table {
+  width: 100%;
+}
+.container div {
+  display: flex;
+  justify-content: space-between;
 
-.container div p:nth-child(2){
-  padding-left: 11.5rem;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  line-height: 4rem;
+}
+.container h1 {
+  font-size: 66.0096px;
+  margin-bottom: 2rem;
+}
 
+.container div p:nth-child(2) {
+  padding-right: 50rem;
 }
 
 .container div p {
-    
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.container div:hover{
-    filter: brightness(0.9);
-    cursor: pointer;
+.container div:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    margin-bottom: -118rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .container {
+    margin-bottom: -18rem;
+    padding-top: 7rem;
+  }
+  .container div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+  }
+  .container div p:nth-child(2) {
+    padding-right: 0;
+  }
+  .container div p:nth-child(3) {
+    display: none;
+  }
 }
