@@ -4,62 +4,63 @@ import Link, { link } from "next/link";
 const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
   return (
     <div className={footer.container}>
-      <h1>CASE STUDIES</h1>
+      <h1>FOMO SAPIENS</h1>
       <div className={footer.inner_container}>
         <div>
           <h5>WE WOULD LOVE TO HEAR FROM YOU</h5>
           <h5> YOU. LETS WORK-- TOGETHER</h5>
           <button onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            CONTACT US
+            JOIN US
           </button>
         </div>
 
         <div className={footer.inner_text_container}>
           <div>
-            <h5>OPEN POSITIONS</h5>
-            <p>HELLO@DASHDIGITAL.IO</p>
-            <p>+27 72 611 3343</p>
+            <h5>CONTACT</h5>
+            <p>fomosapiens@gmail.com</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
           </div>
           <div>
-            <h5>BUSINESS INQUIRES</h5>
-            <p>JUNIOR-MID DIGITAL DESIGNER</p>
-            <p>asdkadklalşsdklşas</p>
-            <p>LONDON SE15 4BQ</p>
+            <h5>MARKET PLACES</h5>
+            <p>https://magiceden.io/fomo-sapiens-nft</p>
+            <p>https://opensea.io/collection/fomo-sapiens-nft</p>
+            <p>&nbsp;</p>
           </div>
           <div>
-            <h5>LONDON</h5>
-            <p>133A RYE LANE</p>
-            <p>LONDON SE15 4BQ</p>
-            <p>UK</p>
+            <h5>LINKS</h5>
+            <p>https://twitter.com/fomosapiens_</p>
+            <p>https://docs.fomosapiens.com/</p>
+            <p>https://www.nftinspect.xyz/fomosapiens</p>
           </div>
           <div>
-            <h5>CAPE TOWN</h5>
-            <p>14 UPPER PEPPER STREET</p>
-            <p>CBD, 8001</p>
-            <p>CAPE TOWN</p>
+            <h5>WHITELIST APPLICATION</h5>
+            <p>https://docs.google.com/forms/u/0/</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
           </div>
         </div>
       </div>
 
       <div className={footer.bottom_container}>
-        <div>LOGO MOGO 2023</div>
+        <div>FOMO SAPIENS 2023</div>
         <div className={footer.bottom_links_container}>
           <Link href="/">
             {" "}
             <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-              DRIBBBLE{" "}
+              TWITTER{" "}
             </span>
           </Link>
           <Link href="/">
             {" "}
             <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-              INSTAGRAM{" "}
+              DISCORD{" "}
             </span>
           </Link>
           <Link href="/">
             {" "}
             <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-              LINKEDIN{" "}
+              MAGIC EDEN{" "}
             </span>
           </Link>
           <Link href="/">

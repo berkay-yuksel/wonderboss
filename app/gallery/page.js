@@ -1,9 +1,7 @@
-import React from 'react'
+import Navbar from "../../components/Navbar";
 
 const Gallery = () => {
-  return (
-    <div>Gallery GalleryGalleryGallery </div>
-  )
-}
+  return <div><Navbar/> </div>;
+};
 
-export default Gallery
+export default Gallery;

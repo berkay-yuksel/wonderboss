@@ -1,0 +1,61 @@
+.container {
+  margin-bottom: 30vh;
+  margin-top: 3vh;
+}
+
+.container h1 {
+  font-size: 7.5vw;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.container h4 {
+  font-size: 3.8vw;
+  padding: 2.5vh 0;
+  margin: 0;
+}
+
+.text_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text_container h5 {
+  font-size: 1.48vw;
+}
+
+.text_container div {
+  width: 30vw;
+}
+
+.text_container div ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  font-size: 1.3vw;
+}
+
+.text_container div ul li {
+  padding-bottom: 0.3vh;
+}
+
+.text_container div p {
+  margin-bottom: 2vh;
+  font-size: 1.3vw;
+}
+
+.text_container div button:first-child {
+  margin-right: 1vw;
+}
+
+.text_container div button {
+  cursor: pointer;
+  padding: 0.7vw;
+}

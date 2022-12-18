@@ -20,7 +20,7 @@ const Featured = ({
         <p>1-00</p>
       </div>
 
-      <div  onMouseEnter={lockedEnter} onMouseLeave={justLeave}>
+      <div onMouseEnter={lockedEnter} onMouseLeave={justLeave}>
         <Link href="/staking">
           <Image alt="leeerob" src={deneme} placeholder="blur" />
           <h5>Staking</h5>
@@ -31,7 +31,7 @@ const Featured = ({
       <div>
         <Link href="/merch">
           <Image alt="leeerob" src={deneme} placeholder="blur" />
-          <h5>Merch</h5>
+          <h5>Lore</h5>
         </Link>
         <p>3-00</p>
       </div>

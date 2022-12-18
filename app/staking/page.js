@@ -1,8 +1,8 @@
-import React from 'react'
+import Navbar from "../../components/Navbar";
 
 const Staking = () => {
   return (
-    <div>Staking</div>
+    <div><Navbar/></div>
   )
 }
 
