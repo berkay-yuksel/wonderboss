@@ -6,7 +6,7 @@
   margin-bottom: 2rem;
 }
 .title h1 {
-  font-size: 7rem;
+  font-size: 7.5vw;
   line-height: 0.9rem;
   font-weight: 400;
 }
@@ -20,9 +20,7 @@
   font-size: 1rem;
 }
 @media screen and (min-width: 1920px) {
-  .title h1 {
-    font-size: 8rem;
-  }
+
   .title {
     margin-bottom: 3rem;
   }
@@ -33,9 +31,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .title h1 {
-    font-size: 7vw;
-  }
+ 
   .title {
     margin-bottom: 2.5vw;
   }

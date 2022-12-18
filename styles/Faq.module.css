@@ -1,6 +1,6 @@
 .container {
-  padding-top: 10rem;
-  margin-bottom: -70rem;
+  padding-top: 10vw;
+  margin-bottom: -50vw;
 }
 .container h4 {
   font-size: 2.5rem;
@@ -41,10 +41,10 @@
 
 @media screen and (min-width: 1920px) {
   .container {
-    margin-bottom: -118rem;
-  }
+    margin-bottom: -66vw;
+  }   
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1070px) {
   .container {
     margin-bottom: -18rem;
     padding-top: 7rem;
@@ -56,6 +56,7 @@
   }
   .container div p:nth-child(2) {
     padding-right: 0;
+    padding-bottom: 0.3vw;
   }
   .container div p:nth-child(3) {
     display: none;
