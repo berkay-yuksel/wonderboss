@@ -11,6 +11,7 @@ import Info from "../components/Info.js";
 import Faq from "../components/Faq.js";
 import Story from "../components/Story.js";
 import Footer from "../components/Footer.js";
+import Preloader from "../components/Preloader";
 
 import { motion, useScroll } from "framer-motion";
 
@@ -98,6 +99,11 @@ const Home = () => {
         variants={variants}
         animate={cursorVariant}
       ></motion.div>
+    
+      <motion.div>
+        <Preloader />
+      </motion.div> 
+
       <Navbar
         clickableEnter={clickableEnter}
         justLeave={justLeave}

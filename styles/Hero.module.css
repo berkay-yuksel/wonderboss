@@ -20,7 +20,6 @@
   font-size: 1rem;
 }
 @media screen and (min-width: 1920px) {
-
   .title {
     margin-bottom: 3rem;
   }
@@ -31,7 +30,6 @@
 }
 
 @media screen and (max-width: 700px) {
- 
   .title {
     margin-bottom: 2.5vw;
   }
@@ -39,4 +37,37 @@
     font-size: 2.5vw;
     line-height: 2vw;
   }
+}
+
+/* text reveal try*/
+
+.wordContainer {
+  overflow: hidden;
+}
+
+/* We define the animation */
+@keyframes up {
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Then, every single word gets animated up */
+.word {
+  animation: up 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(500%);
+}
+
+/* Delay for staggering effect */
+.textWrapper .wordContainer:nth-child(1) .word {
+  animation-delay: 5.55s;
+}
+.textWrapper .wordContainer:nth-child(2) .word {
+  animation-delay: 5.7s;
+}
+.textWrapper .wordContainer:nth-child(3) .word {
+  animation-delay: 5.85s;
 }
