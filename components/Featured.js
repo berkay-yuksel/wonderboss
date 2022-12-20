@@ -29,7 +29,7 @@ const Featured = ({
       </div>
 
       <div>
-        <Link href="/merch">
+        <Link href="/lore">
           <Image alt="leeerob" src={deneme} placeholder="blur" />
           <h5>Lore</h5>
         </Link>
