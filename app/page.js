@@ -7,11 +7,11 @@ import Hero from "../components/Hero.js";
 import Featured from "../components/Featured.js";
 import About from "../components/About.js";
 import Roadmap from "../components/Roadmap.js";
-import Info from "../components/Info.js";
+/* import Info from "../components/Info.js"; */
 import Faq from "../components/Faq.js";
 import Story from "../components/Story.js";
 import Footer from "../components/Footer.js";
-import Preloader from "../components/Preloader";
+/*import Preloader from "../components/Preloader"; */
 
 import { motion, useScroll } from "framer-motion";
 
@@ -99,10 +99,10 @@ const Home = () => {
         variants={variants}
         animate={cursorVariant}
       ></motion.div>
-    
-      <motion.div>
+
+      {/* <motion.div>
         <Preloader />
-      </motion.div> 
+      </motion.div>  */}
 
       <Navbar
         clickableEnter={clickableEnter}
