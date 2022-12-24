@@ -1,7 +1,7 @@
 import info from "../styles/Info.module.css";
 
 import Image from "next/image";
-import brand from "../assets/brand.png";
+
 
 const Info = (justLeave, onMouseEnter, onMouseLeave, clickableEnter) => {
   return (
@@ -9,7 +9,7 @@ const Info = (justLeave, onMouseEnter, onMouseLeave, clickableEnter) => {
       <h2>Info</h2>
       <div className={info.text_container}>
         <div>
-          <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
+          {/* <Image alt="leeerob" src={} placeholder="blur" height={30} /> */}
           <p>
             {" "}
             Lemkus reached out to us to create a new design system and conduct
@@ -22,7 +22,7 @@ const Info = (justLeave, onMouseEnter, onMouseLeave, clickableEnter) => {
         </div>
 
         <div>
-          <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
+          {/* <Image alt="leeerob" src={} placeholder="blur" height={30} /> */}
           <p>
             {" "}
             Lemkus reached out to us to create a new design system and conduct
@@ -35,7 +35,7 @@ const Info = (justLeave, onMouseEnter, onMouseLeave, clickableEnter) => {
         </div>
 
         <div>
-          <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
+          {/* <Image alt="leeerob" src={} placeholder="blur" height={30} /> */}
           <p>
             {" "}
             Lemkus reached out to us to create a new design system and conduct
@@ -48,7 +48,7 @@ const Info = (justLeave, onMouseEnter, onMouseLeave, clickableEnter) => {
         </div>
 
         <div>
-          <Image alt="leeerob" src={brand} placeholder="blur" height={30} />
+          {/* <Image alt="leeerob" src={} placeholder="blur" height={30} /> */}
           <p>
             {" "}
             Lemkus reached out to us to create a new design system and conduct

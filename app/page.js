@@ -51,21 +51,25 @@ const Home = () => {
     },
     text: {
       height: 40,
-      width: 120,
+      width: 140,
       x: mousePosition.x + 10,
       y: mousePosition.y + 10,
-      backgroundColor: "darkgray",
-      /*    backgroundImage: "url(LOCKED RESMİ)", */
+      backgroundImage: "url(/explore.png)",
       borderRadius: "0%",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "auto",
+      color: "transparent",
     },
     locked: {
       height: 40,
-      width: 120,
+      width: 190,
       x: mousePosition.x + 10,
       y: mousePosition.y + 10,
-      backgroundColor: "lightgray",
-      /*    backgroundImage: "url(LOCKED RESMİ)", */
+      backgroundImage: "url(/stuned.png)",
       borderRadius: "0%",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "auto",
+      color: "transparent",
     },
     clickable: {
       height: 20,
@@ -74,15 +78,17 @@ const Home = () => {
       y: mousePosition.y - 10,
       backgroundColor: "transparent",
       border: "2px solid darkgrey",
+      color: "transparent",
     },
     scroll: {
       height: 40,
-      width: 120,
+      width: 222,
       x: mousePosition.x + 10,
       y: mousePosition.y + 10,
-      backgroundColor: "gray",
-      /*    backgroundImage: "url(LOCKED RESMİ)", */
+      backgroundImage:
+        "url(https://cdn.discordapp.com/attachments/911293589261266965/1056169700519841803/scroll.png)",
       borderRadius: "0%",
+      color: "transparent",
     },
   };
 

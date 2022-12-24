@@ -1,6 +1,6 @@
 import featured from "../styles/Featured.module.css";
 import Image from "next/image";
-import deneme from "../assets/deneme.jpg";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -42,7 +42,13 @@ const Featured = ({
         onMouseLeave={justLeave}
       >
         <Link href="/mint-info">
-          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <Image
+            alt="leeerob"
+            src="/deneme.jpg"
+            width="816"
+            height="816"
+            placeholder=""
+          />
           <h5>Mint Information</h5>
         </Link>
         <p>1-00</p>
@@ -54,7 +60,13 @@ const Featured = ({
         onMouseLeave={justLeave}
       >
         <Link href="/staking">
-          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <Image
+            alt="leeerob"
+            src="/deneme.jpg"
+            width="816"
+            height="816"
+            placeholder=""
+          />
           <h5>Staking</h5>
         </Link>
         <p>2-00</p>
@@ -62,11 +74,17 @@ const Featured = ({
 
       <motion.div
         variants={item}
-        onMouseEnter={lockedEnter}
+        onMouseEnter={textEnter}
         onMouseLeave={justLeave}
       >
         <Link href="/lore">
-          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <Image
+            alt="leeerob"
+            src="/deneme.jpg"
+            width="816"
+            height="816"
+            placeholder=""
+          />
           <h5>Lore</h5>
         </Link>
         <p>3-00</p>
@@ -74,11 +92,17 @@ const Featured = ({
 
       <motion.div
         variants={item}
-        onMouseEnter={lockedEnter}
+        onMouseEnter={textEnter}
         onMouseLeave={justLeave}
       >
         <Link href="/gallery">
-          <Image alt="leeerob" src={deneme} placeholder="blur" />
+          <Image
+            alt="leeerob"
+            src="/deneme.jpg"
+            width="816"
+            height="816"
+            placeholder=""
+          />
           <h5>Gallery</h5>
         </Link>
         <p>4-00</p>

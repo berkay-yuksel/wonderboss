@@ -1,8 +1,6 @@
 import story from "../styles/Story.module.css";
 
 import Image from "next/image";
-import deneme from "../assets/deneme.jpg";
-import roadmapImg from "../assets/roadmap.png";
 
 const Story = ({ justLeave, onMouseEnter, onMouseLeave, scrollEnter }) => {
   return (
@@ -11,11 +9,41 @@ const Story = ({ justLeave, onMouseEnter, onMouseLeave, scrollEnter }) => {
       onMouseEnter={scrollEnter}
       onMouseLeave={justLeave}
     >
-      <Image alt="leeerob" src={deneme} placeholder="blur" />
-      <Image alt="leeerob" src={roadmapImg} placeholder="blur" />
-      <Image alt="leeerob" src={deneme} placeholder="blur" />
-      <Image alt="leeerob" src={roadmapImg} placeholder="blur" />
-      <Image alt="leeerob" src={deneme} placeholder="blur" />
+      <Image
+        alt="leeerob"
+        src="/deneme.jpg"
+        width="816"
+        height="816"
+        placeholder="/deneme.webp"
+      />
+      <Image
+        alt="leeerob"
+        src="/roadmap.png"
+        width="2816"
+        height="1454"
+        placeholder="/deneme.webp"
+      />
+      <Image
+        alt="leeerob"
+        src="/deneme.jpg"
+        width="816"
+        height="816"
+        placeholder="/deneme.webp"
+      />
+      <Image
+        alt="leeerob"
+        src="/roadmap.png"
+        width="2816"
+        height="1454"
+        placeholder="/deneme.webp"
+      />
+      <Image
+        alt="leeerob"
+        src="/deneme.jpg"
+        width="816"
+        height="816"
+        placeholder="/deneme.webp"
+      />
     </div>
   );
 };

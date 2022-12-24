@@ -1,7 +1,6 @@
-
 import mintInfo from "../../styles/Mintinfo.module.css";
 import Image from "next/image";
-import bannerPic from "../../assets/roadmap.png";
+
 import Link from "next/link";
 
 const MintInfo = () => {
@@ -12,11 +11,11 @@ const MintInfo = () => {
         <h1>MINT INFORMATION</h1>
         <Image
           className={mintInfo.banner}
-          src={bannerPic}
+          src="/roadmap.jpg"
           alt="Picture of the author"
           width="100vw"
           // blurDataURL="data:..." automatically provided
-          placeholder="blur"
+          placeholder=""
         />
         <h4>LEMKUS IS AN URBAN BOUTIQUE SPECIALISING IN PREMIU</h4>
         <div className={mintInfo.text_container}>
