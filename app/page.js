@@ -11,7 +11,7 @@ import Roadmap from "../components/Roadmap.js";
 import Faq from "../components/Faq.js";
 import Story from "../components/Story.js";
 import Footer from "../components/Footer.js";
-/*import Preloader from "../components/Preloader"; */
+import Preloader from "../components/Preloader";
 
 import { motion, useScroll } from "framer-motion";
 
@@ -43,6 +43,16 @@ const Home = () => {
       window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
+
+  // loaderr
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+
+  //loaderr
   const variants = {
     default: {
       x: mousePosition.x - 8,
@@ -100,60 +110,64 @@ const Home = () => {
 
   return (
     <motion.div>
-      <motion.div
-        className="cursor"
-        variants={variants}
-        animate={cursorVariant}
-      ></motion.div>
+      {loading ? (
+        <motion.div>
+          <Preloader />
+        </motion.div>
+      ) : (
+        <motion.div>
+          <motion.div
+            className="cursor"
+            variants={variants}
+            animate={cursorVariant}
+          ></motion.div>
 
-      {/* <motion.div>
-        <Preloader />
-      </motion.div>  */}
-
-      <Navbar
-        clickableEnter={clickableEnter}
-        justLeave={justLeave}
-        lockedEnter={lockedEnter}
-        onMouseEnter
-        onMouseLeave
-      />
-      <Hero />
-      <Featured
-        textEnter={textEnter}
-        justLeave={justLeave}
-        lockedEnter={lockedEnter}
-        onMouseEnter
-        onMouseLeave
-      />
-      <About
-        clickableEnter={clickableEnter}
-        justLeave={justLeave}
-        onMouseEnter
-        onMouseLeave
-      />
-      <motion.div ref={ref} style={{ scale: scrollYProgress }}>
-        <Roadmap />{" "}
-      </motion.div>
-      {/* <Info /> */}
-      <Faq
-        clickableEnter={clickableEnter}
-        justLeave={justLeave}
-        lockedEnter={lockedEnter}
-        onMouseEnter
-        onMouseLeave
-      />
-      <Story
-        scrollEnter={scrollEnter}
-        justLeave={justLeave}
-        onMouseEnter
-        onMouseLeave
-      />
-      <Footer
-        clickableEnter={clickableEnter}
-        justLeave={justLeave}
-        onMouseEnter
-        onMouseLeave
-      />
+          <Navbar
+            clickableEnter={clickableEnter}
+            justLeave={justLeave}
+            lockedEnter={lockedEnter}
+            onMouseEnter
+            onMouseLeave
+          />
+          <Hero />
+          <Featured
+            textEnter={textEnter}
+            justLeave={justLeave}
+            lockedEnter={lockedEnter}
+            onMouseEnter
+            onMouseLeave
+          />
+          <About
+            clickableEnter={clickableEnter}
+            justLeave={justLeave}
+            onMouseEnter
+            onMouseLeave
+          />
+       
+            <Roadmap />
+       
+          {/* <Info /> */}
+          <Faq
+            clickableEnter={clickableEnter}
+            justLeave={justLeave}
+            lockedEnter={lockedEnter}
+            onMouseEnter
+            onMouseLeave
+          />
+          <Story
+            scrollEnter={scrollEnter}
+            justLeave={justLeave}
+            onMouseEnter
+            onMouseLeave
+          />
+          <Footer
+            clickableEnter={clickableEnter}
+            justLeave={justLeave}
+            onMouseEnter
+            onMouseLeave
+          />
+        </motion.div>
+      )}
     </motion.div>
   );
 };

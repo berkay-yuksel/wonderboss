@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 import preloader from "../styles/Preloader.module.css";
 
@@ -21,15 +20,10 @@ const Preloader = () => {
   return (
     <motion.div
       className={preloader.container}
-      animate={{ y: -2000}}
+      animate={{ y: -2000 }}
       transition={{ duration: 2, delay: 4, ease: [0.87, 0, 0.13, 1] }}
     >
-      <motion.div
-        variants={loaderVariants}
-        animate="animatonOne"
-        className={preloader.loader}
-      ></motion.div>
-      <h1>fomo sapıens</h1>
+      <h1>fomo sapiens</h1>
     </motion.div>
   );
 };
