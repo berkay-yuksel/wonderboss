@@ -37,3 +37,13 @@
     padding-top: 90%;
   }
 }
+@media screen and (max-width: 500px) {
+  .container {
+    width: 20rem;
+    padding-top: 174%;
+  }
+  .container img {
+    width: 20rem;
+    margin-top: -47rem;
+  }
+}

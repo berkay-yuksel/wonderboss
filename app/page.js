@@ -110,11 +110,7 @@ const Home = () => {
 
   return (
     <motion.div>
-      {loading ? (
-        <motion.div>
-          <Preloader />
-        </motion.div>
-      ) : (
+
         <motion.div>
           <motion.div
             className="cursor"
@@ -167,7 +163,7 @@ const Home = () => {
             onMouseLeave
           />
         </motion.div>
-      )}
+    
     </motion.div>
   );
 };

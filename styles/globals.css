@@ -71,6 +71,5 @@ p {
 @media screen and (max-width: 690px) {
   body {
     padding: 1rem;
-    background-color: red;
   }
 }

@@ -9,7 +9,6 @@
   font-size: 7.5vw;
   line-height: 1.8rem;
   font-weight: 400;
- 
 }
 
 .sub_title h5 {
@@ -43,5 +42,12 @@
     line-height: 2vw;
   }
 }
-
-
+@media screen and (max-width: 500px) {
+  .title {
+    margin-bottom: 3.5vw;
+  }
+  .sub_title h5 {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+}
