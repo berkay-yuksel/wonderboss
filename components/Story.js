@@ -14,35 +14,45 @@ const Story = ({ justLeave, onMouseEnter, onMouseLeave, scrollEnter }) => {
         src="/deneme.jpg"
         width="816"
         height="816"
-        placeholder="/deneme.webp"
+        placeholder="blur"
+        blurDataURL="/deneme.webp"
+        quality={10}
       />
       <Image
         alt="leeerob"
         src="/roadmap.png"
         width="2816"
         height="1454"
-        placeholder="/deneme.webp"
+        placeholder="blur"
+        blurDataURL="/deneme.webp"
+        quality={10}
       />
       <Image
         alt="leeerob"
         src="/deneme.jpg"
         width="816"
         height="816"
-        placeholder="/deneme.webp"
+        placeholder="blur"
+        blurDataURL="/deneme.webp"
+        quality={10}
       />
       <Image
         alt="leeerob"
         src="/roadmap.png"
         width="2816"
         height="1454"
-        placeholder="/deneme.webp"
+        placeholder="blur"
+        blurDataURL="/deneme.webp"
+        quality={10}
       />
       <Image
         alt="leeerob"
         src="/deneme.jpg"
         width="816"
         height="816"
-        placeholder="/deneme.webp"
+        placeholder="blur"
+        blurDataURL="/deneme.webp"
+        quality={10}
       />
     </div>
   );

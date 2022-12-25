@@ -15,25 +15,25 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         </div>
 
         <div className={footer.inner_text_container}>
-          <div>
+          <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>CONTACT</h5>
             <p>fomosapiens@gmail.com</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
           </div>
-          <div>
+          <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>MARKET PLACES</h5>
             <p>https://magiceden.io/fomo-sapiens-nft</p>
             <p>https://opensea.io/collection/fomo-sapiens-nft</p>
             <p>&nbsp;</p>
           </div>
-          <div>
+          <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>LINKS</h5>
             <p>https://twitter.com/fomosapiens_</p>
             <p>https://docs.fomosapiens.com/</p>
             <p>https://www.nftinspect.xyz/fomosapiens</p>
           </div>
-          <div>
+          <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>WHITELIST APPLICATION</h5>
             <p>https://docs.google.com/forms/u/0/</p>
             <p>&nbsp;</p>

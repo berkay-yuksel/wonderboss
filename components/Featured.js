@@ -47,7 +47,8 @@ const Featured = ({
             src="/deneme.jpg"
             width="816"
             height="816"
-            placeholder=""
+            placeholder="blur"
+            blurDataURL="/deneme.webp"
           />
           <h5>Mint Information</h5>
         </Link>
@@ -65,7 +66,8 @@ const Featured = ({
             src="/deneme.jpg"
             width="816"
             height="816"
-            placeholder=""
+            placeholder="blur"
+            blurDataURL="/deneme.webp"
           />
           <h5>Staking</h5>
         </Link>
@@ -83,7 +85,8 @@ const Featured = ({
             src="/deneme.jpg"
             width="816"
             height="816"
-            placeholder=""
+            placeholder="blur"
+            blurDataURL="/deneme.webp"
           />
           <h5>Lore</h5>
         </Link>
@@ -101,7 +104,8 @@ const Featured = ({
             src="/deneme.jpg"
             width="816"
             height="816"
-            placeholder=""
+            placeholder="blur"
+            blurDataURL="/deneme.webp"
           />
           <h5>Gallery</h5>
         </Link>

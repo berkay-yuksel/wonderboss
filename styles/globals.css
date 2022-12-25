@@ -68,7 +68,7 @@ p {
     padding: 0 10rem;
   }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 690px) and (min-width: 500px) {
   body {
     padding: 1rem;
   }

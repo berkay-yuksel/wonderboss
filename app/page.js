@@ -64,7 +64,7 @@ const Home = () => {
       width: 140,
       x: mousePosition.x + 10,
       y: mousePosition.y + 10,
-      backgroundImage: "url(/explore.png)",
+      backgroundImage: "url(/explore.webp)",
       borderRadius: "0%",
       backgroundRepeat: "no-repeat",
       backgroundSize: "auto",
@@ -75,7 +75,7 @@ const Home = () => {
       width: 190,
       x: mousePosition.x + 10,
       y: mousePosition.y + 10,
-      backgroundImage: "url(/stuned.png)",
+      backgroundImage: "url(/stuned.webp)",
       borderRadius: "0%",
       backgroundRepeat: "no-repeat",
       backgroundSize: "auto",
@@ -92,7 +92,7 @@ const Home = () => {
     },
     scroll: {
       height: 40,
-      width: 222,
+      width: 122,
       x: mousePosition.x + 10,
       y: mousePosition.y + 10,
       backgroundImage:
@@ -110,60 +110,58 @@ const Home = () => {
 
   return (
     <motion.div>
+      <motion.div>
+        <motion.div
+          className="cursor"
+          variants={variants}
+          animate={cursorVariant}
+        ></motion.div>
 
-        <motion.div>
-          <motion.div
-            className="cursor"
-            variants={variants}
-            animate={cursorVariant}
-          ></motion.div>
+        <Navbar
+          clickableEnter={clickableEnter}
+          justLeave={justLeave}
+          lockedEnter={lockedEnter}
+          onMouseEnter
+          onMouseLeave
+        />
+        <Hero />
+        <Featured
+          textEnter={textEnter}
+          justLeave={justLeave}
+          lockedEnter={lockedEnter}
+          onMouseEnter
+          onMouseLeave
+        />
+        <About
+          clickableEnter={clickableEnter}
+          justLeave={justLeave}
+          onMouseEnter
+          onMouseLeave
+        />
 
-          <Navbar
-            clickableEnter={clickableEnter}
-            justLeave={justLeave}
-            lockedEnter={lockedEnter}
-            onMouseEnter
-            onMouseLeave
-          />
-          <Hero />
-          <Featured
-            textEnter={textEnter}
-            justLeave={justLeave}
-            lockedEnter={lockedEnter}
-            onMouseEnter
-            onMouseLeave
-          />
-          <About
-            clickableEnter={clickableEnter}
-            justLeave={justLeave}
-            onMouseEnter
-            onMouseLeave
-          />
-       
-            <Roadmap />
-       
-          {/* <Info /> */}
-          <Faq
-            clickableEnter={clickableEnter}
-            justLeave={justLeave}
-            lockedEnter={lockedEnter}
-            onMouseEnter
-            onMouseLeave
-          />
-          <Story
-            scrollEnter={scrollEnter}
-            justLeave={justLeave}
-            onMouseEnter
-            onMouseLeave
-          />
-          <Footer
-            clickableEnter={clickableEnter}
-            justLeave={justLeave}
-            onMouseEnter
-            onMouseLeave
-          />
-        </motion.div>
-    
+        <Roadmap />
+
+        {/* <Info /> */}
+        <Faq
+          clickableEnter={clickableEnter}
+          justLeave={justLeave}
+          lockedEnter={lockedEnter}
+          onMouseEnter
+          onMouseLeave
+        />
+        <Story
+          scrollEnter={scrollEnter}
+          justLeave={justLeave}
+          onMouseEnter
+          onMouseLeave
+        />
+        <Footer
+          clickableEnter={clickableEnter}
+          justLeave={justLeave}
+          onMouseEnter
+          onMouseLeave
+        />
+      </motion.div>
     </motion.div>
   );
 };
