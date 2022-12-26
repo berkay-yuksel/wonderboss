@@ -111,7 +111,6 @@
   .container {
     flex-direction: column;
     align-items: flex-start;
-    background-color: red !important;
   }
   .container div {
     width: 45%;
