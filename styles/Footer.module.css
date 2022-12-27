@@ -147,6 +147,9 @@
   .inner_container div:last-child {
     margin-top: 2rem;
   }
+  .container {
+    margin-top: -15rem;
+  }
 
   .container h1 {
     font-size: 4rem;

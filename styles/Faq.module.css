@@ -42,7 +42,7 @@
 @media screen and (min-width: 1920px) {
   .container {
     margin-bottom: -66vw;
-  }   
+  }
 }
 @media screen and (max-width: 1070px) {
   .container {
@@ -60,5 +60,11 @@
   }
   .container div p:nth-child(3) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-bottom: -10rem;
   }
 }
