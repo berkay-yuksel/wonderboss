@@ -24,19 +24,24 @@
   font-size: 66.0096px;
   margin-bottom: 2rem;
 }
-
-.container div p:nth-child(2) {
-  padding-right: 30rem;
-}
-
-.container div p {
+.container div p:first-child {
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
+.container div p:nth-child(2) {
+  margin-right: auto;
+  padding-left: 10vw;
+}
+.container div p:nth-child(3) {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  
+}
+
 .container div:hover {
   filter: brightness(0.9);
-  cursor: pointer;
+ 
 }
 
 @media screen and (min-width: 1920px) {

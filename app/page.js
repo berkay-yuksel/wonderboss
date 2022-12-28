@@ -89,6 +89,7 @@ const Home = () => {
       backgroundColor: "transparent",
       border: "2px solid darkgrey",
       color: "transparent",
+     
     },
     scroll: {
       height: 40,
@@ -138,8 +139,8 @@ const Home = () => {
           onMouseEnter
           onMouseLeave
         />
-
-        <Roadmap />
+{/* 
+        <Roadmap /> */}
 
         {/* <Info /> */}
         <Faq

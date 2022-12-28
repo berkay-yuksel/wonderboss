@@ -28,6 +28,10 @@
   color: white;
   background-color: #2a2a2a;
 }
+.inner_container button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
 
 .inner_text_container {
   display: flex;
@@ -42,6 +46,10 @@
   width: 40%;
   padding-left: 1rem;
   padding-bottom: 1rem;
+}
+.inner_text_container div p:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
 }
 
 .inner_text_container div h5 {
@@ -69,6 +77,11 @@
 .bottom_links_container a:last-child {
   margin-left: 6rem;
   margin-right: 0;
+}
+
+.bottom_container a:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
 }
 
 @media screen and (min-width: 1920px) {

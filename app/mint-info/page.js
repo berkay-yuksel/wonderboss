@@ -9,14 +9,7 @@ const MintInfo = () => {
       <div className={mintInfo.container}>
         <Link href="/">BACK TO HOME PAGE</Link>
         <h1>MINT INFORMATION</h1>
-        <Image
-          className={mintInfo.banner}
-          src="/roadmap.jpg"
-          alt="Picture of the author"
-          width="100vw"
-          // blurDataURL="data:..." automatically provided
-          placeholder=""
-        />
+
         <h4>LEMKUS IS AN URBAN BOUTIQUE SPECIALISING IN PREMIU</h4>
         <div className={mintInfo.text_container}>
           <div>
@@ -50,6 +43,15 @@ const MintInfo = () => {
           </div>
         </div>
       </div>
+      <Image
+        className={mintInfo.banner}
+        src="/roadmap.png"
+        alt="Picture of the author"
+        width="2816"
+        height="1454"
+        blurDataURL="/roadmap.webp"
+        placeholder="blur"
+      />
     </div>
   );
 };

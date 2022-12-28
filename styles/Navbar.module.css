@@ -23,6 +23,10 @@
   font-size: 1vw;
   font-weight: lighter;
 }
+.nav a:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
 @media screen and (min-width: 1920px) {
   .container {
     margin: 2rem -7rem 10rem -7rem;
