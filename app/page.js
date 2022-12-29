@@ -139,8 +139,8 @@ const Home = () => {
           onMouseEnter
           onMouseLeave
         />
-{/* 
-        <Roadmap /> */}
+
+        <Roadmap /> 
 
         {/* <Info /> */}
         <Faq
