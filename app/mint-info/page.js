@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const MintInfo = () => {
   return (
-    <div>
+    <div className={mintInfo.bigger}>
       <div className={mintInfo.container}>
         <Link href="/">BACK TO HOME PAGE</Link>
         <h1>MINT INFORMATION</h1>

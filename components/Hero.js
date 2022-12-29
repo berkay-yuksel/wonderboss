@@ -29,24 +29,24 @@ const Hero = () => {
         >
           <div className={hero.wordContainer}>
             <div className={hero.word}>
-              <motion.h1 variants={item}>A DIGITAL DESIGN STUDIO</motion.h1>
+              <motion.h1 variants={item}>A SPACE COLLECTION</motion.h1>
             </div>
           </div>
           <div className={hero.wordContainer}>
             <div className={hero.word}>
-              <motion.h1 variants={item}>DRIVEN BY RESEARCH &</motion.h1>
+              <motion.h1 variants={item}>DRIVEN BY STORY &</motion.h1>
             </div>
           </div>
           <div className={hero.wordContainer}>
             <div className={hero.word}>
-              <motion.h1 variants={item}>STRATEGY</motion.h1>
+              <motion.h1 variants={item}>COMMUNITY</motion.h1>
             </div>
           </div>
         </motion.div>
       </div>
       <div className={hero.sub_title}>
-        <h5>DESINGED TO ENGAGE</h5>
-        <h5>BUILD TO CONNECT</h5>
+        <h5>EXPRESSIONS VIA ART</h5>
+        <h5>CONNECTIONS VIA NFTS </h5>
       </div>
     </div>
   );

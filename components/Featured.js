@@ -55,7 +55,7 @@ const Featured = ({
         onMouseEnter={lockedEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/staking">
+        <Link href="/">
           <Image alt="leeerob" src={pageBanner} width="816" height="816" />
           <h5>Staking</h5>
         </Link>
@@ -64,10 +64,10 @@ const Featured = ({
 
       <motion.div
         variants={item}
-        onMouseEnter={textEnter}
+        onMouseEnter={lockedEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/lore">
+        <Link href="/">
           <Image alt="leeerob" src={pageBanner} width="816" height="816" />
           <h5>Lore</h5>
         </Link>
@@ -76,10 +76,10 @@ const Featured = ({
 
       <motion.div
         variants={item}
-        onMouseEnter={textEnter}
+        onMouseEnter={lockedEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/gallery">
+        <Link href="/">
           <Image alt="leeerob" src={pageBanner} width="816" height="816" />
           <h5>Gallery</h5>
         </Link>

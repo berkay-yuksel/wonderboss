@@ -7,8 +7,8 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <h1>FOMO SAPIENS</h1>
       <div className={footer.inner_container}>
         <div>
-          <h5>WE WOULD LOVE TO HEAR FROM YOU</h5>
-          <h5> YOU. LETS WORK-- TOGETHER</h5>
+          <h5>WE WANT YOU ON THE SHIP</h5>
+          <h5> C'MON! HOP IN AND SAY HI TO FOMOS</h5>
           <button onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             JOIN US
           </button>
