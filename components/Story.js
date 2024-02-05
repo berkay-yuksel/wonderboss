@@ -11,47 +11,47 @@ const Story = ({ justLeave, onMouseEnter, onMouseLeave, scrollEnter }) => {
     >
       <Image
         alt="leeerob"
-        src="/deneme.jpg"
-        width="816"
-        height="816"
+        src="/story1.webp"
+        width="2000"
+        height="1000"
         placeholder="blur"
-        blurDataURL="/deneme.webp"
+        blurDataURL="/story1.webp"
         quality={10}
       />
       <Image
         alt="leeerob"
-        src="/roadmap.png"
-        width="2816"
-        height="1454"
+        src="/story2.webp"
+        width="2000"
+        height="1000"
         placeholder="blur"
-        blurDataURL="/deneme.webp"
+        blurDataURL="/story2.webp"
         quality={10}
       />
       <Image
         alt="leeerob"
-        src="/deneme.jpg"
-        width="816"
-        height="816"
+        src="/story3.webp"
+        width="2000"
+        height="1000"
         placeholder="blur"
-        blurDataURL="/deneme.webp"
+        blurDataURL="/story3.webp"
         quality={10}
       />
       <Image
         alt="leeerob"
-        src="/roadmap.png"
-        width="2816"
-        height="1454"
+        src="/story4.webp"
+        width="2000"
+        height="1000"
         placeholder="blur"
-        blurDataURL="/deneme.webp"
+        blurDataURL="/story4.webp"
         quality={10}
       />
       <Image
         alt="leeerob"
-        src="/deneme.jpg"
-        width="816"
-        height="816"
+        src="/story5.webp"
+        width="2000"
+        height="1000"
         placeholder="blur"
-        blurDataURL="/deneme.webp"
+        blurDataURL="/story5.webp"
         quality={10}
       />
     </div>

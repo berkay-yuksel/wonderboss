@@ -2,17 +2,15 @@
   width: 60rem;
   height: 200vw;
   overflow-y: scroll;
-  padding-top: 90%;
+  padding-top: 75%;
   padding-bottom: 30vw;
-  margin-bottom: 30vw;
   transform: rotate(-90deg);
-  scale: 0.7;
+  scale: 1;
 }
 .container img {
   width: 63rem;
-
   object-fit: scale-down;
-  margin-top: -10rem;
+  margin-top: 5rem;
   background-image: none !important;
   background-size: 300px 100px;
   transform: rotate(90deg);
