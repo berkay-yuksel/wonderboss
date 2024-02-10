@@ -5,8 +5,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import pageBanner from "../public/deneme.webp";
+//import menuInfoPic from "../public/mint-info.webp";
 import menuInfoPic from "../public/mint-info.jpg";
 import menuLorePic from "../public/lore.jpg";
+import menuGalleryPic from "../public/gallery.png";
+import menuStakingPic from "../public/staking.png";
+//import menuGalleryPic from "../public/gallery.webp";
+//import menuStakingPic from "../public/staking.webp";
 const Featured = ({
   justLeave,
   textEnter,
@@ -45,7 +50,12 @@ const Featured = ({
         onMouseLeave={justLeave}
       >
         <Link href="/mint-info">
-          <Image alt="leeerob" src={menuInfoPic} width="816" height="816" />
+          <Image
+            alt="Allow List & Mint Information"
+            src={menuInfoPic}
+            width="816"
+            height="816"
+          />
           <h5>Allow List & Mint Information</h5>
         </Link>
         <p>1-00</p>
@@ -57,7 +67,7 @@ const Featured = ({
         onMouseLeave={justLeave}
       >
         <Link href="/">
-          <Image alt="leeerob" src={pageBanner} width="816" height="816" />
+          <Image alt="Staking" src={menuStakingPic} width="816" height="816" />
           <h5>Staking</h5>
         </Link>
         <p>2-00</p>
@@ -69,7 +79,7 @@ const Featured = ({
         onMouseLeave={justLeave}
       >
         <Link href="/">
-          <Image alt="leeerob" src={menuLorePic} width="816" height="816" />
+          <Image alt="Lore" src={menuLorePic} width="816" height="816" />
           <h5>Lore</h5>
         </Link>
         <p>3-00</p>
@@ -81,7 +91,7 @@ const Featured = ({
         onMouseLeave={justLeave}
       >
         <Link href="/">
-          <Image alt="leeerob" src={pageBanner} width="816" height="816" />
+          <Image alt="Gallery" src={menuGalleryPic} width="816" height="816" />
           <h5>Gallery</h5>
         </Link>
         <p>4-00</p>
