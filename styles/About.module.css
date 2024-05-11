@@ -71,4 +71,7 @@
   .text_container p {
     width: 100%;
   }
+  .container h2 {
+    font-size: 12vw;
+  }
 }

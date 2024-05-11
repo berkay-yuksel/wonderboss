@@ -14,7 +14,7 @@
 }
 
 .inner_container h5 {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   margin-block-start: 0;
   margin-block-end: 0;
   line-height: 1.3rem;
@@ -46,6 +46,11 @@
   width: 40%;
   padding-left: 1rem;
   padding-bottom: 1rem;
+  height: 10vh;
+}
+
+.inner_text_container div p {
+  width: 100%;
 }
 .inner_text_container div p:hover {
   cursor: pointer;
@@ -102,25 +107,30 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .container {
-    margin-top: -100vw;
-  }
-}
-
 @media screen and (max-width: 1070px) {
   .container {
     margin-top: -25rem;
   }
+
   .inner_text_container {
     margin-bottom: 6.5rem;
     flex-direction: column;
   }
+
   .inner_text_container div {
     width: 100%;
-    padding-left: 0rem;
-    padding-right: 1rem;
+    padding-left: 10vw;
   }
+
+  .inner_text_container div h5 {
+    font-size: 1.7vw;
+  }
+
+  .inner_text_container div p {
+    font-size: 1.5vw;
+    line-height: 1.5rem;
+  }
+
   .inner_container h5 {
     font-size: 1.7rem;
     line-height: 1.7rem;
@@ -146,27 +156,30 @@
   .inner_text_container {
     align-content: flex-start;
     padding-left: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  .inner_container h5 {
-    font-size: 1.5rem;
-    line-height: 1.7rem;
+
+  .inner_text_container div {
+    padding: 0;
   }
-  .inner_container div h5 {
-    font-size: 1.5rem;
-    line-height: 1.7rem;
+
+  .inner_text_container div h5 {
+    font-size: 3.7vw;
   }
-  .inner_container div:last-child {
-    margin-top: 2rem;
+
+  .inner_text_container div p {
+    font-size: 3vw;
+    width: 100%;
   }
+
   .container {
     margin-top: -15rem;
   }
 
   .container h1 {
-    font-size: 4rem;
-    width: 5%;
+    font-size: 12vw;
+    width: 100%;
 
     margin: 1rem 0;
   }

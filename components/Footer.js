@@ -18,31 +18,26 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>CONTACT</h5>
             <p>fsapiens@gmail.com</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>MARKET PLACES</h5>
-            <p>https://magiceden.io/fomo-sapiens</p>
-            <p>https://www.tensor.trade/trade/fomo-sapiens</p>
-            <p>&nbsp;</p>
+            <p>magiceden.io/fomo-sapiens</p>
+            <p>tensor.trade/trade/fomo-sapiens</p>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>OTHER LINKS</h5>
 
-            <p>https://blog.fomosapiensnft.com</p>
+            <p>blog.fomosapiensnft.com</p>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>WHITELIST APPLICATION</h5>
-            <p>https://www.subber.xyz/fomosapienscommunity</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+            <p>subber.xyz/fomosapienscommunity</p>
           </div>
         </div>
       </div>
 
       <div className={footer.bottom_container}>
-        <div>FOMO SAPIENS 2023</div>
+        <div>FOMO SAPIENS 2024</div>
         <div className={footer.bottom_links_container}>
           <Link href="https://twitter.com/fomosapiensnft_">
             {" "}

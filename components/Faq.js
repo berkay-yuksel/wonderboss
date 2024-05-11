@@ -6,7 +6,6 @@ const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <h1>UTILITIES</h1>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p> IP RIGHTS</p>
-        <p>&nbsp;</p>
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p>CLASHUB</p>
@@ -14,7 +13,6 @@ const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p>MINT & STAKING REWARDS</p>
-        <p>&nbsp;</p>
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p>OLL LLC</p>
@@ -22,7 +20,6 @@ const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p>IRL EVENTS</p>
-        <p>&nbsp;</p>
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p>FOMOS PLATFORM</p>
@@ -33,7 +30,6 @@ const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p>FUTURE RELEASES & AIRDROPS</p>
-        <p>&nbsp;</p>
       </div>
       {/* <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
         <p>SPECIFIED COMMUNITY & DAOS</p>

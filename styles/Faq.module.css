@@ -2,20 +2,10 @@
   padding-top: 10vw;
   margin-bottom: -50vw;
 }
-.container h4 {
-  font-size: 2.5rem;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-bottom: 1.3rem;
-}
 
-.container table {
-  width: 100%;
-}
 .container div {
   display: flex;
   justify-content: space-between;
-
   border-bottom: 1px solid #dddddd;
   text-align: left;
   line-height: 4rem;
@@ -28,20 +18,11 @@
 .container div p:first-child {
   margin-block-start: 0;
   margin-block-end: 0;
-  width: 15vw;
+  width: 30%;
 }
 
 .container div p:nth-child(2) {
   margin-right: auto;
-  padding-left: 10vw;
-}
-.container div p:nth-child(3) {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
-.container div:hover {
-  filter: brightness(0.9);
 }
 
 @media screen and (min-width: 1920px) {
@@ -58,18 +39,28 @@
     display: flex;
     justify-content: space-between;
     line-height: 2rem;
+    flex-direction: column;
   }
+  .container div p:first-child {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
   .container div p:nth-child(2) {
     padding-right: 0;
     padding-bottom: 0.3vw;
-  }
-  .container div p:nth-child(3) {
-    display: none;
   }
 }
 
 @media screen and (max-width: 500px) {
   .container {
-    margin-bottom: -10rem;
+    margin-bottom: -15rem;
+    padding-top: 0;
+  }
+  .container h1 {
+    font-size: 12vw;
   }
 }

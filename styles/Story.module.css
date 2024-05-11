@@ -28,10 +28,25 @@
   .container {
     width: 30rem;
     padding-top: 125%;
+    scale: 1.8;
   }
   .container img {
     width: 30rem;
-    margin-top: -35rem;
+    margin-top: -30rem;
+  }
+  .container h1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    width: 30rem;
+    padding-top: 115%;
+    scale: 1.4;
+  }
+  .container img {
+    width: 30rem;
+    margin-top: -30rem;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -42,10 +57,11 @@
 @media screen and (max-width: 500px) {
   .container {
     width: 20rem;
-    padding-top: 174%;
+    padding-top: 144%;
+    scale: 1.5;
   }
   .container img {
     width: 20rem;
-    margin-top: -47rem;
+    margin-top: -40rem;
   }
 }
