@@ -10,22 +10,21 @@ const MintInfo = () => {
         <Link href="/">BACK TO HOME PAGE</Link>
         <h1>MINT INFORMATION</h1>
 
-        <h4>LEMKUS IS AN URBAN BOUTIQUE SPECIALISING IN PREMIU</h4>
         <div className={mintInfo.text_container}>
           <div>
             <h5>MINT DETAILS</h5>
             <ul>
-              <li> 5 SOL</li>
+              <li> 1 SOL</li>
               <li> 5555 PIECE</li>
-              <li> WL MINT STARTING IN JAN 12, 2023 20:00 PM EST</li>
-              <li> YOU CAN MINT UP TO 3 PER WALLET IN WL SALE</li>
-              <li> PUBLIC MINT STARTING IN JAN 13, 2023 20:00 PM EST</li>
-              <li> YOU CAN MINT WITHOUT LIMITS IN PUBLIC SALE</li>
+              <li> PRE-SALE STARTING IN MAY 22, 2024 20 PM EST</li>
+              <li> YOU CAN MINT UP TO 5 PER WALLET IN PRE-SALE</li>
+              <li> PUBLIC MINT STARTING IN MAY 22, 2024 20 PM EST</li>
+              <li> YOU CAN MINT UP TO 10 PER WALLET IN PRE-SALE</li>
             </ul>
           </div>
           <div>
             <div>
-              <h5>HOW TO GET A WL?</h5>
+              <h5>HOW TO GET AN ALLOW LIST SPOT?</h5>
               <p>
                 You can engage with official tweets,send fan content via twitter
                 #fomosapiens , join wl raffles in discord & twitter and apply
@@ -45,11 +44,11 @@ const MintInfo = () => {
       </div>
       <Image
         className={mintInfo.banner}
-        src="/roadmap.png"
+        src="/mintinfo.png"
         alt="Picture of the author"
         width="2816"
         height="1454"
-        blurDataURL="/roadmap.webp"
+        blurDataURL="/mintinfo.webp"
         placeholder="blur"
       />
     </div>

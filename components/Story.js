@@ -9,6 +9,7 @@ const Story = ({ justLeave, onMouseEnter, onMouseLeave, scrollEnter }) => {
       onMouseEnter={scrollEnter}
       onMouseLeave={justLeave}
     >
+      <h1>CHAPTER 1 - STORYLINE</h1>
       <Image
         alt="leeerob"
         src="/story1.webp"

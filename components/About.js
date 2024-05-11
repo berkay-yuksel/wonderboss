@@ -13,6 +13,14 @@ const About = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
 
           <div>
             <p>
+              Fomo Sapiens is a unique story-telling PFP NFT collection
+              comprising a large number of distinct pieces. The collection's
+              primary goal is to form a well-rewarded, vibrant community on the
+              beloved Solana chain via the Pillars (Base, Art, Platform,
+              Gaming), each of which has its own sub-community, events,
+              software, and professional partnerships.
+            </p>
+            {/* <p>
               A NFT collection featuring the stories of the Fomo Sapiens, a
               group of pioneering individuals chosen to establish a new
               decentral space civilization starting on Pluto. Led by the
@@ -21,9 +29,9 @@ const About = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
               withstand the harsh conditions. Own a piece of this exciting new
               chapter in human history and join the Fomo Sapien community as
               they pave the way for a new era of space colonization.
-            </p>
+            </p> */}
             <button onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-              ABOUT US
+              LEARN MORE
             </button>
           </div>
         </div>

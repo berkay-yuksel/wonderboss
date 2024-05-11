@@ -89,15 +89,13 @@ const Home = () => {
       backgroundColor: "transparent",
       border: "2px solid darkgrey",
       color: "transparent",
-     
     },
     scroll: {
       height: 40,
       width: 122,
       x: mousePosition.x + 10,
       y: mousePosition.y + 10,
-      backgroundImage:
-        "url(https://cdn.discordapp.com/attachments/911293589261266965/1056169700519841803/scroll.png)",
+      backgroundImage: "url(/scroll.png)",
       borderRadius: "0%",
       color: "transparent",
     },
@@ -140,7 +138,7 @@ const Home = () => {
           onMouseLeave
         />
 
-        <Roadmap /> 
+        <Roadmap />
 
         {/* <Info /> */}
         <Faq

@@ -17,25 +17,24 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         <div className={footer.inner_text_container}>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>CONTACT</h5>
-            <p>fomosapiens@gmail.com</p>
+            <p>fsapiens@gmail.com</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>MARKET PLACES</h5>
-            <p>https://magiceden.io/fomo-sapiens-nft</p>
-            <p>https://opensea.io/collection/fomo-sapiens-nft</p>
+            <p>https://magiceden.io/fomo-sapiens</p>
+            <p>https://www.tensor.trade/trade/fomo-sapiens</p>
             <p>&nbsp;</p>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            <h5>LINKS</h5>
-            <p>https://twitter.com/fomosapiens_</p>
-            <p>https://docs.fomosapiens.com/</p>
-            <p>https://www.nftinspect.xyz/fomosapiens</p>
+            <h5>OTHER LINKS</h5>
+
+            <p>https://blog.fomosapiensnft.com</p>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>WHITELIST APPLICATION</h5>
-            <p>https://docs.google.com/forms/u/0/</p>
+            <p>https://www.subber.xyz/fomosapienscommunity</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
           </div>
@@ -45,7 +44,7 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <div className={footer.bottom_container}>
         <div>FOMO SAPIENS 2023</div>
         <div className={footer.bottom_links_container}>
-          <Link href="/">
+          <Link href="https://twitter.com/fomosapiensnft_">
             {" "}
             <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
               TWITTER{" "}

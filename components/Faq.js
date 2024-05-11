@@ -3,38 +3,42 @@ import faq from "../styles/Faq.module.css";
 const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
   return (
     <div className={faq.container}>
-      <h1>TIME LINE</h1>
+      <h1>UTILITIES</h1>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>2023-Q1</p> <p>MINTING</p>
-        <p>Mint day is the most exciting day. Beggining for a new adventure!</p>
+        <p> IP RIGHTS</p>
+        <p>&nbsp;</p>
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>2023-Q1</p> <p>STAKING</p>
+        <p>CLASHUB</p>
+        <p>Multi-Chain Blockchain Game</p>
+      </div>
+      <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+        <p>MINT & STAKING REWARDS</p>
+        <p>&nbsp;</p>
+      </div>
+      <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+        <p>OLL LLC</p>
+        <p>Streetwear Fashion Brand for the Artist Curated Merchandise</p>
+      </div>
+      <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+        <p>IRL EVENTS</p>
+        <p>&nbsp;</p>
+      </div>
+      <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+        <p>FOMOS PLATFORM</p>
         <p>
-          Instead of zero-destined tokens, our token will provide value
-          differently
+          Gamified Staking,&nbsp; Invitation App,&nbsp;Gift Boxes, &nbsp;Artists
+          Page,&nbsp; Educational Content etc
         </p>
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>2023-Q2</p> <p>AIR DROP</p>
-        <p>
-          Who doesn't love air drops? Our story will be continiue with new items
-        </p>
+        <p>FUTURE RELEASES & AIRDROPS</p>
+        <p>&nbsp;</p>
       </div>
-      <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>2023-Q3</p> <p>MUTATION</p>
-        <p>Mutate your nft to a much cooler fresh pluto-colored space one</p>
-      </div>
-      <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>2023-Q3</p> <p>MERCH</p>
-        <p>Show off your drip and differenciate from normal people as degen</p>
-      </div>
-      <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>2023-Q4</p> <p>GAME</p>
-        <p>
-          Participate to the adventure in an interactive and more exciting way
-        </p>
-      </div>
+      {/* <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+        <p>SPECIFIED COMMUNITY & DAOS</p>
+        <p>&nbsp;</p>
+      </div> */}
     </div>
   );
 };

@@ -8,6 +8,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       transition: {
+        ease: "linear",
         delayChildren: 0,
         staggerChildren: 0.4,
       },

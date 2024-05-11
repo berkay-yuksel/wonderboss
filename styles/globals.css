@@ -4,9 +4,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #2a2a2a;
+
+  background-color: #f0f0f0;
   background-color: #121212;
+  color: #2a2a2a;
   color: #f0f0f0;
+
   overflow-x: hidden;
 }
 
@@ -40,9 +43,12 @@ p {
   margin-inline-start: 0px;
   margin-block-start: 0em;
 }
+button {
+  cursor: pointer;
+}
 
 .cursor {
-  background-color: #111;
+  background-color: #2a2a2a;
   height: 16px;
   width: 16px;
   border-radius: 50%;

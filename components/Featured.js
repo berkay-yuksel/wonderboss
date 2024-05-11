@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import pageBanner from "../public/deneme.webp";
 //import menuInfoPic from "../public/mint-info.webp";
 import menuInfoPic from "../public/mint-info.jpg";
 import menuLorePic from "../public/lore.jpg";

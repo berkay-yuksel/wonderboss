@@ -13,19 +13,19 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
             MAGIC EDEN
           </span>
         </Link>
-        <Link href="/">
+        <Link href="https://twitter.com/fomosapiensnft_">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             TWITTER
           </span>
         </Link>
         <Link href="/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            DİSCORD
+            DISCORD
           </span>
         </Link>
-        <Link href="/">
+        <Link href="https://blog.fomosapiensnft.com/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            MINT PAGE
+            BLOG
           </span>
         </Link>
       </div>

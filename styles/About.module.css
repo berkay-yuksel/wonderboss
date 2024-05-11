@@ -20,12 +20,13 @@
 }
 
 .text_container p {
-  width: 33rem;
+  width: 40rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   margin-right: 11.5rem;
+  font-size: 1.2rem;
 }
 
 .text_container button {
@@ -35,6 +36,11 @@
   padding: 4px 12px;
   color: white;
   background-color: #2a2a2a;
+}
+
+.text_container button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
 }
 
 @media screen and (min-width: 1920px) {
