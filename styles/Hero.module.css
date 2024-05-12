@@ -56,4 +56,8 @@
     font-size: 4vw;
     line-height: 4vw;
   }
+
+  .title h1 {
+    line-height: 1rem;
+  }
 }
