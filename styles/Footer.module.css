@@ -153,6 +153,9 @@
   .inner_container h1 {
     flex-direction: column;
   }
+  .inner_container div h5 {
+    font-size: 5vw;
+  }
   .inner_text_container {
     align-content: flex-start;
     padding-left: 0;
@@ -165,27 +168,27 @@
   }
 
   .inner_text_container div h5 {
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   .inner_text_container div p {
-    font-size: 3vw;
+    font-size: 4vw;
     width: 100%;
   }
 
   .container {
-    margin-top: -15rem;
+    margin-top: -10rem;
   }
 
   .container h1 {
-    font-size: 12vw;
+    font-size: 11vw;
     width: 100%;
 
     margin: 1rem 0;
   }
   .bottom_container {
-    padding-bottom: 0;
-    font-size: 0.8rem;
+    padding-bottom: 2vw;
+    font-size: 4vw;
   }
   .bottom_links_container a {
     display: none;

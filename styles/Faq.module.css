@@ -57,10 +57,10 @@
 
 @media screen and (max-width: 500px) {
   .container {
-    margin-bottom: -15rem;
+    margin-bottom: -10rem;
     padding-top: 0;
   }
   .container h1 {
-    font-size: 12vw;
+    font-size: 11vw;
   }
 }

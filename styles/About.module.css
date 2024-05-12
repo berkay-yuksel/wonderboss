@@ -72,6 +72,14 @@
     width: 100%;
   }
   .container h2 {
-    font-size: 12vw;
+    font-size: 11vw;
+  }
+  .container h5 {
+    font-size: 5vw;
+    width: 70%;
+
+    font-weight: lighter;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 }

@@ -109,23 +109,22 @@
 
 @media (max-width: 500px) {
   .container {
-    flex-direction: column;
     align-items: flex-start;
   }
 
   .container div {
-    width: 45%;
     margin-bottom: 2rem;
   }
   .container div img {
-    width: 55.75vw;
-    height: 84.5vw;
+    width: 43vw;
+    height: 65vw;
     margin-bottom: 0rem;
   }
   .container div h5 {
-    width: 55.75vw;
-    font-size: 4vw;
+    width: 43vw;
+    font-size: 3.7vw;
     border-top: 0;
+    padding-top: 1vw;
   }
   .container div p {
     display: none;

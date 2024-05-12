@@ -56,12 +56,24 @@
 }
 @media screen and (max-width: 500px) {
   .container {
-    width: 20rem;
-    padding-top: 144%;
-    scale: 1.5;
+    width: 60rem;
+    height: 200vw;
+    overflow-y: scroll;
+    padding: 0;
+    transform: rotate(-90deg);
+    scale: 0.5;
+    margin-left: -65vw;
+  }
+  .container h1 {
+    display: none;
+    visibility: none;
   }
   .container img {
-    width: 20rem;
-    margin-top: -40rem;
+    width: 63rem;
+    object-fit: scale-down;
+    margin-top: 5rem;
+    background-image: none !important;
+    background-size: 300px 100px;
+    transform: rotate(90deg);
   }
 }
