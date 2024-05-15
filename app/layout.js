@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-head-element */
 import localFont from "@next/font/local";
-
+import "../styles/globals.css";
 const myFont = localFont({ src: "../fonts/FoundersGrotesk-Regular.otf" });
 
 export default function RootLayout({ children }) {
