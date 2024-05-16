@@ -50,6 +50,8 @@ const Featured = ({
       >
         <Link href="/mint-info">
           <Image
+            placeholder="blur"
+        
             alt="Allow List & Mint Information"
             src={menuInfoPic}
             width="816"

@@ -25,17 +25,35 @@ const MintInfo = () => {
             <div>
               <h5>HOW TO GET AN ALLOW LIST SPOT?</h5>
               <p>
-                You can engage with official tweets,send fan content via twitter
-                #fomosapiens , join wl raffles in discord & twitter and apply
-                from magic eden.
+                Keep an eye on collaborations (mostly on subber.xyz); use the
+                invitation app or join our giveaways both on Discord and our X
+                account!
               </p>
             </div>
             <div>
               <span>
-                <button>GO TO DISCORD</button>
+                <Link href="https://discord.com/invite/D6JbZjxMt4">
+                  {" "}
+                  <span>DISCORD </span>
+                </Link>
               </span>
               <span>
-                <button>GO TO LAUNCHPAD</button>
+                <Link href="https://www.subber.xyz/fomosapienscommunity/allowlist/fomo-sapiens">
+                  {" "}
+                  <span>SUBBER </span>
+                </Link>
+              </span>
+              <span>
+                <Link href="https://blog.fomosapiensnft.com/posts/fomos-invitation">
+                  {" "}
+                  <span>INVITATION APP </span>
+                </Link>
+              </span>
+              <span>
+                <Link href="https://twitter.com/fomosapiensnft_">
+                  {" "}
+                  <span>𝕏 ACCOUNT</span>
+                </Link>
               </span>
             </div>
           </div>
@@ -48,7 +66,7 @@ const MintInfo = () => {
         width="2816"
         height="1454"
         blurDataURL="/mintinfo.webp"
-        placeholder="blur"
+        placeholder="/mintinfo.webp"
       />
     </div>
   );

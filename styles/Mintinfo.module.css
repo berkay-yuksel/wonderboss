@@ -1,7 +1,5 @@
-
 .bigger {
   margin-bottom: 10vh;
-  
 }
 .container {
   margin-bottom: 10vh;
@@ -33,6 +31,8 @@
 
 .text_container h5 {
   font-size: 1.48vw;
+  margin-block-start: 1vw;
+  margin-block-end: 1vw;
 }
 
 .text_container div {
@@ -60,7 +60,33 @@
   margin-right: 1vw;
 }
 
-.text_container div button {
-  cursor: pointer;
-  padding: 0.7vw;
+.text_container div span {
+  padding-right: 1em;
+  font-size: 1em;
+}
+.text_container div span:last-child {
+  padding-right: 0;
+}
+@media screen and (max-width: 900px) {
+  .text_container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: start;
+  }
+  .text_container div {
+    width: 100%;
+    margin-bottom: 3vw;
+  }
+  .text_container h5 {
+    font-size: 5vw;
+  }
+  .text_container div p {
+    margin-bottom: 2vh;
+    font-size: 3vw;
+  }
+  .text_container div ul {
+    font-size: 3vw;
+  }
 }
