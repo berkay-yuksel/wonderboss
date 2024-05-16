@@ -1,5 +1,5 @@
 import about from "../styles/About.module.css";
-
+import Link, { link } from "next/link";
 const About = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
   return (
     <div className={about.container}>
@@ -30,9 +30,13 @@ const About = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
               chapter in human history and join the Fomo Sapien community as
               they pave the way for a new era of space colonization.
             </p> */}
-            <button onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-              LEARN MORE
-            </button>
+
+            <Link href="/about-project">
+              {" "}
+              <button onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+                LEARN MORE
+              </button>
+            </Link>
           </div>
         </div>
       </div>

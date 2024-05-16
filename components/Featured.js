@@ -51,7 +51,6 @@ const Featured = ({
         <Link href="/mint-info">
           <Image
             placeholder="blur"
-        
             alt="Allow List & Mint Information"
             src={menuInfoPic}
             width="816"
@@ -79,7 +78,7 @@ const Featured = ({
         onMouseEnter={lockedEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/">
+        <Link href="/lore">
           <Image alt="Lore" src={menuLorePic} width="816" height="816" />
           <h5>Lore</h5>
         </Link>
