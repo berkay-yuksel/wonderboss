@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const AboutProject = () => {
   return (
-    <div className={mintInfo.bigger}>
-      <div>
+    <div>
+      <div className={aboutProject.back}>
         <Link href="/">BACK TO HOME PAGE</Link>
         <h1>LEARN MORE</h1>
         <div className="team_container">

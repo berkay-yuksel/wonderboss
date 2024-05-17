@@ -9,6 +9,10 @@
   height: auto;
 }
 
+.back {
+  margin-top: 2.5vw;
+}
+
 .team_container div img {
   border-radius: 10px;
 }
@@ -59,6 +63,8 @@
 }
 
 @media screen and (max-width: 1070px) {
+  .team_container div img {
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -86,9 +92,10 @@
     height: 100% !important;
   }
   .text_container p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .text_container ul li {
-    font-size: 3vw;
+    font-size: 4vw;
+    padding-bottom: 1vw;
   }
 }
