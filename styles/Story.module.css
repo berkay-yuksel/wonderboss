@@ -53,6 +53,10 @@
   .container {
     padding-top: 90%;
   }
+  .container h1 {
+    width: 100%;
+    margin-left: 42vh;
+  }
 }
 @media screen and (max-width: 500px) {
   .container {
