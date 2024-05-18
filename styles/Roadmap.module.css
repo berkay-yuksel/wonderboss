@@ -26,6 +26,9 @@
 
 @media (max-width: 500px) {
   .container {
-    height: 50rem;
+    height: 50vh;
+  }
+  .container img {
+    height: 50vh;
   }
 }
