@@ -13,9 +13,11 @@ const Roadmap = () => {
   console.log(scrollYProgress);
 
   return (
-    <motion.div ref={ref} style={{ scale: scrollYProgress }}>
-      <div className={roadmap.container}></div>{" "}
-    </motion.div>
+    <div className={roadmap.bigger_container}>
+      <motion.div ref={ref} style={{ scale: scrollYProgress }}>
+        <div className={roadmap.container}></div>{" "}
+      </motion.div>
+    </div>
   );
 };
 

@@ -23,9 +23,19 @@
     height: 50rem;
   }
 }
-/* 
+
 @media (max-width: 500px) {
   .container {
-    height: 50rem;
+    visibility: none;
+    display: none;
   }
-} */
+  .bigger_container {
+    margin: 10vh 0;
+    height: 20vh;
+    background-image: url(/banner.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50vh;
+  }
+}
