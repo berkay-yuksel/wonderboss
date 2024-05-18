@@ -11,23 +11,22 @@ const Lore = () => {
         <h1>STORY & LORE OF FOMO SAPIENS</h1>
         <div>
           <p>
-            Until now, extraterrestrial ventures have
-            primarily served as sources of income for the wealthy and
-            governments, focusing on mining and tourism. The concept of a
-            sustainable and realistic "space civilization" has not been
-            seriously considered due to political reasons and the limitations of
-            the human body. However, science has progressed independently and
-            has now enabled us to overcome our most challenging problem.
-            Scientists have successfully evolved human cells to adapt to space
-            conditions, achieving a breakthrough in evolution through scientific
-            means rather than natural selection. This discovery sparked
-            significant FOMO (fear of missing out) among humanity, leading to a
-            surge in efforts related to extraterrestrial life. The pioneer of
-            synthetic evolution, scientists, established a decentralized company
-            and called for all related research to be gathered under its
-            umbrella. This company aims to establish a new space civilization,
-            and the people chosen to build this civilization outside Earth are
-            called "FOMO SAPIENS."
+            Until now, extraterrestrial ventures have primarily served as
+            sources of income for the wealthy and governments, focusing on
+            mining and tourism. The concept of a sustainable and realistic
+            "space civilization" has not been seriously considered due to
+            political reasons and the limitations of the human body. However,
+            science has progressed independently and has now enabled us to
+            overcome our most challenging problem. Scientists have successfully
+            evolved human cells to adapt to space conditions, achieving a
+            breakthrough in evolution through scientific means rather than
+            natural selection. This discovery sparked significant FOMO (fear of
+            missing out) among humanity, leading to a surge in efforts related
+            to extraterrestrial life. The pioneer of synthetic evolution,
+            scientists, established a decentralized company and called for all
+            related research to be gathered under its umbrella. This company
+            aims to establish a new space civilization, and the people chosen to
+            build this civilization outside Earth are called "FOMO SAPIENS."
           </p>
           <br />
           <h2>Why Pluto?</h2>
@@ -36,7 +35,15 @@ const Lore = () => {
             for reaching planets outside the solar system. Additionally, it
             features a heart-shaped plain on its surface.
           </p>
-          <p>image</p>
+          <Image
+            className="{mintInfo.banner}"
+            src="/lore1.gif"
+            alt="Picture of the author"
+            width="300"
+            height="300"
+            blurDataURL=""
+            placeholder=""
+          />
           <br />
           <h2>How will they go?</h2>
           <p>
@@ -53,6 +60,15 @@ const Lore = () => {
             robots, drones, tools, equipment, materials, and genetically
             modified seeds.
           </p>
+          <Image
+            className="{mintInfo.banner}"
+            src="/lore4.webp"
+            alt="Picture of the author"
+            width="300"
+            height="300"
+            blurDataURL=""
+            placeholder=""
+          />
           <h3>Biotech and Synthetic Evolution Elements</h3>
           <p>
             <b>Cell Evolver:</b>This technology evolves human cells to withstand
@@ -94,8 +110,16 @@ const Lore = () => {
             a virtual world.
           </p>
 
-          <p>image here</p>
-          <br />
+          <Image
+            className="{mintInfo.banner}"
+            src="/lore2.webp"
+            alt="Picture of the author"
+            width="860"
+            height="540"
+            blurDataURL=""
+            placeholder=""
+          />
+
           <h5>NEW CIV PERKS</h5>
           <p>
             Meals will consist of lab-grown meat and genetically modified fruits
@@ -125,14 +149,30 @@ const Lore = () => {
             The access of general AIs used will be limited and primarily used
             for automation.
           </p>
+          <br />
+          <Image
+            className="{mintInfo.banner}"
+            src="/lore3.webp"
+            alt="Picture of the author"
+            width="860"
+            height="540"
+            blurDataURL=""
+            placeholder=""
+          />
 
           <h2>Citizens will have tattoos indicating their roles/classes:</h2>
           <ul>
-         
-
             <li>
               <h3>Warriors</h3>
-              <p>image</p>
+              <Image
+                className="{mintInfo.banner}"
+                src="/lore8.webp"
+                alt="Picture of the author"
+                width="500"
+                height="300"
+                blurDataURL=""
+                placeholder=""
+              />
               <p>
                 The Warriors are a skilled and fearless faction of the Lowell
                 Foundation. Their mission is to explore other planets and defend
@@ -140,14 +180,38 @@ const Lore = () => {
                 technology and combat training.{" "}
               </p>
               <span>
-                <p>image</p>
-                <p>image</p>
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
               </span>
             </li>
 
             <li>
               <h3>Scientists</h3>
-              <p>image</p>
+              <Image
+                className="{mintInfo.banner}"
+                src="/lore10.webp"
+                alt="Picture of the author"
+                width="500"
+                height="300"
+                blurDataURL=""
+                placeholder=""
+              />
               <p>
                 The Scientists of the Lowell Foundation cover diverse fields
                 such as physics, chemistry, biology, astronomy, geology, and
@@ -156,14 +220,38 @@ const Lore = () => {
                 constraints.{" "}
               </p>
               <span>
-                <p>image</p>
-                <p>image</p>
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
               </span>
             </li>
 
             <li>
               <h3>Philosophers</h3>
-              <p>image</p>
+              <Image
+                className="{mintInfo.banner}"
+                src="/lore7.webp"
+                alt="Picture of the author"
+                width="500"
+                height="300"
+                blurDataURL=""
+                placeholder=""
+              />
               <p>
                 The Philosophers of the Lowell Foundation are a group of deep
                 thinkers who are dedicated to engaging with philosophical
@@ -172,14 +260,38 @@ const Lore = () => {
                 responsibility of education.
               </p>
               <span>
-                <p>image</p>
-                <p>image</p>
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
               </span>
             </li>
 
             <li>
               <h3>Artists</h3>
-              <p>image</p>
+              <Image
+                className="{mintInfo.banner}"
+                src="/lore11.webp"
+                alt="Picture of the author"
+                width="500"
+                height="300"
+                blurDataURL=""
+                placeholder=""
+              />
               <p>
                 The Artists of Lowell Foundation are a group of creative
                 individuals dedicated to exploring the limitless potential of
@@ -188,14 +300,38 @@ const Lore = () => {
                 to inspire and enrich the community
               </p>
               <span>
-                <p>image</p>
-                <p>image</p>
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
               </span>
             </li>
 
             <li>
               <h3>Diplomats</h3>
-              <p>image</p>
+              <Image
+                className="{mintInfo.banner}"
+                src="/lore9.webp"
+                alt="Picture of the author"
+                width="500"
+                height="300"
+                blurDataURL=""
+                placeholder=""
+              />
               <p>
                 The Diplomats of the Lowell Foundation are responsible for
                 handling crises, running the foundation, planning space
@@ -204,8 +340,24 @@ const Lore = () => {
                 the other factions.
               </p>
               <span>
-                <p>image</p>
-                <p>image</p>
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
+                <Image
+                  className="{mintInfo.banner}"
+                  src="/lunaris.webp"
+                  alt="Picture of the author"
+                  width="300"
+                  height="300"
+                  blurDataURL=""
+                  placeholder=""
+                />
               </span>
             </li>
           </ul>
@@ -219,14 +371,21 @@ const Lore = () => {
               expertise and will undergo rigorous training to prepare them for
               the challenges of establishing a new civilization on Pluto.
             </p>
-            <span>Lab Scene</span>
             <p>
               {" "}
               “Trying to humanize the extraterrestrial environment was doomed to
               fail. Instead, in order to live in space, the human body had to
               evolve.” -Dr. Thiccfloyd{" "}
             </p>
-            <span>image</span>
+            <Image
+              className="{mintInfo.banner}"
+              src="/story1.webp"
+              alt="Picture of the author"
+              width="860"
+              height="540"
+              blurDataURL=""
+              placeholder=""
+            />
             <br />
             <span>Foundation & Lab Opening</span>
             <p>
@@ -236,7 +395,15 @@ const Lore = () => {
               starting from Pluto and called for all research to be consolidated
               within this organization.{" "}
             </p>
-            <span>image</span>
+            <Image
+              className="{mintInfo.banner}"
+              src="/story2.webp"
+              alt="Picture of the author"
+              width="860"
+              height="540"
+              blurDataURL=""
+              placeholder=""
+            />
             <br />
             <span>Invitation</span>
             <p>
@@ -246,7 +413,15 @@ const Lore = () => {
               philosophers, diplomats, and scientists - who would later be known
               as Fomo Sapiens.{" "}
             </p>
-            <span>image</span>
+            <Image
+              className="{mintInfo.banner}"
+              src="/story3.webp"
+              alt="Picture of the author"
+              width="860"
+              height="540"
+              blurDataURL=""
+              placeholder=""
+            />
             <br />
             <span>Tattoo Shop</span>
             <p>
@@ -256,7 +431,15 @@ const Lore = () => {
               markings signify their role and symbolize their dedication and
               courage across the universe.
             </p>
-            <span>image</span>
+            <Image
+              className="{mintInfo.banner}"
+              src="/story4.webp"
+              alt="Picture of the author"
+              width="860"
+              height="540"
+              blurDataURL=""
+              placeholder=""
+            />
             <br />
             <span>Tattoo Shop</span>
             <p>
@@ -265,8 +448,16 @@ const Lore = () => {
               the spacecraft known as Trans Neptunian Express, ready to embark
               on their journey towards Pluto.{" "}
             </p>
-            <span>image</span>
-            <h5>Chapter 2: Journey to Pluto*</h5>
+            <Image
+              className="{mintInfo.banner}"
+              src="/story5.webp"
+              alt="Picture of the author"
+              width="860"
+              height="540"
+              blurDataURL=""
+              placeholder=""
+            />
+            <h5>Chapter 2: Journey to Pluto</h5>
             The second mission involves embarking on the long journey to Pluto
             aboard a state-of-the-art spacecraft. This journey will be filled
             with challenges, including cramped quarters and the difficulties of

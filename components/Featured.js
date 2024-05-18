@@ -78,7 +78,7 @@ const Featured = ({
         onMouseEnter={lockedEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/lore">
+        <Link href="/">
           <Image alt="Lore" src={menuLorePic} width="816" height="816" />
           <h5>Lore</h5>
         </Link>
