@@ -99,14 +99,11 @@
     margin-bottom: 20.5rem;
   }
 
-  .inner_text_container div h5 {
+  .inner_container div h5 {
     font-size: 2rem;
     line-height: 3.3rem;
   }
-  .inner_text_container  h5 {
-    
-    line-height: 3.3rem;
-  }
+
 
   .bottom_container {
     margin: 0.3rem -8rem;
