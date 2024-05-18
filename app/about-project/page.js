@@ -20,12 +20,12 @@ const AboutProject = () => {
                 alt="Picture of the author"
                 width="300"
                 height="300"
-                blurDataURL="/mintinfo.webp"
-                placeholder="/mintinfo.webp"
+                blurDataURL="/lunaris.webp"
+                placeholder="/lunaris.webp"
               />
               <span>
                 {" "}
-                <Link href="/">
+                <Link href="https://twitter.com/fomoslunaris">
                   <h3>lunaris</h3>
                   <h5>co-founder & project manager</h5>
                 </Link>
@@ -41,7 +41,7 @@ const AboutProject = () => {
                 blurDataURL="/mintinfo.webp"
                 placeholder="/mintinfo.webp"
               />
-              <Link href="/">
+              <Link href="https://twitter.com/ilkay_eth">
                 <h3>nac</h3>
                 <h5>co-founder & community manager</h5>
               </Link>
@@ -56,7 +56,7 @@ const AboutProject = () => {
                 blurDataURL="/mintinfo.webp"
                 placeholder="/mintinfo.webp"
               />
-              <Link href="/">
+              <Link href="https://twitter.com/Tmac_SOL">
                 <h3>tmac</h3>
                 <h5>artist</h5>
               </Link>
@@ -71,7 +71,7 @@ const AboutProject = () => {
                 blurDataURL="/mintinfo.webp"
                 placeholder="/mintinfo.webp"
               />
-              <Link href="/">
+              <Link href="https://twitter.com/cuneytsenyavas">
                 <h3>cuneyt senyavas</h3>
                 <h5>technical lead</h5>
               </Link>

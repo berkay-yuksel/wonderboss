@@ -10,6 +10,15 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="color-scheme" content="light only" />
       </head>
+      <head>
+        <title>Fomo Sapiens NFT</title>
+        <meta property="og:title" content="My page title" key="title" />
+        <meta
+          name="description"
+          content="Fomo Sapiens is a large story-telling pfp NFT collection sitting on Solana network."
+          key="desc"
+        />
+      </head>
       <body className={myFont.className}>{children}</body>
     </html>
   );
