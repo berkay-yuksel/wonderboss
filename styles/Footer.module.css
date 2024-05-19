@@ -92,7 +92,7 @@
 
 @media screen and (min-width: 1920px) {
   .container {
-    margin-top: -135rem;
+    margin-top: -84vw;
   }
 
   .inner_text_container {
@@ -103,7 +103,6 @@
     font-size: 2rem;
     line-height: 3.3rem;
   }
-
 
   .bottom_container {
     margin: 0.3rem -8rem;
