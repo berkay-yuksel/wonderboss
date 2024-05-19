@@ -92,7 +92,11 @@
 
 @media screen and (min-width: 1920px) {
   .container {
+<<<<<<< HEAD
     margin-top: -84vw;
+=======
+    margin-top: -75rem;
+>>>>>>> 2e6a72b3274ff0465cd210e047fdf2c2c15da7db
   }
 
   .inner_text_container {
