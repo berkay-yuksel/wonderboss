@@ -15,9 +15,9 @@ const MintInfo = () => {
             <ul>
               <li> 1 SOL</li>
               <li> 5555 PIECE</li>
-              <li> PRE-SALE STARTING IN MAY 22, 2024 20 PM EST</li>
+              <li> PRE-SALE STARTING IN JUNE 19, 2024 20 PM EST</li>
               <li> YOU CAN MINT UP TO 5 PER WALLET IN PRE-SALE</li>
-              <li> PUBLIC MINT STARTING IN MAY 22, 2024 20 PM EST</li>
+              <li> PUBLIC MINT STARTING IN JUNE 19, 2024 20 PM EST</li>
               <li> YOU CAN MINT UP TO 10 PER WALLET IN PRE-SALE</li>
             </ul>
           </div>
