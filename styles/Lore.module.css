@@ -14,3 +14,112 @@
 .box1 img:hover {
   opacity: 0;
 }
+
+.topContainer p {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.topContainer h1 {
+  margin-bottom: 1em;
+}
+
+.whyPluto {
+  margin-top: 5em;
+  width: 22vw;
+  padding: 1em;
+  border: 2px solid grey;
+}
+
+.howWillTheyGo {
+  margin-top: -10em;
+  width: 47.5vw;
+  padding: 1em;
+  border: 2px solid grey;
+  position: relative;
+  left: 45%;
+}
+
+.howWillTheyGo img {
+  height: auto;
+  width: 45vw;
+  object-fit: contain;
+}
+
+.biotechElements {
+  width: 60vw;
+  padding: 1em;
+  border: 2px solid grey;
+  margin-top: 10em;
+  margin-bottom: 45vw;
+}
+.biotechElements b {
+  font-size: 1em;
+  font-weight: 600;
+  margin-right: 0.35em;
+}
+.biotechElements h3 {
+  font-size: 1.5em;
+}
+
+.biotechElements img {
+  width: 30vw;
+  height: 30vw;
+  padding: 1em;
+  border: 2px solid grey;
+  position: absolute;
+  z-index: 2;
+  margin-left: 54vw;
+  margin-top: -5vw;
+}
+
+.classTypesContainer h1 {
+  font-size: 7em;
+}
+.classContainer {
+  margin-bottom: 20vw;
+}
+.classContainer div {
+  display: flex;
+  align-items: end;
+}
+.classContainer div div h3 {
+  font-size: 2em;
+}
+
+.classContainer div div p {
+  padding-bottom: 0.5em;
+}
+.classContainer div div {
+  flex-direction: column;
+  align-items: baseline;
+  height: 15vw;
+  padding: 1em;
+  border: 0px solid grey;
+}
+
+.classContainer div {
+  padding: 1em;
+  border: 2px solid grey;
+}
+
+.classContainer div img {
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+}
+.classContainer span {
+  margin-left: 20vw;
+}
+
+.classContainer span img {
+  margin-left: 3vw;
+  padding: 1em;
+  border: 2px solid grey;
+  width: 25vw;
+  height: 25vw;
+  margin-top: -2vw;
+}
+
+.chaptersContainer h1 {
+  font-size: 7em;
+}
