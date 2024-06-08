@@ -129,7 +129,7 @@
 }
 
 .chaptersContainer h1 {
-  font-size: 7em;
+  font-size: 7vw;
 }
 .chaptersContainer img {
   width: 60vw;
@@ -208,5 +208,8 @@
   .chaptersContainer div img {
     width: 100%;
     height: 100%;
+  }
+  .chaptersContainer div p {
+   text-align: start;
   }
 }
