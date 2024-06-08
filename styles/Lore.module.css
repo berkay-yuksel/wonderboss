@@ -175,6 +175,8 @@
 
   .classTypesContainer {
     padding-top: 10vw;
+    width: 100%;
+    text-align: center;
   }
 
   .classContainer div {
@@ -194,9 +196,9 @@
     margin-left: 0;
   }
   .classContainer span img {
-    width: 41vw;
-    height: 41vw;
-    margin-top: -4vw;
+    width: 41.5vw;
+    height: 41.5vw;
+    margin-top: -8vw;
   }
 
   .chaptersContainer div {
@@ -205,5 +207,6 @@
   }
   .chaptersContainer div img {
     width: 100%;
+    height: 100%;
   }
 }

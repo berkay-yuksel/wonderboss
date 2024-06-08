@@ -75,7 +75,7 @@ const Featured = ({
 
       <motion.div
         variants={item}
-        onMouseEnter={lockedEnter}
+        onMouseEnter={textEnter}
         onMouseLeave={justLeave}
       >
         <Link href="/">
