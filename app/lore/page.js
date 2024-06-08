@@ -204,7 +204,7 @@ const Lore = () => {
                 />
                 <Image
                   className="{mintInfo.banner}"
-                  src="/08.png "
+                  src="/08.png"
                   alt="Picture of the author"
                   width="300"
                   height="300"
