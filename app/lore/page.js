@@ -1,7 +1,8 @@
 import LoreStyles from "../../styles/Lore.module.css";
+
 import Image from "next/image";
 import Link from "next/link";
-
+import FooterBottom from "../../components/FooterBottom";
 const Lore = () => {
   return (
     <div className={LoreStyles.topContainer}>
@@ -394,101 +395,110 @@ const Lore = () => {
 
           <div className={LoreStyles.chaptersContainer}>
             <h1>Chapters</h1>
-            <h2>Chapter 1: Selection and Training</h2>
-            <p>
-              The first mission of our story involves selecting and training a
-              group of individuals who are genetically compatible with space
-              travel. This group will be hand-picked for their unique skills and
-              expertise and will undergo rigorous training to prepare them for
-              the challenges of establishing a new civilization on Pluto.
-            </p>
-            <span>Part 1: Dr. Thiccfloyd found Synthetic Evolution</span>
-            <p>
-              {" "}
-              “Trying to humanize the extraterrestrial environment was doomed to
-              fail. Instead, in order to live in space, the human body had to
-              evolve.” -Dr. Thiccfloyd{" "}
-            </p>
-            <Image
-              className="{mintInfo.banner}"
-              src="/story1.webp"
-              alt="Picture of the author"
-              width="860"
-              height="540"
-              blurDataURL=""
-              placeholder=""
-            />
-            <br />
-            <span>Foundation & Lab Opening</span>
-            <p>
-              Dr. Thiccfloyd, who enabled the human body to adapt to space
-              conditions through synthetic evolution, founded the Lowell
-              Foundation to establish a decentralized space civilization
-              starting from Pluto and called for all research to be consolidated
-              within this organization.{" "}
-            </p>
-            <Image
-              className="{mintInfo.banner}"
-              src="/story2.webp"
-              alt="Picture of the author"
-              width="860"
-              height="540"
-              blurDataURL=""
-              placeholder=""
-            />
-            <br />
-            <span>Invitation</span>
-            <p>
-              The Lowell Foundation volunteers' groundbreaking works sparked
-              FOMO in humanity and propelled studies on extraterrestrial life.
-              It was time to invite the pioneers - artists, warriors,
-              philosophers, diplomats, and scientists - who would later be known
-              as Fomo Sapiens.{" "}
-            </p>
-            <Image
-              className="{mintInfo.banner}"
-              src="/story3.webp"
-              alt="Picture of the author"
-              width="860"
-              height="540"
-              blurDataURL=""
-              placeholder=""
-            />
-            <br />
-            <span>Tattoo Shop</span>
-            <p>
-              {" "}
-              Fomo Sapiens, chosen by Lowell Foundation to build a new
-              civilization on Pluto, get tattoos to show their fraction. These
-              markings signify their role and symbolize their dedication and
-              courage across the universe.
-            </p>
-            <Image
-              className="{mintInfo.banner}"
-              src="/story4.webp"
-              alt="Picture of the author"
-              width="860"
-              height="540"
-              blurDataURL=""
-              placeholder=""
-            />
-            <br />
-            <span>Final Preps</span>
-            <p>
-              Final preparations have been completed, and an exciting new era
-              for humanity in space is about to begin as the Fomo Sapiens board
-              the spacecraft known as Trans Neptunian Express, ready to embark
-              on their journey towards Pluto.{" "}
-            </p>
-            <Image
-              className="{mintInfo.banner}"
-              src="/story5.webp"
-              alt="Picture of the author"
-              width="860"
-              height="540"
-              blurDataURL=""
-              placeholder=""
-            />
+            <span className={LoreStyles.chapterInfo}>
+              <h2>Chapter 1: Selection and Training</h2>
+
+              <p>
+                The first mission of our story involves selecting and training a
+                group of individuals who are genetically compatible with space
+                travel. This group will be hand-picked for their unique skills
+                and expertise and will undergo rigorous training to prepare them
+                for the challenges of establishing a new civilization on Pluto.
+              </p>
+            </span>
+            <div>
+              <Image
+                className="{mintInfo.banner}"
+                src="/story1.webp"
+                alt="Picture of the author"
+                width="860"
+                height="540"
+                blurDataURL=""
+                placeholder=""
+              />
+              <h3>Part 1: Dr. Thiccfloyd found Synthetic Evolution</h3>
+              <p>
+                {" "}
+                “Trying to humanize the extraterrestrial environment was doomed
+                to fail. Instead, in order to live in space, the human body had
+                to evolve.” -Dr. Thiccfloyd{" "}
+              </p>
+            </div>
+            <div>
+              <Image
+                className="{mintInfo.banner}"
+                src="/story2.webp"
+                alt="Picture of the author"
+                width="860"
+                height="540"
+                blurDataURL=""
+                placeholder=""
+              />
+              <h3>Foundation & Lab Opening</h3>
+              <p>
+                Dr. Thiccfloyd, who enabled the human body to adapt to space
+                conditions through synthetic evolution, founded the Lowell
+                Foundation to establish a decentralized space civilization
+                starting from Pluto and called for all research to be
+                consolidated within this organization.{" "}
+              </p>
+            </div>
+            <div>
+              <Image
+                className="{mintInfo.banner}"
+                src="/story3.webp"
+                alt="Picture of the author"
+                width="860"
+                height="540"
+                blurDataURL=""
+                placeholder=""
+              />
+              <h3>Invitation</h3>
+              <p>
+                The Lowell Foundation volunteers' groundbreaking works sparked
+                FOMO in humanity and propelled studies on extraterrestrial life.
+                It was time to invite the pioneers - artists, warriors,
+                philosophers, diplomats, and scientists - who would later be
+                known as Fomo Sapiens.{" "}
+              </p>
+            </div>
+            <div>
+              <Image
+                className="{mintInfo.banner}"
+                src="/story4.webp"
+                alt="Picture of the author"
+                width="860"
+                height="540"
+                blurDataURL=""
+                placeholder=""
+              />
+              <h3>Tattoo Shop</h3>
+              <p>
+                {" "}
+                Fomo Sapiens, chosen by Lowell Foundation to build a new
+                civilization on Pluto, get tattoos to show their fraction. These
+                markings signify their role and symbolize their dedication and
+                courage across the universe.
+              </p>
+            </div>
+            <div>
+              <Image
+                className="{mintInfo.banner}"
+                src="/story5.webp"
+                alt="Picture of the author"
+                width="860"
+                height="540"
+                blurDataURL=""
+                placeholder=""
+              />
+              <h3>Final Preps</h3>
+              <p>
+                Final preparations have been completed, and an exciting new era
+                for humanity in space is about to begin as the Fomo Sapiens
+                board the spacecraft known as Trans Neptunian Express, ready to
+                embark on their journey towards Pluto.{" "}
+              </p>
+            </div>
             <h2>Chapter 2: Journey to Pluto</h2>
             <p>
               The second mission involves embarking on the long journey to Pluto
@@ -524,6 +534,7 @@ const Lore = () => {
           </div>
         </div>
       </div>
+      <FooterBottom />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import mintInfo from "../../styles/Mintinfo.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import FooterBottom from "../../components/FooterBottom";
 
 const MintInfo = () => {
   return (
@@ -68,6 +69,7 @@ const MintInfo = () => {
         blurDataURL="/mintinfo.webp"
         placeholder="/mintinfo.webp"
       />
+      <FooterBottom />
     </div>
   );
 };

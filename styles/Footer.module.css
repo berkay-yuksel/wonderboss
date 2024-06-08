@@ -67,8 +67,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 1rem 0;
+  margin-top: 5vw;
   border-top: 1px solid #ccc;
 }
 
@@ -93,7 +93,6 @@
 @media screen and (min-width: 1920px) {
   .container {
     margin-top: -84vw;
-  
   }
 
   .inner_text_container {

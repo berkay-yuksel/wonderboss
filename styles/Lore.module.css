@@ -30,6 +30,10 @@
   border: 2px solid grey;
 }
 
+.whyPluto img {
+  width: 19.8vw;
+}
+
 .howWillTheyGo {
   margin-top: -10em;
   width: 47.5vw;
@@ -120,6 +124,25 @@
   margin-top: -2vw;
 }
 
+.chaptersContainer {
+  padding-bottom: 3vw;
+}
+
 .chaptersContainer h1 {
   font-size: 7em;
+}
+.chaptersContainer img {
+  width: 60vw;
+}
+
+.chaptersContainer div {
+  margin-bottom: 5vw;
+  width: 60vw;
+}
+.chaptersContainer img {
+  width: 58vw;
+}
+
+.chapterInfo p {
+  margin-bottom: 3vw;
 }

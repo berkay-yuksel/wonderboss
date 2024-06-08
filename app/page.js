@@ -14,6 +14,7 @@ import Footer from "../components/Footer.js";
 import Preloader from "../components/Preloader";
 
 import { motion, useScroll } from "framer-motion";
+import FooterBottom from "../components/FooterBottom.js";
 
 const Home = () => {
   //big pics animation
@@ -155,6 +156,12 @@ const Home = () => {
           onMouseLeave
         />
         <Footer
+          clickableEnter={clickableEnter}
+          justLeave={justLeave}
+          onMouseEnter
+          onMouseLeave
+        />
+        <FooterBottom
           clickableEnter={clickableEnter}
           justLeave={justLeave}
           onMouseEnter
