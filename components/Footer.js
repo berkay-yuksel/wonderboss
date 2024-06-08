@@ -20,7 +20,7 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         <div className={footer.inner_text_container}>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>CONTACT</h5>
-            <p>fsapiens@gmail.com</p>
+            <p>fsapiensnft@gmail.com</p>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>MARKET PLACES</h5>
