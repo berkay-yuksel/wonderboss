@@ -81,7 +81,7 @@ const AboutProject = () => {
         <div className={aboutProject.text_container}>
           <h2>What is Fomo Sapiens?</h2>
           <p>
-            Fomo Sapiens is a unique PFP NFT collection comprising 7777 distinct
+            Fomo Sapiens is a unique PFP NFT collection comprising 5555 distinct
             pieces. At its core, the project is dedicated to fostering a vibrant
             community within the NFT realm, where members experience a sense of
             ownership and engagement across various pillars such as Fomos X
