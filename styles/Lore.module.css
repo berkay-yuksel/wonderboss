@@ -141,6 +141,7 @@
 }
 .chaptersContainer img {
   width: 58vw;
+  height: 100%;
 }
 
 .chapterInfo p {
@@ -210,6 +211,6 @@
     height: 100%;
   }
   .chaptersContainer div p {
-   text-align: start;
+    text-align: start;
   }
 }
