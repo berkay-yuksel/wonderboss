@@ -29,18 +29,20 @@ const Hero = () => {
           className={hero.textWrapper}
         >
           <div className={hero.wordContainer}>
+            {/* <div className={hero.word}>
+              <motion.h1 variants={item}>TIME TO</motion.h1>
+            </div> */}
+          </div>
+          <div className={hero.wordContainer}>
             <div className={hero.word}>
-              <motion.h1 variants={item}>A SPACE COLLECTION</motion.h1>
+              <motion.h1 variants={item}>UNLEASH YOUR</motion.h1>
             </div>
           </div>
           <div className={hero.wordContainer}>
             <div className={hero.word}>
-              <motion.h1 variants={item}>DRIVEN BY STORY &</motion.h1>
-            </div>
-          </div>
-          <div className={hero.wordContainer}>
-            <div className={hero.word}>
-              <motion.h1 variants={item}>COMMUNITY</motion.h1>
+              <motion.h1 variants={item}>
+                INNER <u>BOSS</u>
+              </motion.h1>
             </div>
           </div>
         </motion.div>

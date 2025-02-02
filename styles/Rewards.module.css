@@ -1,0 +1,55 @@
+.container {
+  background-color: red;
+  width: 3vw;
+  height: 5vw;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 17vw;
+  right: 28vw;
+  animation: forwards 40s effect infinite;
+}
+.box {
+  font-size: 2vw;
+  border: 1px solid white;
+
+  border-radius: 50%;
+  padding: 2vw;
+  position: relative;
+  transition: ease-in 0.3s;
+}
+.box span {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(calc(15deg * var(--i)))
+    translateY(calc(-1em / sin(15deg)));
+}
+.box:hover {
+  padding: 27vw;
+  border: 3px solid white;
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    font-size: 3vw;
+  }
+  50% {
+    font-size: 3.2vw;
+  }
+
+  100% {
+    font-size: 3vw;
+  }
+}

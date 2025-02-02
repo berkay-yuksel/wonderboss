@@ -10,7 +10,9 @@ const Roadmap = () => {
     target: ref,
     offset: ["start end", "end end"],
   });
-  console.log(scrollYProgress);
+  {
+    /*  console.log(scrollYProgress); */
+  }
 
   return (
     <div>

@@ -7,13 +7,13 @@ const About = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <div>
         <div className={about.text_container}>
           <div>
-            <h5>ONLY ART HAVE THE POWER TO UNITE AND</h5>
+            <h5>ONLY THE ART HAVE THE POWER TO UNITE AND</h5>
             <h5>INSPIRE A COMMUNITY TOWARDS A COMMON GOAL</h5>
           </div>
 
           <div>
             <p>
-              Fomo Sapiens is a unique story-telling PFP NFT collection
+              Wonder Boss is a unique story-telling PFP NFT collection
               comprising a large number of distinct pieces. The collection's
               primary goal is to form a well-rewarded, vibrant community on the
               beloved Solana chain via the Pillars (Base, Art, Platform,

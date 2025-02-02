@@ -23,7 +23,7 @@ const Preloader = () => {
       animate={{ y: -2000 }}
       transition={{ duration: 2, delay: 4, ease: [0.87, 0, 0.13, 1] }}
     >
-      <h1>fomo sapiens</h1>
+      <h1>wonder boss</h1>
     </motion.div>
   );
 };

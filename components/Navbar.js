@@ -5,7 +5,7 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
   return (
     <div className={navbar.container}>
       <h1 onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        FOMO SAPIENS
+        WONDER BOSS
       </h1>
       <div className={navbar.nav}>
         <Link href="/">

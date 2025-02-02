@@ -4,7 +4,7 @@ import Link, { link } from "next/link";
 const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
   return (
     <div className={footer.container}>
-      <h1>FOMO SAPIENS</h1>
+      <h1>WONDER BOSS</h1>
       <div className={footer.inner_container}>
         <div>
           <h5>WE WANT YOU ON THE SHIP</h5>

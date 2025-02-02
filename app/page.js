@@ -12,6 +12,7 @@ import Faq from "../components/Faq.js";
 import Story from "../components/Story.js";
 import Footer from "../components/Footer.js";
 import Preloader from "../components/Preloader";
+import Rewards from "../components/Rewards.js";
 
 import { motion, useScroll } from "framer-motion";
 import FooterBottom from "../components/FooterBottom.js";
@@ -59,6 +60,8 @@ const Home = () => {
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
       color: "transparent",
+      backgroundColor: "rgb(233,233,233,0.4)",
+     /*  backgroundColor: "red", */
     },
     text: {
       height: 40,
@@ -125,6 +128,7 @@ const Home = () => {
           onMouseLeave
         />
         <Hero />
+        <Rewards />
         <Featured
           textEnter={textEnter}
           justLeave={justLeave}

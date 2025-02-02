@@ -11,11 +11,11 @@ export default function RootLayout({ children }) {
         <meta name="color-scheme" content="light only" />
       </head>
       <head>
-        <title>Fomo Sapiens NFT</title>
+        <title>Wonder Boss NFT</title>
         <meta property="og:title" content="My page title" key="title" />
         <meta
           name="description"
-          content="Fomo Sapiens is a large story-telling pfp NFT collection sitting on Solana network."
+          content="Wonder Boss is a large story-telling pfp NFT collection sitting on Solana network."
           key="desc"
         />
       </head>

@@ -12,7 +12,7 @@ const FooterBottom = ({
     <div>
       {" "}
       <div className={footerBottom.bottom_container}>
-        <div>FOMO SAPIENS 2024</div>
+        <div>WONDER BOSS 2025</div>
         <div className={footerBottom.bottom_links_container}>
           <Link href="https://twitter.com/fomosapiensnft_">
             {" "}

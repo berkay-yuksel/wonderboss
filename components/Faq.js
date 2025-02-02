@@ -22,7 +22,7 @@ const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         <p>IRL EVENTS</p>
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>WONDERBOSS SOFTWARES</p>
+        <p>WONDER BOSS SOFTWARE</p>
         <p>
           Gamified Staking,&nbsp; Invitation App,&nbsp;Gift Boxes, &nbsp;Artists
           Page,&nbsp; Educational Content etc

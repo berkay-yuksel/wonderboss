@@ -1,0 +1,1304 @@
+{
+    "events": [
+      {
+        "id": "1",
+        "title": "NFT Art Contest 2025",
+         "short_title":"nft-art-contest",
+        "description": "A global contest for showcasing the best NFT artworks.",
+        "type": "Contest",
+        "disclaimer":"This is an attendance event. Please ensure you have permission to participate. ",
+        "disclaimer_link":"https://x.com/fomosapiensnft_",
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "about": "example com globaltech",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "about": "https cominnovationhub jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+     
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "🎤 Opening Speech & Event Introduction (10:00 AM - 10:30 AM)  "
+      },
+      {
+        "id": 2,
+        "line": "💡 Basics of NFTs & Blockchain Technology (10:30 AM - 11:15 AM) "
+      },
+      {
+        "id": 3,
+        "line": "🚀 NFT & Merch Raffles (Starts 11:15 AM)"
+      },
+      {
+        "id": 4,
+        "line": "🎉 Q&A Session & Closing Remarks (12:00 PM - 12:30 PM) ( Ask us anything…  except why Ethereum hold so low) "
+      }
+    ],
+
+   
+    "additional_links": [
+      {
+        "title": "Join this events' TG group",
+        "url": "https://example.com/faq"
+      }
+    
+    ]
+  },
+        "creator": "Alice Smith",
+        "date": "2025-02-10",
+        "time": "12:00 UTC",
+        "location": {
+          "online": true,
+          "venue": "Virtual Event Platform",
+          "address": "Online"
+        },
+   
+        "status": "Upcoming",
+        "image": "/event1.png",
+        "tags": ["NFT", "art", "contest"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "2",
+        "title": "DeFi and NFTs: Bridging the Gap",
+         "short_title":"defi-event",
+        "description": "A Live discussion on how DeFi can integrate with NFTs.",
+        "type": "Event",
+        
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+         
+        ],
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+         
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "John Doe",
+        "date": "2025-01-25",
+        "time": "18:00 UTC",
+        "location": {
+          "online": true,
+          "venue": "Zoom",
+          "address": null
+        },
+        "status": "Live",
+        "image": "/event2.png",
+        "tags": ["DeFi", "NFT", "finance"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Generative Art Workshop",
+         "short_title":"generative-art-workshop",
+        "description": "Learn the fundamentals of creating generative NFT art.",
+        "type": "Event",
+        
+  
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+         
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Jane Roe",
+        "date": "2025-03-05",
+        "time": "15:00 UTC",
+        "location": {
+          "online": false,
+          "venue": "San Francisco Tech Hub",
+          "address": "123 Main St, San Francisco, CA"
+        },
+        "status": "Upcoming",
+        "image": "/event3.png",
+        "tags": ["NFT", "generative art", "workshop"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+
+      },
+      {
+        "id": "4",
+        "title": "NFT Gaming Contest",
+         "short_title":"nft-gaming-contest",
+        "description": "Compete with your favorite NFT cards in a battle arena.",
+        "type": "Contest",
+        
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+      
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Rick Sanchez",
+        "date": "2025-02-18",
+        "time": "14:00 UTC",
+        "location": {
+          "online": true,
+          "venue": "Twitch Stream",
+          "address": null
+        },
+        "status": "Upcoming",
+        "image": "/event1.png",
+        "tags": ["NFT", "gaming", "contest"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Metaverse Exploration Meetup",
+         "short_title":"metaverse-exploration-meetup",
+        "description": "Explore virtual worlds with fellow NFT enthusiasts.",
+        "type": "Event",
+        
+  
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+         
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Samantha Green",
+        "date": "2025-03-10",
+        "time": "19:00 UTC",
+        "location": {
+          "online": false,
+          "venue": "Metaverse Hub",
+          "address": "456 Virtual St, Los Angeles, CA"
+        },
+        "status": "Upcoming",
+        "image": "/event2.png",
+        "tags": ["NFT", "metaverse", "event"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "6",
+        "title": "NFT Launchpad Showcase",
+         "short_title":"nft-launchpad-showcase",
+        "description": "An exclusive showcase of Upcoming NFT collections.",
+        "type": "Event",
+        
+  
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+         
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Emily White",
+        "date": "2025-04-01",
+        "time": "13:00 UTC",
+        "location": {
+          "online": true,
+          "venue": "YouTube Live",
+          "address": null
+        },
+        "status": "Upcoming",
+        "image": "/event3.png",
+        "tags": ["NFT", "launchpad", "showcase"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "7",
+        "title": "Web3 Developers Meetup",
+         "short_title":"web3-dev-meetup",
+        "description": "A networking event for Web3 and NFT developers.",
+        "type": "Event",
+        
+  
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+         
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Tom Harris",
+        "date": "2025-02-25",
+        "time": "17:00 UTC",
+        "location": {
+          "online": false,
+          "venue": "Berlin Tech Center",
+          "address": "789 Developer Rd, Berlin, Germany"
+        },
+        "status": "Upcoming",
+        "image": "/event1.png",
+        "tags": ["Web3", "NFT", "networking"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "8",
+        "title": "AI and NFTs Panel",
+         "short_title":"ai-and-nfts-panel",
+        "description": "Discussing the future of AI-generated NFTs.",
+        "type": "Event",
+        
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+      
+        "hosts": [
+         
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Lisa Brown",
+        "date": "2025-03-20",
+        "time": "10:00",
+        "location": {
+          "online": true,
+          "venue": "Discord Stage",
+          "address": null
+        },
+        "status": "Upcoming",
+        "image": "/event2.png",
+        "tags": ["AI", "NFT", "discussion"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "9",
+        "title": "NFT Charity Auction",
+         "short_title":"nft-charity-auction",
+        "description": "Bid on exclusive NFTs to support a good cause.",
+        "type": "Event",
+        
+  
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "hosts": [
+         
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Mark Taylor",
+        "date": "2025-04-15",
+        "time": "20:00",
+        "location": {
+          "online": true,
+          "venue": "OpenSea Auction",
+          "address": null
+        },
+        "status": "Upcoming",
+        "image": "/event3.png",
+        "tags": ["NFT", "charity", "auction"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      },
+      {
+        "id": "10",
+        "title": "NFT Ecosystem Summit",
+         "short_title":"nft-ecosystem-summit",
+        "description": "A summit exploring the state and future of the NFT ecosystem.",
+        "type": "Event",
+        
+  
+        "created_by": [
+          {
+            "id": 1,
+            "name": "Sarah Johnson",
+            "image_url": "https://example.com/sarah.jpg",
+            "twitter": "@sarahjtech"
+          },
+          {
+            "id": 2,
+            "name": "Michael Lee",
+            "image_url": "https://example.com/michael.jpg",
+            "twitter": "@michaeltech"
+          }
+        ],
+        "sponsors": [
+          {
+            "id": 1,
+            "name": "GlobalTech Solutions",
+            "image_url": "https://example.com/globaltech.jpg",
+            "link": "https://globaltechsolutions.com"
+          },
+          {
+            "id": 2,
+            "name": "InnovationHub",
+            "image_url": "https://example.com/innovationhub.jpg",
+            "link": "https://innovationhub.org"
+          }
+        ],
+        "agenda": {
+    "steps": [
+      {
+        "id": 1,
+        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+      },
+      {
+        "id": 2,
+        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+      },
+      {
+        "id": 3,
+        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+      },
+      {
+        "id": 4,
+        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+      }
+    ],
+    "additional_one": {
+      "name": "Event Rules",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Respect all participants and speakers."
+        },
+        {
+          "id": 2,
+          "line": "No spamming or off-topic discussions."
+        },
+        {
+          "id": 3,
+          "line": "Keep questions concise during Q&A."
+        }
+      ]
+    },
+    "additional_two": {
+      "name": "Useful Resources",
+      "lines": [
+        {
+          "id": 1,
+          "line": "Check out the Event FAQs for common questions."
+        },
+        {
+          "id": 2,
+          "line": "Read the NFT Guide for Beginners to get started."
+        },
+        {
+          "id": 3,
+          "line": "Contact Support if you need assistance."
+        }
+      ]
+    },
+    "additional_links": [
+      {
+        "title": "Event FAQs",
+        "url": "https://example.com/faq"
+      },
+      {
+        "title": "NFT Guide for Beginners",
+        "url": "https://example.com/nft-guide"
+      },
+      {
+        "title": "Contact Support",
+        "url": "https://example.com/support"
+      }
+    ]
+  },
+        "creator": "Angela Carter",
+        "date": "2025-05-01",
+        "time": "09:00",
+        "location": {
+          "online": false,
+          "venue": "London Blockchain Hub",
+          "address": "12 Blockchain St, London, UK"
+        },
+        "status": "Upcoming",
+        "image": "/event2.png",
+        "tags": ["NFT", "summit", "ecosystem"],
+        "event_images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg",
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg",
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg",
+          "https://example.com/image9.jpg"
+        ]
+      }
+    ]
+  }
+  

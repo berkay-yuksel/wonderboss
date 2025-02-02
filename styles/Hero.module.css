@@ -24,6 +24,21 @@
   overflow: hidden;
 }
 
+@media screen and (min-width: 2800px) {
+  .title {
+    margin-bottom: 3rem;
+  }
+  .sub_title h5 {
+    font-size: 2rem;
+    line-height: 1.7rem;
+  }
+  .title h1 {
+    font-size: 9vw;
+    line-height: 2.6rem !important;
+    font-weight: 400;
+ 
+  }
+}
 @media screen and (min-width: 1920px) {
   .title {
     margin-bottom: 3rem;
@@ -36,6 +51,7 @@
     font-size: 7vw;
     line-height: 2.2rem;
     font-weight: 400;
+   
   }
 }
 

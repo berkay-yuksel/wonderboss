@@ -5,12 +5,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 //import menuInfoPic from "../public/mint-info.webp";
-import menuInfoPic from "../public/mint-info.jpg";
-import menuLorePic from "../public/lore.jpg";
-import menuGalleryPic from "../public/gallery.png";
-import menuStakingPic from "../public/staking.png";
+import menuInfoPic from "../public/05.png";
+import menuEventsPic from "../public/04.png";
+import menuGalleryPic from "../public/02.png";
+import menuStakingPic from "../public/10.png";
 //import menuGalleryPic from "../public/gallery.webp";
 //import menuStakingPic from "../public/staking.webp";
+
 const Featured = ({
   justLeave,
   textEnter,
@@ -78,9 +79,9 @@ const Featured = ({
         onMouseEnter={textEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/lore">
-          <Image alt="Lore" src={menuLorePic} width="816" height="816" />
-          <h5>Lore</h5>
+        <Link href="/events">
+          <Image alt="Events" src={menuEventsPic} width="816" height="816" />
+          <h5>Events</h5>
         </Link>
         <p>3-00</p>
       </motion.div>

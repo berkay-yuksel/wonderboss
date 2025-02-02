@@ -1,0 +1,78 @@
+.topContainer p {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.topContainer h1 {
+  margin-bottom: 1em;
+}
+.topContainer {
+  width: 90vw;
+}
+.filterBox {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.filterBox div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filterBox button {
+  padding: 0.4vw;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-right: 0.1rem;
+}
+.filterBox button:hover {
+  background-color: white;
+}
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2vw;
+  margin-bottom: 20vw;
+}
+
+.cardsContainer div {
+  width: 21vw;
+  height: 100%;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 12px;
+}
+.cardsContainer div:hover {
+  cursor: pointer;
+  background-color: rgba(238, 238, 238, 0.05);
+}
+.cardsContainer div h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: -0.35vw;
+}
+.cardsContainer div h5 {
+  font-size: 1.1rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 1vw 0;
+}
+
+.cardsContainer div img {
+  border-radius: 12px;
+  width: 100%;
+  height: 18vw;
+  object-fit: cover;
+}
+.cardsContainer div p {
+  margin-bottom: 1vw;
+}
+.cardsContainer div p:last-child {
+  margin-bottom: 0;
+}
+
+.cardsContainer div svg {
+  margin-right: 0.2vw;
+  padding-top: 0.2vw;
+}
