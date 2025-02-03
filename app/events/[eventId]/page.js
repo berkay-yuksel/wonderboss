@@ -64,9 +64,6 @@ const EventPage = ({ params }) => {
                   ))}
                 </div>
               </div>
-              <div>
-                <p>asdsad</p>
-              </div>
             </div>
 
             <div className={eventPage.galleryContainer}>
@@ -85,6 +82,11 @@ const EventPage = ({ params }) => {
                   />
                 ))}
               </div>
+            </div>
+            <div>
+              <br />
+              <h3>Who is coming?</h3>
+              <button>Connect Wallet</button>
             </div>
           </div>
 
@@ -131,15 +133,11 @@ const EventPage = ({ params }) => {
 
               {eventData.status !== "Ended" && (
                 <div className={eventPage.joinContainer}>
-                  <button>Join Event (Connect Wallet)</button>
+                  <button>Join Event</button>
                 </div>
               )}
             </div>
-            {/* {eventData.status !== "Ended" && (
-              <div className={eventPage.joinContainer}>
-                <button>Join event</button>
-              </div>
-            )} */}
+
             <div className={eventPage.lowerRightContainer}>
               {eventData.disclaimer && (
                 <span className={eventPage.disclaimerContainer}>
@@ -155,6 +153,36 @@ const EventPage = ({ params }) => {
               <div className={eventPage.aboutContainer}>
                 <h2>About</h2>
                 <p>{eventData.description}</p>
+                {eventData.rewards && (
+                  <div className={eventPage.rewardsContainer}>
+                    <h3>Rewards:</h3>
+                    <div>
+                      {eventData.rewards.map((reward) => (
+                        <span key={reward.id}>
+                          <p>
+                            {reward.name} x {reward.amount}
+                          </p>
+
+                          {reward.winner ? (
+                            <p>Winner: {reward.winner}</p>
+                          ) : (
+                            <p>Winner: TBA</p>
+                          )}
+
+                          <p>
+                            {reward.transaction ? (
+                              <Link href={reward.transaction}>
+                                Transaction{"  "}
+                              </Link>
+                            ) : (
+                              <p>TBA </p>
+                            )}
+                          </p>
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               {eventData.hosts.length >= 1 && (

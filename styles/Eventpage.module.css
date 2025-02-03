@@ -99,6 +99,7 @@
 
 .rightContainer {
   padding: 1.5vw;
+  padding-left: 2vw;
 }
 
 .nameContainer h4 {
@@ -189,6 +190,7 @@
   border-radius: 7px;
   font-size: 1.2vw;
   margin-bottom: 0.7vw;
+  width: 10vw;
 }
 .hostsContainer span {
   display: flex;
@@ -228,4 +230,51 @@
   /* list-style-type: disc;
   margin-left: 1vw; */
   margin-bottom: 0;
+}
+
+.aboutContainer {
+  padding-bottom: 0 !important;
+}
+.rewardsContainer {
+  padding-bottom: 0.25vw !important;
+}
+.rewardsContainer div {
+  background-color: rgba(255, 255, 255, 0.01);
+  width: 60vw;
+  display: grid;
+  column-gap: 1vw;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 0.5vw;
+  border-radius: 15px;
+}
+.rewardsContainer div span {
+  display: grid;
+  grid-template-columns: 3fr 1fr auto;
+  align-items: center;
+  font-size: 1.2vw;
+  border-bottom: 1px solid white;
+  padding-right: 1vw;
+}
+.rewardsContainer div span:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.rewardsContainer div span:last-child {
+  border: none;
+}
+.rewardsContainer div span:nth-last-child(2) {
+  border: none;
+}
+.rewardsContainer div span p {
+  font-size: 1vw !important;
+  margin: 0.5vw 0 !important;
+}
+.rewardsContainer div span p a {
+  /* padding-left: 1vw; */
+}
+
+.rewardsContainer h3 {
+  font-size: 1.2vw;
+  color: rgb(229, 229, 229);
+  margin-block-start: 0.2vw;
+  margin-block-end: 0.2vw;
 }

@@ -50,7 +50,89 @@
             "link": "https://innovationhub.org"
           }
         ],
-     
+     "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
+  
         "agenda": {
     "steps": [
       {
@@ -173,6 +255,88 @@
         "hosts": [
          
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -303,6 +467,88 @@
         "hosts": [
          
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -430,7 +676,88 @@
             "link": "https://innovationhub.org"
           }
         ],
-      
+      "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -561,6 +888,88 @@
         "hosts": [
          
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -691,6 +1100,88 @@
         "hosts": [
          
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -821,6 +1312,88 @@
         "hosts": [
          
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -951,6 +1524,88 @@
         "hosts": [
          
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -1081,6 +1736,88 @@
         "hosts": [
          
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
@@ -1208,6 +1945,88 @@
             "link": "https://innovationhub.org"
           }
         ],
+        "rewards": [
+    {
+      "id": 1,
+      "name": "Degenerate Ape Academy",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 100
+    },
+    {
+      "id": 2,
+      "name": "Solana Monkey Business",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 50
+    },
+    {
+      "id": 3,
+      "name": "Aurory",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 200
+    },
+    {
+      "id": 4,
+      "name": "Thugbirdz",
+     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 300
+    },
+    {
+      "id": 5,
+      "name": "Galactic Gecko Space Garage",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+       "winner": "#1231",
+       "amount":1,
+      "value": 500
+    },
+    {
+      "id": 6,
+      "name": "Sollamas",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 1000
+    },
+    {
+      "id": 7,
+      "name": "Frakt",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 150
+    },
+    {
+      "id": 8,
+      "name": "SolPunks",
+      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
+      "winner": "#1231",
+      "amount":1,
+      "value": 250
+    },
+    {
+      "id": 9,
+      "name": "Portals",
+      "transaction": "explore_metaverse",
+      "winner": "#1231",
+      "amount":1,
+      "value": 400
+    },
+    {
+      "id": 10,
+      "name": "Shadowy Super Coder",
+      "transaction": "coding_challenge",
+      "winner": "#1231",
+      "amount":1,
+      "value": 600
+    }
+  ],
         "agenda": {
     "steps": [
       {
