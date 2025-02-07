@@ -15,11 +15,65 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
 .filterBox div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.advFilters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  /* border-radius: 5px; */
+}
+.advFilters div {
+
+}
+.advFilters fieldset p {
+  font-size: 1vw;
+  margin-bottom: 0;
+  border: none;
+  padding-right: 0;
+}
+
+.advFilters fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 0;
+}
+.firstBox {
+  border-left: none !important;
+  padding-left: 0.1vw !important;
+}
+.advFilters fieldset div {
+  border: none;
+  padding: 0 0.225vw;
+}
+
+.advFilters fieldset div label {
+  margin-bottom: -0.4vw;
+  padding-left: 0.1vw;
+}
+
+.advFilters fieldset span {
+  border: none;
+  border-left: 1px solid white;
+  line-height: 1.5vw;
+  border-radius: 2px;
+
+  padding-left: 0.6vw;
+}
+
+.advFilters fieldset span p {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: -0.25vw;
+}
+
 .filterBox button {
   padding: 0.4vw;
   font-size: 1rem;

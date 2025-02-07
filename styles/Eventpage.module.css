@@ -148,7 +148,7 @@
   background-color: rgba(255, 0, 0, 0.126);
   border-radius: 15px;
   width: 100%;
-  max-width: 48vw;
+  max-width: 49vw;
   padding: 1vw 1vw 1vw 1vw;
   margin-bottom: 1vw;
   font-size: 1vw;
@@ -208,7 +208,7 @@
   margin: 0;
 }
 .agendaContainer p {
-  max-width: 48vw;
+  max-width: 49vw;
 }
 .agendaContainer h3 {
   font-size: 1.2vw;

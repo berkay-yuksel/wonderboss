@@ -10,6 +10,29 @@ const Events = () => {
   const [events, setEvents] = useState(eventsData.events);
   const [filteredEvents, setFilteredEvents] = useState(events);
   const [statusFilter, setStatusFilter] = useState("all");
+  const [display, setDisplay] = useState(false);
+  const [typeFilter, setTypeFilter] = useState("all");
+  /* checkbox stuff */
+  const [checkboxes, setCheckboxes] = useState({
+    option1: true,
+    option2: true,
+    option3: true,
+    option4: true,
+    option5: true,
+    option6: true,
+    option7: true,
+    option8: true,
+    option9: true,
+  });
+
+  const handleCheckboxChange = (event) => {
+    const { name, checked } = event.target;
+    setCheckboxes((prev) => ({
+      ...prev,
+      [name]: checked,
+    }));
+  };
+  /* checkbox stuff */
 
   useEffect(() => {
     if (statusFilter === "all") {
@@ -19,7 +42,7 @@ const Events = () => {
         events.filter((event) => event.status === statusFilter)
       );
     }
-  }, [statusFilter, events]);
+  }, [statusFilter, events, checkboxes]);
 
   return (
     <div className={EventsStyles.topContainer}>
@@ -30,13 +53,116 @@ const Events = () => {
 
         <div>
           <div className={EventsStyles.filterBox}>
-            <div>
-              <button
-                onClick={() => alert("Filter options will be implemented")}
-              >
+            <div className={EventsStyles.advFilters}>
+              <button onClick={() => setDisplay((prevDisplay) => !prevDisplay)}>
                 Filter
               </button>
+              <div style={{ display: display ? "flex" : "none" }}>
+                <div>
+                  <fieldset>
+                    <span className={EventsStyles.firstBox}>
+                      <p>Event type:</p>
+                    </span>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option1"
+                        checked={checkboxes.option1}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="scales">Contests</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option2"
+                        checked={checkboxes.option2}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="horns">Meet ups</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option3"
+                        checked={checkboxes.option3}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="part">Participation</label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div>
+                  <fieldset>
+                    <span>
+                      <p>Event type:</p>
+                    </span>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option4"
+                        checked={checkboxes.option4}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="scales">Contests</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option5"
+                        checked={checkboxes.option5}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="horns">Meet ups</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option6"
+                        checked={checkboxes.option6}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="part">Participation</label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div>
+                  <fieldset>
+                    <span>
+                      <p>Event type:</p>
+                    </span>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option7"
+                        checked={checkboxes.option7}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="scales">Contests</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option8"
+                        checked={checkboxes.option8}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="horns">Meet ups</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="option9"
+                        checked={checkboxes.option9}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label htmlFor="part">Participation</label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
             </div>
+
             <div>
               <button onClick={() => setStatusFilter("all")}>All</button>
               <button onClick={() => setStatusFilter("Live")}>Live</button>
