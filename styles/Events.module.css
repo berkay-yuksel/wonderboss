@@ -88,3 +88,15 @@
   margin-right: 0.2vw;
   padding-top: 0.2vw;
 }
+
+@media screen and (min-width: 1920px) {
+  .topContainer {
+    scale: 0.85;
+    margin-top: -8vw;
+  }
+}
+@media screen and (max-width: 1070px) {
+}
+
+@media screen and (max-width: 500px) {
+}

@@ -278,3 +278,18 @@
   margin-block-start: 0.2vw;
   margin-block-end: 0.2vw;
 }
+
+@media screen and (min-width: 2600px) {
+  .mainContainer {
+    scale: 0.8;
+    margin-top: -5vw;
+  }
+  .backNav {
+    font-size: 0.8vw;
+  }
+}
+@media screen and (max-width: 1070px) {
+}
+
+@media screen and (max-width: 500px) {
+}

@@ -10,7 +10,7 @@ const EventPage = ({ params }) => {
   );
 
   return (
-    <div>
+    <div className={eventPage.backNav}>
       <br />
       <Link href="/events">BACK</Link>
       {eventData ? (
