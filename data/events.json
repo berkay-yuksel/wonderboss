@@ -676,6 +676,9 @@
             "link": "https://innovationhub.org"
           }
         ],
+        "hosts": [
+         
+        ],
       "rewards": [
     {
       "id": 1,
@@ -1944,6 +1947,9 @@
             "image_url": "https://example.com/innovationhub.jpg",
             "link": "https://innovationhub.org"
           }
+        ],
+        "hosts": [
+         
         ],
         "rewards": [
     {
