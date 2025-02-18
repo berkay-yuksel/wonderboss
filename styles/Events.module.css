@@ -89,10 +89,17 @@
   padding-top: 0.2vw;
 }
 
-@media screen and (min-width: 1920px) {
-}
-@media screen and (max-width: 1070px) {
-}
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    gap: 10vw;
+  }
+  .cardsContainer div {
+    width: 100%;
+  }
+  .cardsContainer div img {
+    height: auto;
+  }
 }

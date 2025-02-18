@@ -53,3 +53,19 @@
     font-size: 3vw;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .box {
+    font-size: 5vw;
+    transition: none;
+  }
+  .box:hover {
+    padding: 0;
+    border: 3px solid white;
+  }
+  .container {
+    animation: none;
+    top: 30vw;
+    right: 35vw;
+  }
+}

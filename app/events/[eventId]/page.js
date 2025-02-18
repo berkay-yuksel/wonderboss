@@ -125,7 +125,7 @@ const EventPage = ({ params }) => {
                   <path d="M480.21-480Q510-480 531-501.21t21-51Q552-582 530.79-603t-51-21Q450-624 429-602.79t-21 51Q408-522 429.21-501t51 21ZM480-191q119-107 179.5-197T720-549q0-105-68.5-174T480-792q-103 0-171.5 69T240-549q0 71 60.5 161T480-191Zm0 95Q323.03-227.11 245.51-339.55 168-452 168-549q0-134 89-224.5T479.5-864q133.5 0 223 90.5T792-549q0 97-77 209T480-96Zm0-456Z" />
                 </svg>
 
-                <div>
+                <div className={eventPage.locationContainer}>
                   <p>{eventData.location.venue} </p>{" "}
                   <p>{eventData.location.address} </p>{" "}
                 </div>
@@ -251,7 +251,7 @@ const EventPage = ({ params }) => {
                 )}
               </div>
 
-              <div className={eventPage.locationContainer}>
+              <div className={eventPage.locationMapContainer}>
                 <h2>Location</h2>
                 <p>{eventData.location.address}</p>
                 {!eventData.location.online && (
