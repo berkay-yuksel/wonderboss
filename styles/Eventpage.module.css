@@ -339,12 +339,12 @@
     height: 7vw;
   }
   .dateContainer div p {
-    font-size: 0.83rem;
+    font-size: 0.8rem;
   }
   .dateContainer button {
-    height: 5vw;
-    width: 20vw;
+    width: 100%;
     font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
   }
   .disclaimerContainer {
     max-width: 100%;
