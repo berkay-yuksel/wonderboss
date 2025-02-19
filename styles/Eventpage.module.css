@@ -339,27 +339,28 @@
     height: 7vw;
   }
   .dateContainer div p {
-    font-size: 2.5vw;
+    font-size: 0.95rem;
   }
   .dateContainer button {
     height: 5vw;
     width: 20vw;
-    font-size: 2vw;
+    font-size: 0.9rem;
+    margin-left: 1.5vw;
   }
   .disclaimerContainer {
     max-width: 100%;
   }
   .disclaimerContainer p {
-    font-size: 2.5vw;
+    font-size: 0.95rem;
     width: 100%;
     max-width: 100%;
   }
   .aboutContainer h2 {
-    font-size: 5vw !important;
+    font-size: 2.2rem !important;
     padding-top: 2vw !important;
   }
   .aboutContainer p {
-    font-size: 3.7vw !important;
+    font-size: 1.25rem !important;
   }
   .rewardsContainer div {
     grid-template-columns: 1fr;
@@ -370,11 +371,13 @@
     font-size: 3.5vw !important;
   }
   .rewardsContainer div span p {
-    font-size: 3vw !important;
+    font-size: 0.9rem !important;
+    padding: 0.5rem 0;
   }
   .rewardsContainer div span:last-child {
     border: none;
   }
+
   .rewardsContainer div span:nth-last-child(2) {
     border-bottom: 1px solid white;
   }
@@ -382,10 +385,10 @@
     padding-top: 2vw !important;
   }
   .hostsContainer h2 {
-    font-size: 5vw !important;
+    font-size: 2.2rem !important;
   }
   .hostsContainer span p {
-    font-size: 3vw !important;
+    font-size: 1.25rem !important;
     width: 100%;
   }
   .hostsContainer span a {
@@ -396,10 +399,10 @@
     padding-top: 2vw !important;
   }
   .agendaContainer h2 {
-    font-size: 5vw !important;
+    font-size: 2.2rem !important;
   }
   .agendaContainer span ul li p {
-    font-size: 3vw !important;
+    font-size: 1.25rem !important;
     max-width: 100% !important;
     padding-bottom: 1vw;
   }
@@ -411,10 +414,10 @@
     padding-bottom: 10vw !important;
   }
   .locationMapContainer h2 {
-    font-size: 5vw !important;
+    font-size: 2.2rem !important;
   }
   .locationMapContainer p {
-    font-size: 3vw !important;
+    font-size: 1.25rem !important;
   }
   .locationMapContainer div iframe {
     width: 100%;

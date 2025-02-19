@@ -41,7 +41,6 @@
 .text_container button:hover {
   cursor: pointer;
   filter: brightness(0.9);
- 
 }
 
 @media screen and (min-width: 1920px) {
@@ -57,7 +56,6 @@
 
 @media screen and (max-width: 1070px) {
   .container {
-    margin-bottom: -7rem;
   }
 
   .text_container {
