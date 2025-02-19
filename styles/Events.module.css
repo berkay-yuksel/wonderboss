@@ -133,7 +133,6 @@
 
   .advFilters button {
     font-size: 1.2rem;
-    color: black !important;
   }
   .filterBox {
     flex-direction: column;
@@ -149,6 +148,5 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: black !important;
   }
 }
