@@ -51,7 +51,7 @@ const Events = () => {
               <div style={{ display: display ? "flex" : "none" }}>
                 <div>
                   <div>
-                    <label>
+                    <label className={EventsStyles.filterTypeName} >
                       <b>Event type:</b>
                     </label>
                     {["Contest", "Meeting", "Event"].map((type) => (

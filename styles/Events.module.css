@@ -121,8 +121,15 @@
   }
   .advFilters {
     margin-bottom: 3vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
+  .advFilters div {
+    width: 100%;
+  }
+  .filterTypeName b {
+    visibility: hidden;
+  }
+
   .advFilters button {
     font-size: 1.2rem;
   }
