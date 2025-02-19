@@ -47,7 +47,9 @@ button {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-
+button:focus {
+  outline: none !important;
+}
 .cursor {
   background-color: #2a2a2a;
   height: 16px;
