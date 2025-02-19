@@ -171,7 +171,7 @@
 }
 
 .lowerRightContainer div h2 {
-  font-size: 2vw;
+  font-size: 1.8rem !important;
   margin-block-start: 0;
   margin-block-end: 0;
   padding: 0.5vw 0;
@@ -339,28 +339,33 @@
     height: 7vw;
   }
   .dateContainer div p {
-    font-size: 0.95rem;
+    font-size: 0.83rem;
   }
   .dateContainer button {
     height: 5vw;
     width: 20vw;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-left: 1.5vw;
   }
   .disclaimerContainer {
     max-width: 100%;
   }
   .disclaimerContainer p {
-    font-size: 0.95rem;
+    font-size: 0.83rem;
     width: 100%;
     max-width: 100%;
+    padding: 0.3rem;
+    border-radius: 7px;
+  }
+  .disclaimerContainer a b {
+    font-size: 0.85rem;
   }
   .aboutContainer h2 {
-    font-size: 2.2rem !important;
+    font-size: 1.8rem !important;
     padding-top: 2vw !important;
   }
   .aboutContainer p {
-    font-size: 1.25rem !important;
+    font-size: 1.2rem !important;
   }
   .rewardsContainer div {
     grid-template-columns: 1fr;
@@ -368,7 +373,7 @@
   }
   .rewardsContainer h3 {
     grid-template-columns: 1fr;
-    font-size: 3.5vw !important;
+    font-size: 1.25rem !important;
   }
   .rewardsContainer div span p {
     font-size: 0.9rem !important;
@@ -385,39 +390,39 @@
     padding-top: 2vw !important;
   }
   .hostsContainer h2 {
-    font-size: 2.2rem !important;
+    font-size: 1.8rem !important;
   }
   .hostsContainer span p {
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
     width: 100%;
   }
   .hostsContainer span a {
-    font-size: 3vw !important;
+    font-size: 1rem !important;
     width: 100%;
   }
   .agendaContainer {
     padding-top: 2vw !important;
   }
   .agendaContainer h2 {
-    font-size: 2.2rem !important;
+    font-size: 1.8rem !important;
   }
   .agendaContainer span ul li p {
-    font-size: 1.25rem !important;
+    font-size: 1.2rem !important;
     max-width: 100% !important;
     padding-bottom: 1vw;
   }
   .agendaContainer span h3 {
-    font-size: 3.5vw !important;
+    font-size: 1.25rem !important;
   }
   .locationMapContainer {
     padding-top: 2vw !important;
     padding-bottom: 10vw !important;
   }
   .locationMapContainer h2 {
-    font-size: 2.2rem !important;
+    font-size: 1.8rem !important;
   }
   .locationMapContainer p {
-    font-size: 1.25rem !important;
+    font-size: 1.2rem !important;
   }
   .locationMapContainer div iframe {
     width: 100%;
