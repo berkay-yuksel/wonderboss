@@ -16,9 +16,11 @@ const About = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
               Wonder Boss is a unique story-telling PFP NFT collection
               comprising a large number of distinct pieces. The collection's
               primary goal is to form a well-rewarded, vibrant community on the
-              beloved Solana chain via the Pillars (Base, Art, Platform,
-              Gaming), each of which has its own sub-community, events,
-              software, and professional partnerships.
+              beloved Solana chain, with a focus on introducing innovative
+              technologies like DEC (Decentralized Emulated Computer). Wonder
+              Boss also offers its community various events, exclusive software,
+              and professional partnerships to enhance the overall experience
+              and provide continuous growth
             </p>
             {/* <p>
               A NFT collection featuring the stories of the Fomo Sapiens, a

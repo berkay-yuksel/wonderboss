@@ -20,41 +20,43 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         <div className={footer.inner_text_container}>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>CONTACT</h5>
-            <p>fsapiensnft@gmail.com</p>
+            <Link href="https://forms.gle/Eeg8ysCeaXCNBbXJ9">
+              {" "}
+              <p> Support Form</p>
+            </Link>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>MARKET PLACES</h5>
-            <Link href="magiceden.io/marketplace/fomo_sapiens">
+            <Link href="https://www.magiceden.io/marketplace/wonder_boss">
               {" "}
-              <p> magiceden.io/marketplace/fomo_sapiens</p>
+              <p> magiceden.io/marketplace/wonder_boss (soon)</p>
             </Link>
 
-            <Link href="https://www.tensor.trade/trade/fomo_sapiens">
+            <Link href="https://www.tensor.trade/trade/wonder_boss">
               {" "}
-              <p>https://www.tensor.trade/trade/fomo_sapiens</p>
+              <p>tensor.trade/trade/wonder_boss (soon)</p>
             </Link>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>OTHER LINKS</h5>
-            <Link href="https://discord.com/invite/D6JbZjxMt4">
+            <Link href="https://blog.fomosapiensnft.com/">
               {" "}
-              <p>blog.fomosapiensnft.com</p>
+              <p>blog.wonderboss.com</p>
             </Link>
-            <Link href="https://discord.com/invite/D6JbZjxMt4">
+            <Link href="https://aetherworks.xyz/">
               {" "}
-              <p>invitation.fomosapiensnft.com</p>
+              <p>aetherworks.xyz</p>
             </Link>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>WHITELIST APPLICATION</h5>
             <Link href="https://discord.com/invite/D6JbZjxMt4">
               {" "}
-              <p>subber.xyz/fomosapienscommunity</p>
+              <p>https://www.alphabot.app/_/wonder_boss</p>
             </Link>
           </div>
         </div>
       </div>
-
     </div>
   );
 };

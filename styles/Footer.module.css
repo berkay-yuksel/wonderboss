@@ -39,11 +39,11 @@
   flex-wrap: wrap;
   width: 55vw;
   margin-bottom: 17.5rem;
-  padding-left: 6.3rem;
+  padding-left: 0.3rem;
 }
 
 .inner_text_container div {
-  width: 40%;
+  width: 46%;
   padding-left: 1rem;
   padding-bottom: 1rem;
   height: 20vh;
