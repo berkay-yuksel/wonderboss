@@ -64,7 +64,7 @@ const AboutProject = () => {
             <div>
               <Image
                 className="{mintInfo.banner}"
-                src="/cuneyt.png"
+                src="/serhan.png"
                 alt="Picture of the author"
                 width="300"
                 height="300"
