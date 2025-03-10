@@ -71,7 +71,7 @@ const AboutProject = () => {
                 blurDataURL="/mintinfo.webp"
                 placeholder="/mintinfo.webp"
               />
-              <Link href="https://twitter.com/cuneytsenyavas">
+              <Link href="https://twitter.com/anonimlesmek">
                 <h3>anonimlesmek</h3>
                 <h5>technical lead</h5>
               </Link>
