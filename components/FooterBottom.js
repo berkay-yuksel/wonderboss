@@ -14,10 +14,10 @@ const FooterBottom = ({
       <div className={footerBottom.bottom_container}>
         <div>WONDER BOSS 2025</div>
         <div className={footerBottom.bottom_links_container}>
-          <Link href="https://twitter.com/fomosapiensnft_">
+          <Link href="https://twitter.com/wonderbossnft">
             {" "}
             <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-              TWITTER{" "}
+              X / TWITTER{" "}
             </span>
           </Link>
           <Link href="https://discord.com/invite/D6JbZjxMt4">

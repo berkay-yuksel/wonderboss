@@ -8,7 +8,9 @@ const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         <p> IP RIGHTS</p>
       </div>
       <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-        <p>THE DEC BY WONDER BOSS</p>
+        <p>
+          <b>THE DEC</b> BY WONDER BOSS
+        </p>
 
         <p>
           DEC is a tokenized, emulation-based web platform that creates a fully
@@ -30,9 +32,7 @@ const Faq = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         <p>OTHER</p>
         <p>
           Gamified Staking,&nbsp; Gift Boxes, &nbsp;
-          <b>
-            <u>Sub Community Pages</u>
-          </b>
+          <b>Sub Community Pages</b>
           ,&nbsp; Educational Content etc
         </p>
       </div>

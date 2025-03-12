@@ -11,7 +11,10 @@
   background-position: center;
   background-size: contain;
 }
-
+.container:hover {
+  background-image: url(/solanadark.jpeg);
+  transition: background-image 2s ease;
+}
 .container img {
   object-fit: cover;
   width: 100vw;

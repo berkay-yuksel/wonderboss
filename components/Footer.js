@@ -7,8 +7,8 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <h1>WONDER BOSS</h1>
       <div className={footer.inner_container}>
         <div>
-          <h5>WE WANT YOU ON THE SHIP</h5>
-          <h5> C'MON! HOP IN AND SAY HI TO FOMOS</h5>
+          <h5>WE WANT YOU ON THE GANG</h5>
+          <h5> C'MON! HOP IN AND SAY HI TO OTHER BOSSES</h5>
 
           <Link href="https://discord.com/invite/D6JbZjxMt4">
             <button onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
@@ -43,14 +43,14 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
               {" "}
               <p>blog.wonderboss.com</p>
             </Link>
-            <Link href="https://aetherworks.xyz/">
+            {/* <Link href="https://aetherworks.xyz/">
               {" "}
               <p>aetherworks.xyz</p>
-            </Link>
+            </Link> */}
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>WHITELIST APPLICATION</h5>
-            <Link href="https://discord.com/invite/D6JbZjxMt4">
+            <Link href="">
               {" "}
               <p>https://www.alphabot.app/_/wonder_boss</p>
             </Link>

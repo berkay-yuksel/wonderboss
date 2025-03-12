@@ -10,12 +10,12 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <div className={navbar.nav}>
         <Link href="/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-           LAUNCHPAD
+            LAUNCHPAD
           </span>
         </Link>
-        <Link href="https://twitter.com/fomosapiensnft_">
+        <Link href="https://twitter.com/wonderbossnft">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            TWITTER
+            TWITTER / X
           </span>
         </Link>
         <Link href="https://discord.com/invite/D6JbZjxMt4">

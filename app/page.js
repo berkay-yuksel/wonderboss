@@ -61,7 +61,7 @@ const Home = () => {
       y: mousePosition.y - 8,
       color: "transparent",
       backgroundColor: "rgb(233,233,233,0.4)",
-     /*  backgroundColor: "red", */
+      /*  backgroundColor: "red", */
     },
     text: {
       height: 40,
@@ -128,7 +128,7 @@ const Home = () => {
           onMouseLeave
         />
         <Hero />
-        <Rewards />
+        {/* <Rewards /> */}
         <Featured
           textEnter={textEnter}
           justLeave={justLeave}
