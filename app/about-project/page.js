@@ -16,10 +16,10 @@ const AboutProject = () => {
             <div>
               <Image
                 className="{mintInfo.banner}"
-                src="/lunaris.webp"
+                src="/lunaris.png"
                 alt="Picture of the author"
-                width="300"
-                height="300"
+                width="1500"
+                height="1500"
                 blurDataURL="/lunaris.webp"
                 placeholder="/lunaris.webp"
               />
@@ -36,8 +36,8 @@ const AboutProject = () => {
                 className="{mintInfo.banner}"
                 src="/nac.png"
                 alt="Picture of the author"
-                width="300"
-                height="300"
+                width="1500"
+                height="1500"
                 blurDataURL="/mintinfo.webp"
                 placeholder="/mintinfo.webp"
               />
@@ -49,10 +49,10 @@ const AboutProject = () => {
             <div>
               <Image
                 className="{mintInfo.banner}"
-                src="/tmac.jpg"
+                src="/tmac.png"
                 alt="Picture of the author"
-                width="300"
-                height="300"
+                width="1500"
+                height="1500"
                 blurDataURL="/mintinfo.webp"
                 placeholder="/mintinfo.webp"
               />
@@ -66,8 +66,8 @@ const AboutProject = () => {
                 className="{mintInfo.banner}"
                 src="/serhan.png"
                 alt="Picture of the author"
-                width="300"
-                height="300"
+                width="1500"
+                height="1500"
                 blurDataURL="/mintinfo.webp"
                 placeholder="/mintinfo.webp"
               />
