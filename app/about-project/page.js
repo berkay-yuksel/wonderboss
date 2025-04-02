@@ -80,10 +80,43 @@ const AboutProject = () => {
         </div>
         <div className={aboutProject.text_container}>
           <h2>What is Wonder Boss?</h2>
-          <p></p>
+          <p>
+            Wonder Boss is a revolutionary story-driven PFP NFT collection built
+            on the Solana blockchain, designed to cultivate a thriving,
+            well-rewarded community. More than just digital collectibles, Wonder
+            Boss is an ecosystem that fuses art, technology, and
+            innovation—empowering its holders with real-world utilities,
+            exclusive software, and access to groundbreaking decentralized
+            computing solutions. At the heart of the project is the
+            Decentralized Emulated Computer (DEC), a cutting-edge web-based
+            emulation platform set to launch on the Monad chain. This technology
+            will provide users with a Turing-complete, fully decentralized
+            computing environment, opening up endless possibilities in Web3.
+            Beyond technology, Wonder Boss extends its reach into streetwear
+            fashion, gamified staking, and immersive IRL and online events,
+            ensuring that the community remains engaged, rewarded, and
+            constantly growing.
+          </p>
           <br />
-          <p></p>
+          <h2>Mission</h2>
+          <p>
+            Our mission is to build a decentralized and interconnected digital
+            ecosystem that empowers users through blockchain-based ownership,
+            innovation, and creative expression. By integrating NFTs,
+            decentralized computing, and real-world utilities, we aim to bridge
+            the gap between Web3 and everyday experiences, providing long-term
+            value to our holders.
+          </p>
           <br />
+          <h2>Vision</h2>
+          <p>
+            Wonder Boss envisions a future where blockchain technology enhances
+            every aspect of digital and real life, from entertainment and gaming
+            to decentralized computing and commerce. We strive to become a
+            leading force in NFT-driven storytelling, community engagement, and
+            Web3 innovation, creating a sustainable and rewarding ecosystem for
+            all participants.
+          </p>
           <div className={aboutProject.first_image_container}>
             {/* <Image
               src="/story2.webp"
