@@ -23,7 +23,7 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
             DISCORD
           </span>
         </Link>
-        <Link href="https://blog.wonderbossnft.com/">
+        <Link href="https://blog.wonderboss.com/">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             BLOG
           </span>
