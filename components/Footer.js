@@ -39,7 +39,7 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>OTHER LINKS</h5>
-            <Link href="https://blog.fomosapiensnft.com/">
+            <Link href="https://blog.wonderboss.com/">
               {" "}
               <p>blog.wonderboss.com</p>
             </Link>
