@@ -48,6 +48,7 @@ const Featured = ({
         variants={item}
         onMouseEnter={lockedEnter}
         onMouseLeave={justLeave}
+        
       >
         <Link href="/">
           <Image

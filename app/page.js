@@ -14,7 +14,13 @@ import Footer from "../components/Footer.js";
 import Preloader from "../components/Preloader";
 import Rewards from "../components/Rewards.js";
 
-import { motion, useScroll } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 import FooterBottom from "../components/FooterBottom.js";
 
 const Home = () => {
@@ -26,24 +32,24 @@ const Home = () => {
   });
 
   //custom cursor
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const springX = useSpring(mouseX, { stiffness: 300, damping: 30 });
+  const springY = useSpring(mouseY, { stiffness: 300, damping: 30 });
+
+  const offsetX = useTransform(springX, (value) => value - 8);
+  const offsetY = useTransform(springY, (value) => value - 8);
+
   const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
     const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
+      mouseX.set(e.clientX);
+      mouseY.set(e.clientY);
     };
     window.addEventListener("mousemove", mouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
+    return () => window.removeEventListener("mousemove", mouseMove);
   }, []);
 
   // loaderr
@@ -57,51 +63,44 @@ const Home = () => {
   //loaderr
   const variants = {
     default: {
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
-      color: "transparent",
-      backgroundColor: "rgb(233,233,233,0.4)",
-      /*  backgroundColor: "red", */
+      width: 16,
+      height: 16,
+      backgroundColor: "rgba(233,233,233,0.4)",
+      borderRadius: "50%",
     },
     text: {
-      height: 40,
       width: 140,
-      x: mousePosition.x + 10,
-      y: mousePosition.y + 10,
+      height: 40,
       backgroundImage: "url(/explore.webp)",
-      borderRadius: "0%",
       backgroundRepeat: "no-repeat",
       backgroundSize: "auto",
-      color: "transparent",
+      borderRadius: "0%",
     },
     locked: {
-      height: 40,
       width: 190,
-      x: mousePosition.x + 10,
-      y: mousePosition.y + 10,
+      height: 40,
       backgroundImage: "url(/stuned.webp)",
-      borderRadius: "0%",
       backgroundRepeat: "no-repeat",
       backgroundSize: "auto",
-      color: "transparent",
+      borderRadius: "0%",
+      marginLeft: "15px",
+      marginTop: "-15px",
     },
     clickable: {
-      height: 20,
       width: 20,
-      x: mousePosition.x - 10,
-      y: mousePosition.y - 10,
-      backgroundColor: "transparent",
+      height: 20,
       border: "2px solid darkgrey",
-      color: "transparent",
+      backgroundColor: "transparent",
     },
     scroll: {
-      height: 40,
       width: 122,
-      x: mousePosition.x + 10,
-      y: mousePosition.y + 10,
+      height: 40,
       backgroundImage: "url(/scroll.png)",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "auto",
       borderRadius: "0%",
-      color: "transparent",
+      marginLeft: "15px",
+      marginTop: "-15px",
     },
   };
 
@@ -118,6 +117,10 @@ const Home = () => {
           className="cursor"
           variants={variants}
           animate={cursorVariant}
+          style={{
+            translateX: offsetX,
+            translateY: offsetY,
+          }}
         ></motion.div>
 
         <Navbar
