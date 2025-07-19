@@ -9,8 +9,6 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="color-scheme" content="light only" />
-      </head>
-      <head>
         <title>Wonder Boss NFT</title>
         <meta property="og:title" content="My page title" key="title" />
         <meta
@@ -19,6 +17,7 @@ export default function RootLayout({ children }) {
           key="desc"
         />
       </head>
+
       <body className={myFont.className}>{children}</body>
     </html>
   );
