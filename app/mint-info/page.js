@@ -33,7 +33,7 @@ const MintInfo = () => {
             </div>
             <div>
               <span>
-                <Link href="https://discord.com/invite/D6JbZjxMt4">
+                <Link href="https://discord.com/invite/GmZzzC72as">
                   {" "}
                   <span>DISCORD </span>
                 </Link>

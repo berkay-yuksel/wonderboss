@@ -20,7 +20,7 @@ const FooterBottom = ({
               X / TWITTER{" "}
             </span>
           </Link>
-          <Link href="https://discord.com/invite/D6JbZjxMt4">
+          <Link href="https://discord.com/invite/GmZzzC72as">
             {" "}
             <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
               DISCORD{" "}

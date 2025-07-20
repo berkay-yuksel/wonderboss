@@ -43,7 +43,7 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
               {" "}
               <p>blog.wonderboss.com</p>
             </Link>
-            {/* <Link href="https://aetherworks.xyz/">
+            {/* <Link href="https://pulse.atombots.xyz/dashboards/leaderboard?pc=BOSS">
               {" "}
               <p>aetherworks.xyz</p>
             </Link> */}
@@ -53,6 +53,14 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
             <Link href="https://www.alphabot.app/_/wonderbossnft">
               {" "}
               <p>https://www.alphabot.app/_/wonderbossnft</p>
+            </Link>
+            <Link href="https://www.subber.xyz/wonderboss/allowlist/wonder-boss-allow-list">
+              {" "}
+              <p>https://www.subber.xyz/wonderboss</p>
+            </Link>
+            <Link href="https://atlas3.io/project/wonder-boss">
+              {" "}
+              <p>https://atlas3.io/project/wonder-boss</p>
             </Link>
           </div>
         </div>
