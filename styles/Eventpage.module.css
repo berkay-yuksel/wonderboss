@@ -397,6 +397,21 @@
     grid-template-columns: 1fr;
     font-size: 1.25rem !important;
   }
+  .rewardsTwoContainer h3 {
+    font-size: 1.25rem;
+  }
+
+  .rewardsTwoContainer div span p {
+   
+    padding: 0.5rem 0;
+  }
+  .rewardsTwoContainer div span:last-child {
+    border: none;
+  }
+
+  .rewardsTwoContainer div span:nth-last-child(2) {
+    border-bottom: 1px solid white;
+  }
   .rewardsContainer div span p {
     font-size: 0.9rem !important;
     padding: 0.5rem 0;
