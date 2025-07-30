@@ -5,7 +5,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ["example.com", "pbs.twimg.com"], // İzin verdiğin domainleri buraya ekle
+  },
 };
-
 
 module.exports = nextConfig;

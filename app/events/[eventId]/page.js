@@ -34,7 +34,7 @@ const EventPage = ({ params }) => {
                     <div key={creator.id}>
                       <div>
                         <Image
-                          src="/08.png"
+                          src={creator.image_url}
                           width={600}
                           height={600}
                           alt="event image"
@@ -54,7 +54,7 @@ const EventPage = ({ params }) => {
                     <div key={sponsor.id}>
                       <Link href={sponsor.link}>
                         <Image
-                          src="/08.png"
+                          src={sponsor.image_url}
                           width={600}
                           height={600}
                           alt="event image"
@@ -72,9 +72,9 @@ const EventPage = ({ params }) => {
                 <h3>Gallery</h3> <button>View All</button>
               </div>
               <div className={eventPage.galleryLower}>
-                {eventData.event_images.map((eventImg) => (
+                {eventData.event_images.map((eventImg, index) => (
                   <Image
-                    key={eventImg.id}
+                    key={index}
                     src="/08.png"
                     width={500}
                     height={500}
@@ -83,10 +83,13 @@ const EventPage = ({ params }) => {
                 ))}
               </div>
             </div>
-            <div>
+            <div className={eventPage.participantsContainer}>
               <br />
-              <h3>Who is coming?</h3>
-              <button>Connect Wallet</button>
+              <h3>Who is in?</h3>
+              <p>This feature will be available after the collection launch</p>
+              <button>
+                <del>Connect Wallet</del>
+              </button>
             </div>
           </div>
 
@@ -133,7 +136,10 @@ const EventPage = ({ params }) => {
 
               {eventData.status !== "Ended" && (
                 <div className={eventPage.joinContainer}>
-                  <button>Join Event</button>
+                  <Link href={eventData.join_link ? eventData.join_link : ""}>
+                    {" "}
+                    <button>Join Event</button>
+                  </Link>
                 </div>
               )}
             </div>
@@ -152,7 +158,9 @@ const EventPage = ({ params }) => {
               )}
               <div className={eventPage.aboutContainer}>
                 <h2>About</h2>
-                <p>{eventData.description}</p>
+                {eventData.description.split("\n").map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
                 {eventData.rewards && (
                   <div className={eventPage.rewardsContainer}>
                     <h3>Rewards:</h3>
@@ -178,6 +186,18 @@ const EventPage = ({ params }) => {
                               <p>TBA </p>
                             )}
                           </p>
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {eventData.rewards2 && (
+                  <div className={eventPage.rewardsTwoContainer}>
+                    <h3>Rewards:</h3>
+                    <div>
+                      {eventData.rewards2.map((reward) => (
+                        <span key={reward.id}>
+                          <p>{reward.desc}</p>
                         </span>
                       ))}
                     </div>
@@ -212,8 +232,8 @@ const EventPage = ({ params }) => {
                 <span>
                   <h3>Additional links:</h3>
                   <ul>
-                    {eventData.agenda.additional_links.map((link) => (
-                      <li key={link.id}>
+                    {eventData.agenda.additional_links.map((link, index) => (
+                      <li key={index}>
                         <span>
                           <p>
                             {link.title} <Link href={link.url}>here.</Link>

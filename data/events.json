@@ -188,172 +188,71 @@
       },
       {
         "id": "2",
-        "title": "DeFi and NFTs: Bridging the Gap",
-         "short_title":"defi-event",
-        "description": "A Live discussion on how DeFi can integrate with NFTs.",
+        "title": "Tmac’s Archive",
+         "short_title":"tmacs-archive",
+        "description": "The Tmac’s Archive event, a collaboration between Tmac and Wonder Boss, showcases a curated collection of open edition artworks inspired by the Solana NFT ecosystem. These unique visuals, created by Tmac, reflect the spirit of Solana’s diverse communities and embody the belief that unity across these communities strengthens Solana as a whole. \n All artworks are available for free minting on the Drip platform. \n  Minting an open edition artwork gives you a chance to qualify for the upcoming Drip-listed minting phase of the Wonder Boss NFT. \n This event celebrates and supports the vibrant Solana NFT ecosystem while helping grow the Boss family through art, collaboration, and collective energy.",
         "type": "Event",
+        "join_link":"https://drip.haus/okaybeats/set/5aff62b3-bccc-4fe8-86ab-ceac62b75218",
         
         "created_by": [
           {
             "id": 1,
-            "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
-            "twitter": "@sarahjtech"
+            "name": "Tmac",
+            "image_url": "https://pbs.twimg.com/profile_images/1749080713377222656/Mc__3z64_400x400.jpg",
+            "twitter": "https://x.com/Tmac_SOL"
           },
           {
             "id": 2,
-            "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
-            "twitter": "@michaeltech"
+            "name": "Wonder Boss",
+            "image_url": "https://pbs.twimg.com/profile_images/1892527673223614464/SksEuAwg_400x400.jpg",
+            "twitter": "https://x.com/wonderbossnft"
           }
         ],
         "sponsors": [
-          {
+       {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
-          },
-          {
-            "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "DRiP",
+            "image_url": "https://pbs.twimg.com/profile_images/1907641677348831232/IZTCeoa-_400x400.jpg",
+            "link": "https://drip.haus/"
           }
+         
         ],
+ 
+
         "hosts": [
          
         ],
-        "created_by": [
-          {
-            "id": 1,
-            "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
-            "twitter": "@sarahjtech"
-          },
-          {
-            "id": 2,
-            "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
-            "twitter": "@michaeltech"
-          }
-        ],
-        "sponsors": [
-          {
-            "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
-          },
-          {
-            "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
-          }
-        ],
-        "hosts": [
-         
-        ],
-        "rewards": [
+        "rewards2": [
     {
       "id": 1,
-      "name": "Degenerate Ape Academy",
-      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
-      "amount":1,
-      "value": 100
+      "desc": "Own a unique open edition artwork from Tmac’s Archive."
     },
     {
       "id": 2,
-      "name": "Solana Monkey Business",
-      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
-      "amount":1,
-      "value": 50
-    },
-    {
-      "id": 3,
-      "name": "Aurory",
-      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
-      "amount":1,
-      "value": 200
-    },
-    {
-      "id": 4,
-      "name": "Thugbirdz",
-     "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
-      "amount":1,
-      "value": 300
-    },
-    {
-      "id": 5,
-      "name": "Galactic Gecko Space Garage",
-      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-       "winner": "#1231",
-       "amount":1,
-      "value": 500
-    },
-    {
-      "id": 6,
-      "name": "Sollamas",
-      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
-      "amount":1,
-      "value": 1000
-    },
-    {
-      "id": 7,
-      "name": "Frakt",
-      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
-      "amount":1,
-      "value": 150
-    },
-    {
-      "id": 8,
-      "name": "SolPunks",
-      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
-      "amount":1,
-      "value": 250
-    },
-    {
-      "id": 9,
-      "name": "Portals",
-      "transaction": "explore_metaverse",
-      "winner": "#1231",
-      "amount":1,
-      "value": 400
-    },
-    {
-      "id": 10,
-      "name": "Shadowy Super Coder",
-      "transaction": "coding_challenge",
-      "winner": "#1231",
-      "amount":1,
-      "value": 600
+      "desc": "Earn a chance to secure a Wonder Boss allowlist spot for the upcoming Drip-listed minting phase."
     }
   ],
         "agenda": {
     "steps": [
       {
         "id": 1,
-        "line": "Opening & Intro (10:00 AM - 10:30 AM)"
+        "line": "Event officially announced to the community"
       },
       {
         "id": 2,
-        "line": "NFT & Blockchain Basics (10:30 AM - 11:15 AM)"
+        "line": "A variety of unique open edition artworks released on DRiP for free minting"
       },
       {
         "id": 3,
-        "line": "Live NFT Minting Demo (11:15 AM - 12:00 PM)"
+        "line": "Participants mint their favorite open edition artworks)"
       },
       {
         "id": 4,
-        "line": "Q&A & Closing (12:00 PM - 12:30 PM)"
+        "line": "Winners who wish to participate have minted the Wonder Boss NFT during the upcoming Drip-listed phase"
+      },
+            {
+        "id": 5,
+        "line": "Event concludes after the Wonder Boss drip-listed phase"
       }
     ],
     "additional_one": {
@@ -361,47 +260,18 @@
       "lines": [
         {
           "id": 1,
-          "line": "Respect all participants and speakers."
-        },
-        {
-          "id": 2,
-          "line": "No spamming or off-topic discussions."
-        },
-        {
-          "id": 3,
-          "line": "Keep questions concise during Q&A."
+          "line": "Owning multiple open edition artworks does not increase the number of mints allowed per wallet for the Wonder Boss Drip-listed minting phase"
         }
       ]
     },
-    "additional_two": {
-      "name": "Useful Resources",
-      "lines": [
-        {
-          "id": 1,
-          "line": "Check out the Event FAQs for common questions."
-        },
-        {
-          "id": 2,
-          "line": "Read the NFT Guide for Beginners to get started."
-        },
-        {
-          "id": 3,
-          "line": "Contact Support if you need assistance."
-        }
-      ]
-    },
+ 
     "additional_links": [
       {
-        "title": "Event FAQs",
-        "url": "https://example.com/faq"
-      },
-      {
-        "title": "NFT Guide for Beginners",
-        "url": "https://example.com/nft-guide"
-      },
-      {
-        "title": "Contact Support",
-        "url": "https://example.com/support"
+        "title": "DRiP website",
+        "url": "https://drip.haus/"
+      }, {
+        "title": "Wonder Boss Discord server for support",
+        "url": "https://drip.haus/"
       }
     ]
   },
@@ -410,22 +280,16 @@
         "time": "18:00 UTC",
         "location": {
           "online": true,
-          "venue": "Zoom",
-          "address": null
+          "venue": "DRiP",
+          "address": "Online"
         },
         "status": "Live",
-        "image": "/event2.png",
+        "image": "/tmacsarchive.png",
         "tags": ["DeFi", "NFT", "finance"],
         "event_images": [
           "https://example.com/image1.jpg",
           "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+          "https://example.com/image3.jpg"
         ]
       },
       {
