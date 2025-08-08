@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
 export default function GalleryPage() {
-  // public/cards içindeki dosyalar — isim = username (twitter)
   const images = [
     { name: "0xsecretalpha7", src: "/cards/0xsecretalpha7.png" },
     { name: "5hort5nipa.sol", src: "/cards/5hort5nipa.sol.png" },
@@ -93,8 +92,7 @@ export default function GalleryPage() {
     <>
       <style jsx global>{`
         html,
-        body,
-        #__next {
+        body {
           margin: 0;
           padding: 0;
           height: 100%;
@@ -105,35 +103,25 @@ export default function GalleryPage() {
           box-sizing: border-box;
         }
       `}</style>
-
-      <LoopingGallery
-        images={images}
-        cols={3}
-        rowsPerTile={2} // 3x2 = 6 cell
-        cellW={600}
-        cellH={360}
-        gapCss="8vw"
-        outerGapCss="8vw"
-        autoDir={{ x: 2, y: 1 }}
-        initialSpeed={40}
-        searchPauseMs={2000}
-      />
+      <LoopingGallery images={images} />
     </>
   );
 }
 
-function LoopingGallery({
-  images,
-  cols = 3,
-  rowsPerTile = 2,
-  cellW = 400,
-  cellH = 280,
-  gapCss = "8vw",
-  outerGapCss = "8vw",
-  autoDir = { x: 1, y: 0 },
-  initialSpeed = 40,
-  searchPauseMs = 2000,
-}) {
+function LoopingGallery({ images }) {
+  // layout
+  const cols = 3,
+    rows = 2;
+  const cellW = 600,
+    cellH = 360;
+  const gapCss = "8vw",
+    outerGapCss = "8vw";
+
+  // autopan
+  const autoDir = { x: 2, y: 1 };
+  const initialSpeed = 40;
+
+  // state
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [autoOn, setAutoOn] = useState(true);
   const [speed, setSpeed] = useState(initialSpeed);
@@ -141,30 +129,27 @@ function LoopingGallery({
   const rafRef = useRef(null);
   const lastRef = useRef(0);
 
-  const dragRef = useRef({ active: false, x: 0, y: 0, ox: 0, oy: 0 });
   const [vp, setVp] = useState({ w: 1, h: 1 });
   const [gapPx, setGapPx] = useState(0);
   const [outerGapPx, setOuterGapPx] = useState(0);
 
   const [query, setQuery] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0); // highlighted suggestion
   const [lightbox, setLightbox] = useState(null);
 
-  // helpers
-  const toPx = (val) => {
-    const m = String(val).trim();
-    if (m.endsWith("vw")) return (window.innerWidth * parseFloat(m)) / 100;
-    if (m.endsWith("vh")) return (window.innerHeight * parseFloat(m)) / 100;
-    if (m.endsWith("px")) return parseFloat(m);
-    return parseFloat(m) || 0;
-  };
-  const mod = (n, m) => ((n % m) + m) % m;
-  const hash2D = (x, y) => {
-    // hızlı, deterministik bir 2D hash (pozitif 32-bit)
-    let h = x * 374761393 + y * 668265263;
-    h = (h ^ (h >>> 13)) >>> 0;
-    return h;
-  };
+  const resumeTimeoutRef = useRef(null);
 
+  // utils
+  const toPx = (val) => {
+    if (val.endsWith("vw")) return (window.innerWidth * parseFloat(val)) / 100;
+    if (val.endsWith("vh")) return (window.innerHeight * parseFloat(val)) / 100;
+    return parseFloat(val) || 0;
+  };
+  const hash2D = (x, y) => ((x * 73856093) ^ (y * 19349663)) >>> 0;
+  const wrapMod = (v, m) => ((v % m) + m) % m; // negatif mod fix
+
+  // resize
   useEffect(() => {
     const recalc = () => {
       setVp({ w: window.innerWidth, h: window.innerHeight });
@@ -174,26 +159,31 @@ function LoopingGallery({
     recalc();
     window.addEventListener("resize", recalc);
     return () => window.removeEventListener("resize", recalc);
-  }, [gapCss, outerGapCss]);
+  }, []);
 
-  // Sabit tile ölçüleri
-  const rows = rowsPerTile;
+  // dimensions
   const gridW = cols * cellW + (cols - 1) * gapPx;
   const gridH = rows * cellH + (rows - 1) * gapPx;
   const tileW = gridW + outerGapPx;
   const tileH = gridH + outerGapPx;
 
-  // Ekranı kaplayacak kadar kopya + buffer
+  // repeat
   const repX = Math.max(3, Math.ceil(vp.w / tileW) + 3);
   const repY = Math.max(3, Math.ceil(vp.h / tileH) + 3);
   const spanX = Math.floor(repX / 2);
   const spanY = Math.floor(repY / 2);
 
-  // Autopan
+  // base tile
+  const baseTileX = Math.floor(offset.x / tileW);
+  const baseTileY = Math.floor(offset.y / tileH);
+
+  // dir normalize
   const dirNorm = useMemo(() => {
     const len = Math.hypot(autoDir.x || 0, autoDir.y || 0) || 1;
     return { x: (autoDir.x || 0) / len, y: (autoDir.y || 0) / len };
   }, [autoDir.x, autoDir.y]);
+
+  // autopan loop
   useEffect(() => {
     const tick = (t) => {
       if (!lastRef.current) lastRef.current = t;
@@ -218,8 +208,16 @@ function LoopingGallery({
     };
   }, [autoOn, speed, dirNorm.x, dirNorm.y]);
 
-  // Pan (no drag on images)
+  // manual pan
+  const dragRef = useRef({ active: false, x: 0, y: 0, ox: 0, oy: 0 });
+  const clearResumeTimeout = () => {
+    if (resumeTimeoutRef.current) {
+      clearTimeout(resumeTimeoutRef.current);
+      resumeTimeoutRef.current = null;
+    }
+  };
   const onPointerDown = (e) => {
+    clearResumeTimeout();
     if (e.target.closest("[data-no-pan]")) return;
     e.currentTarget.setPointerCapture?.(e.pointerId);
     dragRef.current = {
@@ -248,166 +246,130 @@ function LoopingGallery({
   const onWheel = (e) =>
     setOffset((o) => ({ x: o.x + e.deltaX, y: o.y + e.deltaY }));
 
-  // Search / focus
-  const shortestDelta = (a, b, modm) => {
-    let d = (b - a) % modm;
-    if (d > modm / 2) d -= modm;
-    if (d < -modm / 2) d += modm;
-    return d;
-  };
-  const animateOffsetTo = (txWrapped, tyWrapped, ms = 700, onDone) => {
-    // Burada "wrapped" yerine direkt hedef piksel kullanıyoruz
+  // smooth pan helper (distance-based duration + smoother easing)
+  const animRef = useRef(0);
+  const animateOffsetTo = (tx, ty) => {
+    cancelAnimationFrame(animRef.current);
+    const sx = offset.x,
+      sy = offset.y;
+
+    const dist = Math.hypot(tx - sx, ty - sy);
+    // 1.0s to 2.2s depending on distance
+    const ms = Math.max(1000, Math.min(2200, 700 + dist * 0.5));
+
     const start = performance.now();
-    const startX = offset.x;
-    const startY = offset.y;
+    const easeInOutCubic = (p) =>
+      p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
-    // hedefleri en yakın tile'a göre kaydır
-    const dxRaw = txWrapped - startX;
-    const dyRaw = tyWrapped - startY;
-    const dx = shortestDelta(0, dxRaw, tileW);
-    const dy = shortestDelta(0, dyRaw, tileH);
-
-    autoPausedRef.current = true;
     const step = (t) => {
       const p = Math.min(1, (t - start) / ms);
-      const ease = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
-      setOffset({ x: startX + dx * ease, y: startY + dy * ease });
-      if (p < 1) requestAnimationFrame(step);
-      else onDone?.();
+      const e = easeInOutCubic(p);
+      setOffset({ x: sx + (tx - sx) * e, y: sy + (ty - sy) * e });
+      if (p < 1) animRef.current = requestAnimationFrame(step);
     };
-    requestAnimationFrame(step);
+    animRef.current = requestAnimationFrame(step);
   };
 
-  const focusByName = (name) => {
-    if (!name) return;
-    const idx = images.findIndex(
-      (it) => it.name?.toLowerCase() === name.toLowerCase()
-    );
-    if (idx === -1) return;
-
-    const cellsPerTile = cols * rows;
-    const col = idx % cols;
-    const row = Math.floor((idx % cellsPerTile) / cols);
-    const pad = outerGapPx / 2;
-
-    const ix = pad + col * (cellW + gapPx) + cellW / 2;
-    const iy = pad + row * (cellH + gapPx) + cellH / 2;
-
-    // world-space hedef: mevcut offset baz alınarak merkezlemeyi hedefliyoruz
-    const targetX = ix - vp.w / 2 + offset.x;
-    const targetY = iy - vp.h / 2 + offset.y;
-
-    animateOffsetTo(targetX, targetY, 800, () => {
-      setTimeout(() => {
-        if (autoOn) autoPausedRef.current = false;
-      }, searchPauseMs);
-    });
+  const scheduleResume = (ms = 3500) => {
+    clearResumeTimeout();
+    resumeTimeoutRef.current = setTimeout(() => {
+      autoPausedRef.current = false;
+      setAutoOn(true);
+      resumeTimeoutRef.current = null;
+    }, ms);
   };
 
-  // Lightbox
-  const openLightbox = (item) => {
-    autoPausedRef.current = true;
-    setLightbox(item);
-  };
-  const closeLightbox = () => {
-    setLightbox(null);
-    if (autoOn) autoPausedRef.current = false;
-  };
-  useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === "Escape") closeLightbox();
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
-
-  // --- TILE: 3x2 sabit; images dağıtımı ---
-  const cellsPerTile = cols * rows;
-
-  function Tile({ startIndex }) {
-    return (
-      <div
-        style={{
-          position: "absolute",
-          display: "grid",
-          gridTemplateColumns: `repeat(${cols}, ${cellW}px)`,
-          gap: gapCss,
-          width: `${gridW}px`,
-          height: `${gridH}px`,
-          padding: `${outerGapPx / 2}px`,
-          boxSizing: "content-box",
-        }}
-      >
-        {Array.from({ length: cellsPerTile }).map((_, i) => {
-          const item = images[(startIndex + i) % images.length];
-          return (
-            <figure key={i} data-no-pan style={{ margin: 0 }}>
-              <img
-                src={item.src}
-                alt={item.name || ""}
-                draggable="false"
-                data-no-pan
-                loading="lazy"
-                decoding="async"
-                onClick={() => openLightbox(item)}
-                style={{
-                  width: `${cellW}px`,
-                  height: `${cellH}px`,
-                  objectFit: "cover",
-                  userSelect: "none",
-                  display: "block",
-                  borderRadius: "10px",
-                  cursor: "zoom-in",
-                }}
-              />
-              <figcaption
-                style={{
-                  color: "#bbb",
-                  fontSize: 12,
-                  marginTop: 6,
-                  textAlign: "center",
-                }}
-              >
-                @{item.name}
-              </figcaption>
-            </figure>
-          );
-        })}
-      </div>
-    );
-  }
-
-  // Global tile origin (dünya koordinatı)
-  const baseTileX = Math.floor(offset.x / tileW);
-  const baseTileY = Math.floor(offset.y / tileH);
-
-  // Kopyalar: global koordinata göre yerleştir + stabil startIndex
+  // tiles (world-stable)
+  const ox = wrapMod(offset.x, tileW);
+  const oy = wrapMod(offset.y, tileH);
   const copies = [];
-  const tilesWide = 2 * spanX + 1;
   for (let gy = -spanY; gy <= spanY; gy++) {
     for (let gx = -spanX; gx <= spanX; gx++) {
-      const globalX = baseTileX + gx;
-      const globalY = baseTileY + gy;
-
-      const left = globalX * tileW - offset.x;
-      const top = globalY * tileH - offset.y;
-
-      const h = hash2D(globalX, globalY);
-      const startIndex = h % images.length;
-
+      const left = gx * tileW - ox;
+      const top = gy * tileH - oy;
+      const startIndex = hash2D(baseTileX + gx, baseTileY + gy) % images.length;
       copies.push(
-        <div
-          key={`t-${globalX}-${globalY}`}
-          style={{
-            position: "absolute",
-            transform: `translate3d(${left}px, ${top}px, 0)`,
-          }}
-        >
-          <Tile startIndex={startIndex} />
+        <div key={`${gx}-${gy}`} style={{ position: "absolute", left, top }}>
+          <Tile
+            images={images}
+            startIndex={startIndex}
+            cols={cols}
+            rows={rows}
+            cellW={cellW}
+            cellH={cellH}
+            gridW={gridW}
+            gridH={gridH}
+            gapCss={gapCss}
+            outerGapPx={outerGapPx}
+            openLightbox={(item) => {
+              autoPausedRef.current = true;
+              setLightbox(item);
+              clearResumeTimeout();
+            }}
+          />
         </div>
       );
     }
   }
+
+  // search focus (pause autopan, then animate, resume after 3.5s)
+  const focusByName = (raw) => {
+    const q = (raw || "").trim().toLowerCase();
+    if (!q) return;
+
+    let idx = images.findIndex((it) => it.name?.toLowerCase() === q);
+    if (idx === -1) {
+      idx = images.findIndex((it) => it.name?.toLowerCase().includes(q));
+      if (idx === -1) return;
+    }
+
+    // Pause
+    setAutoOn(false);
+    autoPausedRef.current = true;
+    clearResumeTimeout();
+
+    const cellsPerTile = cols * rows;
+    const extra = 2; // buffer
+    for (let gy = -spanY - extra; gy <= spanY + extra; gy++) {
+      for (let gx = -spanX - extra; gx <= spanX + extra; gx++) {
+        const globalX = baseTileX + gx;
+        const globalY = baseTileY + gy;
+        const startIndex = hash2D(globalX, globalY) % images.length;
+        const local = (idx - startIndex + images.length) % images.length;
+        if (local < cellsPerTile) {
+          const col = local % cols;
+          const row = Math.floor(local / cols);
+          const pad = outerGapPx / 2;
+          const leftWorld = globalX * tileW;
+          const topWorld = globalY * tileH;
+          const ix = leftWorld + pad + col * (cellW + gapPx) + cellW / 2;
+          const iy = topWorld + pad + row * (cellH + gapPx) + cellH / 2;
+          const targetX = ix - vp.w / 2;
+          const targetY = iy - vp.h / 2;
+          animateOffsetTo(targetX, targetY);
+          scheduleResume(3500); // resume after 3.5s
+          return;
+        }
+      }
+    }
+  };
+
+  // suggestions
+  const suggestions = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return images.filter((it) => it.name.toLowerCase().includes(q)).slice(0, 8);
+  }, [query, images]);
+
+  // Reset active index when suggestions change
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [query]);
+
+  // lightbox close
+  const closeLightbox = () => {
+    setLightbox(null); /* autopan kullanıcı açarsa devam */
+  };
 
   return (
     <div
@@ -418,7 +380,7 @@ function LoopingGallery({
         overflow: "hidden",
       }}
     >
-      {/* GALLERY */}
+      {/* gallery plane */}
       <div
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
@@ -428,29 +390,36 @@ function LoopingGallery({
         style={{
           position: "absolute",
           inset: 0,
-          background: "#23233aff",
+          background: "#23233a",
           touchAction: "none",
           cursor: "grab",
           zIndex: 1,
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            left: 0,
-            top: 0,
-            willChange: "transform",
-          }}
-        >
-          {copies}
-        </div>
+        <div style={{ position: "absolute", left: 0, top: 0 }}>{copies}</div>
       </div>
 
-      {/* SEARCH BAR */}
+      {/* search + suggestions */}
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          focusByName(query);
+          if (
+            suggestions.length > 0 &&
+            query.trim() &&
+            !suggestions.some(
+              (s) => s.name.toLowerCase() === query.trim().toLowerCase()
+            )
+          ) {
+            const pick =
+              suggestions[
+                Math.max(0, Math.min(activeIndex, suggestions.length - 1))
+              ];
+            setQuery(pick.name);
+            focusByName(pick.name);
+          } else {
+            focusByName(query);
+          }
+          setShowSuggestions(false);
         }}
         style={{
           position: "absolute",
@@ -458,47 +427,139 @@ function LoopingGallery({
           top: 16,
           transform: "translateX(-50%)",
           display: "flex",
-          gap: 8,
-          alignItems: "center",
+          flexDirection: "column",
+          gap: 4,
+          alignItems: "stretch",
           background: "rgba(20,20,22,0.85)",
           padding: "8px 12px",
           borderRadius: 12,
           backdropFilter: "blur(6px)",
           boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
           zIndex: 5,
+          minWidth: 320,
         }}
       >
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Type username…"
-          style={{
-            width: "52vw",
-            maxWidth: 520,
-            border: "1px solid #333",
-            background: "transparent",
-            color: "#eee",
-            padding: "10px 12px",
-            borderRadius: 8,
-            outline: "none",
-          }}
-        />
-        <button
-          type="submit"
-          style={{
-            border: "1px solid #444",
-            background: "#1f1f22",
-            color: "#eee",
-            padding: "10px 14px",
-            borderRadius: 8,
-            cursor: "pointer",
-          }}
-        >
-          Search
-        </button>
+        <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          <input
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setShowSuggestions(true);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                if (
+                  suggestions.length > 0 &&
+                  query.trim() &&
+                  !suggestions.some(
+                    (s) => s.name.toLowerCase() === query.trim().toLowerCase()
+                  )
+                ) {
+                  e.preventDefault();
+                  const pick =
+                    suggestions[
+                      Math.max(0, Math.min(activeIndex, suggestions.length - 1))
+                    ];
+                  setQuery(pick.name);
+                  focusByName(pick.name);
+                  setShowSuggestions(false);
+                }
+              } else if (e.key === "ArrowDown") {
+                e.preventDefault();
+                if (suggestions.length)
+                  setActiveIndex((i) =>
+                    Math.min(i + 1, suggestions.length - 1)
+                  );
+              } else if (e.key === "ArrowUp") {
+                e.preventDefault();
+                if (suggestions.length)
+                  setActiveIndex((i) => Math.max(i - 1, 0));
+              } else if (e.key === "Escape") {
+                setShowSuggestions(false);
+              }
+            }}
+            placeholder="Type username…"
+            style={{
+              width: "52vw",
+              maxWidth: 520,
+              border: "1px solid #333",
+              background: "transparent",
+              color: "#eee",
+              padding: "10px 12px",
+              borderRadius: 8,
+              outline: "none",
+            }}
+          />
+          <button
+            type="submit"
+            style={{
+              border: "1px solid #444",
+              background: "#1f1f22",
+              color: "#eee",
+              padding: "10px 14px",
+              borderRadius: 8,
+              cursor: "pointer",
+            }}
+          >
+            Search
+          </button>
+        </div>
+
+        {showSuggestions && query.trim() !== "" && (
+          <div
+            style={{
+              background: "rgba(15,15,16,0.95)",
+              border: "1px solid #333",
+              borderRadius: 8,
+              overflow: "hidden",
+              maxHeight: 180,
+              overflowY: "auto",
+            }}
+            onMouseDown={(e) => e.preventDefault()}
+          >
+            {suggestions.length === 0 ? (
+              <div
+                style={{
+                  padding: "6px 10px",
+                  paddingBottom: "2px",
+                  color: "#666",
+                }}
+              >
+                No matches
+              </div>
+            ) : (
+              suggestions.map((it, i) => (
+                <div
+                  key={it.name}
+                  onMouseEnter={() => setActiveIndex(i)}
+                  onClick={() => {
+                    setQuery(it.name);
+                    setShowSuggestions(false);
+                    setAutoOn(false);
+                    focusByName(it.name);
+                  }}
+                  style={{
+                    padding: "8px 10px",
+                    paddingBottom: "4px",
+                    cursor: "pointer",
+                    color: i === activeIndex ? "#fff" : "#ccc",
+                    background: i === activeIndex ? "#2a2a2d" : "transparent",
+                    borderBottom: "1px solid #222",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 8,
+                  }}
+                >
+                  <span style={{ opacity: 0.65 }}>@</span>
+                  <span>{it.name}</span>
+                </div>
+              ))
+            )}
+          </div>
+        )}
       </form>
 
-      {/* PAN CONTROLS */}
+      {/* pan controls */}
       <div
         style={{
           position: "absolute",
@@ -519,6 +580,7 @@ function LoopingGallery({
       >
         <button
           onClick={() => {
+            clearResumeTimeout();
             if (autoOn) {
               setAutoOn(false);
               autoPausedRef.current = true;
@@ -555,7 +617,7 @@ function LoopingGallery({
         </label>
       </div>
 
-      {/* LIGHTBOX */}
+      {/* lightbox */}
       {lightbox && (
         <div
           onClick={closeLightbox}
@@ -592,7 +654,6 @@ function LoopingGallery({
                 display: "block",
               }}
             />
-            {/* Close: resme değmeden, hafif uzak */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -616,7 +677,6 @@ function LoopingGallery({
             >
               ×
             </button>
-            {/* Bottom-right: Go to @username */}
             <a
               href={`https://twitter.com/${encodeURIComponent(lightbox.name)}`}
               target="_blank"
@@ -629,6 +689,7 @@ function LoopingGallery({
                 background: "rgba(0,0,0,0.55)",
                 color: "#fff",
                 padding: "8px 14px",
+                paddingBottom: "2px",
                 borderRadius: 999,
                 textDecoration: "none",
                 fontSize: 15,
@@ -640,6 +701,70 @@ function LoopingGallery({
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+function Tile({
+  images,
+  startIndex,
+  cols,
+  rows,
+  cellW,
+  cellH,
+  gridW,
+  gridH,
+  gapCss,
+  outerGapPx,
+  openLightbox,
+}) {
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${cols}, ${cellW}px)`,
+        gap: gapCss,
+        width: `${gridW}px`,
+        height: `${gridH}px`,
+        padding: `${outerGapPx / 2}px`,
+        boxSizing: "content-box",
+      }}
+    >
+      {Array.from({ length: cols * rows }).map((_, i) => {
+        const item = images[(startIndex + i) % images.length];
+        return (
+          <figure key={i} data-no-pan style={{ margin: 0 }}>
+            <img
+              src={item.src}
+              alt={item.name}
+              draggable="false"
+              data-no-pan
+              loading="lazy"
+              decoding="async"
+              onClick={() => openLightbox(item)}
+              style={{
+                width: `${cellW}px`,
+                height: `${cellH}px`,
+                objectFit: "cover",
+                userSelect: "none",
+                display: "block",
+                borderRadius: "10px",
+                cursor: "zoom-in",
+              }}
+            />
+            <figcaption
+              style={{
+                color: "#bbb",
+                fontSize: 12,
+                marginTop: 6,
+                textAlign: "center",
+              }}
+            >
+              @{item.name}
+            </figcaption>
+          </figure>
+        );
+      })}
     </div>
   );
 }
