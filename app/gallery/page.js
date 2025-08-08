@@ -109,7 +109,7 @@ export default function GalleryPage() {
       <LoopingGallery
         images={images}
         cols={3}
-        rowsPerTile={2} // <<< SABİT küçük tile: 3x2 = 6 görsel
+        rowsPerTile={2} // 3x2 = 6 cell
         cellW={600}
         cellH={360}
         gapCss="8vw"
@@ -125,7 +125,7 @@ export default function GalleryPage() {
 function LoopingGallery({
   images,
   cols = 3,
-  rowsPerTile = 2, // <<< yeni
+  rowsPerTile = 2,
   cellW = 400,
   cellH = 280,
   gapCss = "8vw",
@@ -157,6 +157,14 @@ function LoopingGallery({
     if (m.endsWith("px")) return parseFloat(m);
     return parseFloat(m) || 0;
   };
+  const mod = (n, m) => ((n % m) + m) % m;
+  const hash2D = (x, y) => {
+    // hızlı, deterministik bir 2D hash (pozitif 32-bit)
+    let h = x * 374761393 + y * 668265263;
+    h = (h ^ (h >>> 13)) >>> 0;
+    return h;
+  };
+
   useEffect(() => {
     const recalc = () => {
       setVp({ w: window.innerWidth, h: window.innerHeight });
@@ -169,7 +177,7 @@ function LoopingGallery({
   }, [gapCss, outerGapCss]);
 
   // Sabit tile ölçüleri
-  const rows = rowsPerTile; // <<< artık sabit
+  const rows = rowsPerTile;
   const gridW = cols * cellW + (cols - 1) * gapPx;
   const gridH = rows * cellH + (rows - 1) * gapPx;
   const tileW = gridW + outerGapPx;
@@ -180,10 +188,6 @@ function LoopingGallery({
   const repY = Math.max(3, Math.ceil(vp.h / tileH) + 3);
   const spanX = Math.floor(repX / 2);
   const spanY = Math.floor(repY / 2);
-
-  const wrap = (v, m) => ((v % m) + m) % m;
-  const wrappedX = wrap(offset.x, tileW);
-  const wrappedY = wrap(offset.y, tileH);
 
   // Autopan
   const dirNorm = useMemo(() => {
@@ -245,18 +249,24 @@ function LoopingGallery({
     setOffset((o) => ({ x: o.x + e.deltaX, y: o.y + e.deltaY }));
 
   // Search / focus
-  const shortestDelta = (a, b, mod) => {
-    let d = (b - a) % mod;
-    if (d > mod / 2) d -= mod;
-    if (d < -mod / 2) d += mod;
+  const shortestDelta = (a, b, modm) => {
+    let d = (b - a) % modm;
+    if (d > modm / 2) d -= modm;
+    if (d < -modm / 2) d += modm;
     return d;
   };
   const animateOffsetTo = (txWrapped, tyWrapped, ms = 700, onDone) => {
+    // Burada "wrapped" yerine direkt hedef piksel kullanıyoruz
     const start = performance.now();
-    const startX = wrappedX;
-    const startY = wrappedY;
-    const dx = shortestDelta(startX, txWrapped, tileW);
-    const dy = shortestDelta(startY, tyWrapped, tileH);
+    const startX = offset.x;
+    const startY = offset.y;
+
+    // hedefleri en yakın tile'a göre kaydır
+    const dxRaw = txWrapped - startX;
+    const dyRaw = tyWrapped - startY;
+    const dx = shortestDelta(0, dxRaw, tileW);
+    const dy = shortestDelta(0, dyRaw, tileH);
+
     autoPausedRef.current = true;
     const step = (t) => {
       const p = Math.min(1, (t - start) / ms);
@@ -275,18 +285,19 @@ function LoopingGallery({
     );
     if (idx === -1) return;
 
-    // Hedefi base tile içinde konumlandır: index -> (col,row)
     const cellsPerTile = cols * rows;
     const col = idx % cols;
-    const row = Math.floor((idx % cellsPerTile) / cols); // sadece görünür tile ölçüsünde hizala
-
+    const row = Math.floor((idx % cellsPerTile) / cols);
     const pad = outerGapPx / 2;
+
     const ix = pad + col * (cellW + gapPx) + cellW / 2;
     const iy = pad + row * (cellH + gapPx) + cellH / 2;
-    const targetWrappedX = ix - vp.w / 2;
-    const targetWrappedY = iy - vp.h / 2;
 
-    animateOffsetTo(targetWrappedX, targetWrappedY, 800, () => {
+    // world-space hedef: mevcut offset baz alınarak merkezlemeyi hedefliyoruz
+    const targetX = ix - vp.w / 2 + offset.x;
+    const targetY = iy - vp.h / 2 + offset.y;
+
+    animateOffsetTo(targetX, targetY, 800, () => {
       setTimeout(() => {
         if (autoOn) autoPausedRef.current = false;
       }, searchPauseMs);
@@ -312,6 +323,7 @@ function LoopingGallery({
 
   // --- TILE: 3x2 sabit; images dağıtımı ---
   const cellsPerTile = cols * rows;
+
   function Tile({ startIndex }) {
     return (
       <div
@@ -345,7 +357,6 @@ function LoopingGallery({
                   userSelect: "none",
                   display: "block",
                   borderRadius: "10px",
-                  // boxShadow kaldırıldı → performans
                   cursor: "zoom-in",
                 }}
               />
@@ -366,18 +377,27 @@ function LoopingGallery({
     );
   }
 
-  // Kopyalar: her tile için farklı startIndex ver → tüm set yayılır
+  // Global tile origin (dünya koordinatı)
+  const baseTileX = Math.floor(offset.x / tileW);
+  const baseTileY = Math.floor(offset.y / tileH);
+
+  // Kopyalar: global koordinata göre yerleştir + stabil startIndex
   const copies = [];
   const tilesWide = 2 * spanX + 1;
   for (let gy = -spanY; gy <= spanY; gy++) {
     for (let gx = -spanX; gx <= spanX; gx++) {
-      const left = gx * tileW - wrappedX;
-      const top = gy * tileH - wrappedY;
-      const tileId = (gy + spanY) * tilesWide + (gx + spanX);
-      const startIndex = (tileId * cellsPerTile) % images.length; // dağıtım
+      const globalX = baseTileX + gx;
+      const globalY = baseTileY + gy;
+
+      const left = globalX * tileW - offset.x;
+      const top = globalY * tileH - offset.y;
+
+      const h = hash2D(globalX, globalY);
+      const startIndex = h % images.length;
+
       copies.push(
         <div
-          key={`t-${gx}-${gy}`}
+          key={`t-${globalX}-${globalY}`}
           style={{
             position: "absolute",
             transform: `translate3d(${left}px, ${top}px, 0)`,
