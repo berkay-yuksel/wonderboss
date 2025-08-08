@@ -6,7 +6,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["example.com", "pbs.twimg.com"], // İzin verdiğin domainleri buraya ekle
+    domains: ["example.com", "pbs.twimg.com", "picsum.photos"], // İzin verdiğin domainleri buraya ekle
   },
 };
 
