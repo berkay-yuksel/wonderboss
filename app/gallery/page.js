@@ -254,23 +254,27 @@ function LoopingGallery({ images }) {
       sy = offset.y;
 
     const dist = Math.hypot(tx - sx, ty - sy);
-    // 1.0s to 2.2s depending on distance
-    const ms = Math.max(1000, Math.min(2200, 700 + dist * 0.5));
+    // Daha yumuşak: mesafeye göre daha uzun süre
+
+    const ms = Math.max(600, Math.min(1600, 1200 + dist * 1.15));
 
     const start = performance.now();
-    const easeInOutCubic = (p) =>
-      p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+    // S-curve (quintic smoothstep)
+    const easeInOutQuintic = (p) => p * p * p * (p * (6 * p - 15) + 10);
 
     const step = (t) => {
       const p = Math.min(1, (t - start) / ms);
-      const e = easeInOutCubic(p);
+      const e = easeInOutQuintic(p);
       setOffset({ x: sx + (tx - sx) * e, y: sy + (ty - sy) * e });
-      if (p < 1) animRef.current = requestAnimationFrame(step);
+      if (p < 1) {
+        animRef.current = requestAnimationFrame(step);
+      }
     };
+
     animRef.current = requestAnimationFrame(step);
   };
 
-  const scheduleResume = (ms = 3500) => {
+  const scheduleResume = (ms = 3000) => {
     clearResumeTimeout();
     resumeTimeoutRef.current = setTimeout(() => {
       autoPausedRef.current = false;
@@ -311,8 +315,7 @@ function LoopingGallery({ images }) {
       );
     }
   }
-
-  // search focus (pause autopan, then animate, resume after 3.5s)
+  // search focus (pause, animate to nearest, resume after 3.5s)
   const focusByName = (raw) => {
     const q = (raw || "").trim().toLowerCase();
     if (!q) return;
@@ -323,34 +326,49 @@ function LoopingGallery({ images }) {
       if (idx === -1) return;
     }
 
-    // Pause
+    // Pause autopan
     setAutoOn(false);
     autoPausedRef.current = true;
-    clearResumeTimeout();
+    if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
 
     const cellsPerTile = cols * rows;
-    const extra = 2; // buffer
+    const extra = 3; // daha geniş aralık (yakın kopyayı bulmak için)
+    let best = null;
+
     for (let gy = -spanY - extra; gy <= spanY + extra; gy++) {
       for (let gx = -spanX - extra; gx <= spanX + extra; gx++) {
         const globalX = baseTileX + gx;
         const globalY = baseTileY + gy;
         const startIndex = hash2D(globalX, globalY) % images.length;
         const local = (idx - startIndex + images.length) % images.length;
+
         if (local < cellsPerTile) {
           const col = local % cols;
           const row = Math.floor(local / cols);
           const pad = outerGapPx / 2;
+
           const leftWorld = globalX * tileW;
           const topWorld = globalY * tileH;
+
           const ix = leftWorld + pad + col * (cellW + gapPx) + cellW / 2;
           const iy = topWorld + pad + row * (cellH + gapPx) + cellH / 2;
+
           const targetX = ix - vp.w / 2;
           const targetY = iy - vp.h / 2;
-          animateOffsetTo(targetX, targetY);
-          scheduleResume(3500); // resume after 3.5s
-          return;
+
+          const dx = targetX - offset.x;
+          const dy = targetY - offset.y;
+          const dist2 = dx * dx + dy * dy;
+
+          if (!best || dist2 < best.dist2)
+            best = { tx: targetX, ty: targetY, dist2 };
         }
       }
+    }
+
+    if (best) {
+      animateOffsetTo(best.tx, best.ty);
+      scheduleResume(3500); // 3.5 sn sonra autopan devam
     }
   };
 
