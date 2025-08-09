@@ -595,6 +595,7 @@ function LoopingGallery({ images }) {
               padding: "10px 12px",
               borderRadius: 8,
               outline: "none",
+              fontSize: "16px", // ← minimum 16px tut, zoom olmaz
             }}
           />
           <button
