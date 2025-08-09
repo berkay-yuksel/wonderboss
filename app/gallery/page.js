@@ -151,6 +151,39 @@ export default function GalleryPage() {
         * {
           box-sizing: border-box;
         }
+        figure {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        /* 1) Resimleri küçült */
+        @media (max-width: 900px) {
+          figure img {
+            width: 360px !important;
+            height: 216px !important; /* 16:9 */
+            display: block !important;
+            margin: 0 auto !important; /* ortala */
+          }
+        }
+        @media (max-width: 480px) {
+          figure img {
+            width: 280px !important;
+            height: 168px !important;
+          }
+          figure figcaption {
+            font-size: 11px !important;
+          }
+        }
+
+        /* 3) @username tam ortaya */
+        figure figcaption {
+          width: 100% !important;
+          margin: 6px 0 0 0 !important;
+          text-align: center !important;
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
       `}</style>
       <LoopingGallery images={images} />
     </>
@@ -161,10 +194,16 @@ function LoopingGallery({ images }) {
   // layout
   const cols = 3,
     rows = 2;
-  const cellW = 600,
+
+  let cellW = 600,
     cellH = 360;
-  const gapCss = "8vw",
+  let gapCss = "8vw",
     outerGapCss = "8vw";
+
+  if (typeof window !== "undefined" && window.innerWidth <= 480) {
+    cellW = 300; // 600 → 300
+    cellH = 180; // 360 → 180
+  }
 
   // autopan
   const autoDir = { x: 2, y: 1 };
@@ -344,6 +383,7 @@ function LoopingGallery({ images }) {
       copies.push(
         <div key={`${gx}-${gy}`} style={{ position: "absolute", left, top }}>
           <Tile
+            className="grid_tile"
             images={images}
             startIndex={startIndex}
             cols={cols}
@@ -729,16 +769,16 @@ function LoopingGallery({ images }) {
               aria-label="Close"
               style={{
                 position: "absolute",
-                top: "-16px",
-                right: "-16px",
+                top: "-1.2vw", // eskiden -16px
+                right: "-1.2vw",
                 border: "1px solid rgba(255,255,255,0.25)",
                 background: "rgba(0,0,0,0.55)",
                 color: "#fff",
-                padding: "6px 12px",
-                borderRadius: 10,
+                padding: "0.4vw 0.8vw", // eskiden 6px 12px
+                borderRadius: "0.6vw",
                 cursor: "pointer",
                 lineHeight: 1,
-                fontSize: 18,
+                fontSize: "1.8vw", // eskiden 18px
                 backdropFilter: "blur(4px)",
               }}
             >
@@ -750,16 +790,16 @@ function LoopingGallery({ images }) {
               rel="noopener noreferrer"
               style={{
                 position: "absolute",
-                right: 12,
-                bottom: 12,
+                right: "1vw", // eskiden 12px
+                bottom: "1vw",
                 border: "1px solid rgba(255,255,255,0.25)",
                 background: "rgba(0,0,0,0.55)",
                 color: "#fff",
-                padding: "8px 14px",
-                paddingBottom: "2px",
-                borderRadius: 999,
+                padding: "0.6vw 1vw", // eskiden 8px 14px
+                paddingBottom: "0.3vw", // eskiden 2px
+                borderRadius: "5vw", // yuvarlak buton, büyük orantı
                 textDecoration: "none",
-                fontSize: 15,
+                fontSize: "1.4vw", // eskiden 15px
                 backdropFilter: "blur(4px)",
               }}
             >
