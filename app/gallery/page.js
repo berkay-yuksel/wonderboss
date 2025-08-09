@@ -184,6 +184,14 @@ export default function GalleryPage() {
           justify-content: center !important;
           align-items: center !important;
         }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          select,
+          textarea,
+          input {
+            font-size: 16px !important;
+            -webkit-text-size-adjust: 100%;
+          }
+        }
       `}</style>
       <LoopingGallery images={images} />
     </>
