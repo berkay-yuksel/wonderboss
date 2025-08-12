@@ -9,31 +9,31 @@
         "disclaimer":"This is an attendance event. Please ensure you have permission to participate. ",
         "disclaimer_link":"https://x.com/fomosapiensnft_",
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
           {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -172,7 +172,7 @@
         },
    
         "status": "Upcoming",
-        "image": "/event1.png",
+        "image": "/aa.jpg",
         "tags": ["NFT", "art", "contest"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -275,7 +275,7 @@
       }
     ]
   },
-        "creator": "John Doe",
+        "creator": "Wonder Boss",
         "date": "2025-01-25",
         "time": "18:00 UTC",
         "location": {
@@ -301,31 +301,31 @@
         
   
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+             {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -490,7 +490,7 @@
           "address": "123 Main St, San Francisco, CA"
         },
         "status": "Upcoming",
-        "image": "/event3.png",
+        "image": "/bb.jpg",
         "tags": ["NFT", "generative art", "workshop"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -513,31 +513,31 @@
         "type": "Contest",
         
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+           {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -702,7 +702,7 @@
           "address": null
         },
         "status": "Upcoming",
-        "image": "/event1.png",
+        "image": "/cc.jpg",
         "tags": ["NFT", "gaming", "contest"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -725,31 +725,31 @@
         
   
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+         {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -914,7 +914,7 @@
           "address": "456 Virtual St, Los Angeles, CA"
         },
         "status": "Upcoming",
-        "image": "/event2.png",
+        "image": "/dd.jpg",
         "tags": ["NFT", "metaverse", "event"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -937,31 +937,31 @@
         
   
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+             {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -1126,7 +1126,7 @@
           "address": null
         },
         "status": "Upcoming",
-        "image": "/event3.png",
+        "image": "/ee.jpg",
         "tags": ["NFT", "launchpad", "showcase"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -1149,31 +1149,31 @@
         
   
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+             {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -1338,7 +1338,7 @@
           "address": "789 Developer Rd, Berlin, Germany"
         },
         "status": "Upcoming",
-        "image": "/event1.png",
+        "image": "/ff.jpg",
         "tags": ["Web3", "NFT", "networking"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -1360,31 +1360,31 @@
         "type": "Meeting",
         
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+             {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
       
@@ -1550,7 +1550,7 @@
           "address": null
         },
         "status": "Upcoming",
-        "image": "/event2.png",
+        "image": "/ıı.jpg",
         "tags": ["AI", "NFT", "discussion"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -1573,31 +1573,31 @@
         
   
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+             {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -1762,7 +1762,7 @@
           "address": null
         },
         "status": "Upcoming",
-        "image": "/event3.png",
+        "image": "/gg.jpg",
         "tags": ["NFT", "charity", "auction"],
         "event_images": [
           "https://example.com/image1.jpg",
@@ -1785,31 +1785,31 @@
         
   
         "created_by": [
-          {
+       {
             "id": 1,
             "name": "Sarah Johnson",
-            "image_url": "https://example.com/sarah.jpg",
+            "image_url": "/sarah.jpg",
             "twitter": "@sarahjtech"
           },
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "https://example.com/michael.jpg",
+            "image_url": "/notfrank.png",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
-          {
+             {
             "id": 1,
-            "name": "GlobalTech Solutions",
-            "image_url": "https://example.com/globaltech.jpg",
-            "link": "https://globaltechsolutions.com"
+            "name": "Freepik",
+            "image_url": "/freepik.png",
+            "link": "https:/freepik.com"
           },
-          {
+       {
             "id": 2,
-            "name": "InnovationHub",
-            "image_url": "https://example.com/innovationhub.jpg",
-            "link": "https://innovationhub.org"
+            "name": "Soolana",
+            "image_url": "/solana.png",
+            "link": "https://solana.com"
           }
         ],
         "hosts": [
@@ -1974,7 +1974,7 @@
           "address": "12 Blockchain St, London, UK"
         },
         "status": "Upcoming",
-        "image": "/event2.png",
+        "image": "/hh.jpg",
         "tags": ["NFT", "summit", "ecosystem"],
         "event_images": [
           "https://example.com/image1.jpg",
