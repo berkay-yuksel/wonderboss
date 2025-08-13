@@ -75,7 +75,7 @@ const EventPage = ({ params }) => {
                 {eventData.event_images.map((eventImg, index) => (
                   <Image
                     key={index}
-                    src="/08.png"
+                    src={eventImg}
                     width={500}
                     height={500}
                     alt="event image"
@@ -96,9 +96,12 @@ const EventPage = ({ params }) => {
           <div className={eventPage.rightContainer}>
             <div className={eventPage.nameContainer}>
               <h4>
-                {eventData.status} - {eventData.type}
+                {eventData.status} -
+                {eventData.isSample
+                  ? ` Sample ${eventData.type}`
+                  : ` ${eventData.type}`}
               </h4>
-              <h1>{eventData.title}</h1>
+              <h1>{eventData.title} </h1>
             </div>
 
             <div className={eventPage.dateContainer}>

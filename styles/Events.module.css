@@ -150,3 +150,8 @@
     width: 100%;
   }
 }
+
+.sampleBadge {
+  color: rgb(118, 117, 117);
+  font-size: 14px;
+}

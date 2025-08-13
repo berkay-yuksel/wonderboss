@@ -163,27 +163,21 @@
     ]
   },
         "creator": "Alice Smith",
-        "date": "2025-02-10",
+        "date": "February 10th, 2025",
         "time": "12:00 UTC",
         "location": {
           "online": true,
           "venue": "Virtual Event Platform",
           "address": "Online"
         },
-   
-        "status": "Upcoming",
+   "isSample": true,
+        "status": "Ended",
         "image": "/aa.jpg",
         "tags": ["NFT", "art", "contest"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -276,7 +270,7 @@
     ]
   },
         "creator": "Wonder Boss",
-        "date": "2025-01-25",
+        "date": "August 20th, 2025",
         "time": "18:00 UTC",
         "location": {
           "online": true,
@@ -286,10 +280,10 @@
         "status": "Live",
         "image": "/tmacsarchive.png",
         "tags": ["DeFi", "NFT", "finance"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg"
+      "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -482,26 +476,21 @@
     ]
   },
         "creator": "Jane Roe",
-        "date": "2025-03-05",
+        "date": "March 5th, 2025",
         "time": "15:00 UTC",
         "location": {
           "online": false,
           "venue": "San Francisco Tech Hub",
           "address": "123 Main St, San Francisco, CA"
         },
+           "isSample": true,
         "status": "Upcoming",
         "image": "/bb.jpg",
         "tags": ["NFT", "generative art", "workshop"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
 
       },
@@ -694,26 +683,22 @@
     ]
   },
         "creator": "Rick Sanchez",
-        "date": "2025-02-18",
+        "date": "February 18th, 2025",
         "time": "14:00 UTC",
         "location": {
           "online": true,
           "venue": "Twitch Stream",
           "address": null
         },
-        "status": "Upcoming",
+           "isSample": true,
+
+        "status": "Ended",
         "image": "/cc.jpg",
         "tags": ["NFT", "gaming", "contest"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -906,26 +891,21 @@
     ]
   },
         "creator": "Samantha Green",
-        "date": "2025-03-10",
+        "date": "2March 10th, 2026",
         "time": "19:00 UTC",
         "location": {
           "online": false,
           "venue": "Metaverse Hub",
           "address": "456 Virtual St, Los Angeles, CA"
         },
+           "isSample": true,
         "status": "Upcoming",
         "image": "/dd.jpg",
         "tags": ["NFT", "metaverse", "event"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -1118,26 +1098,21 @@
     ]
   },
         "creator": "Emily White",
-        "date": "2025-04-01",
+        "date": "August 17st, 2025",
         "time": "13:00 UTC",
         "location": {
           "online": true,
           "venue": "YouTube Live",
           "address": null
         },
-        "status": "Upcoming",
+           "isSample": true,
+        "status": "Live",
         "image": "/ee.jpg",
         "tags": ["NFT", "launchpad", "showcase"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -1329,27 +1304,22 @@
       }
     ]
   },
-        "creator": "Tom Harris",
-        "date": "2025-02-25",
+        "creator": "Boss DAO",
+        "date": "February 25th, 2025",
         "time": "17:00 UTC",
         "location": {
           "online": false,
           "venue": "Berlin Tech Center",
           "address": "789 Developer Rd, Berlin, Germany"
         },
+           "isSample": true,
         "status": "Upcoming",
         "image": "/ff.jpg",
         "tags": ["Web3", "NFT", "networking"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -1542,26 +1512,21 @@
     ]
   },
         "creator": "Lisa Brown",
-        "date": "2025-03-20",
-        "time": "10:00",
+        "date": "March 20th, 2025",
+        "time": "10:00 UTC",
         "location": {
           "online": true,
           "venue": "Discord Stage",
           "address": null
         },
+           "isSample": true,
         "status": "Upcoming",
         "image": "/ıı.jpg",
         "tags": ["AI", "NFT", "discussion"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -1755,25 +1720,20 @@
   },
         "creator": "Mark Taylor",
         "date": "2025-04-15",
-        "time": "20:00",
+        "time": "20:00 UTC",
         "location": {
           "online": true,
           "venue": "OpenSea Auction",
           "address": null
         },
+           "isSample": true,
         "status": "Upcoming",
         "image": "/gg.jpg",
         "tags": ["NFT", "charity", "auction"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       },
       {
@@ -1966,26 +1926,21 @@
     ]
   },
         "creator": "Angela Carter",
-        "date": "2025-05-01",
-        "time": "09:00",
+        "date": "April 15th, 2025",
+        "time": "09:00 UTC",
         "location": {
           "online": false,
           "venue": "London Blockchain Hub",
           "address": "12 Blockchain St, London, UK"
         },
+           "isSample": true,
         "status": "Upcoming",
         "image": "/hh.jpg",
         "tags": ["NFT", "summit", "ecosystem"],
-        "event_images": [
-          "https://example.com/image1.jpg",
-          "https://example.com/image2.jpg",
-          "https://example.com/image3.jpg",
-          "https://example.com/image4.jpg",
-          "https://example.com/image5.jpg",
-          "https://example.com/image6.jpg",
-          "https://example.com/image7.jpg",
-          "https://example.com/image8.jpg",
-          "https://example.com/image9.jpg"
+       "event_images": [
+          "/yellow.jpg",
+            "/green.jpg",
+            "/blue.jpg"
         ]
       }
     ]

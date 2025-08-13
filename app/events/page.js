@@ -51,7 +51,7 @@ const Events = () => {
               <div style={{ display: display ? "flex" : "none" }}>
                 <div>
                   <div>
-                    <label className={EventsStyles.filterTypeName} >
+                    <label className={EventsStyles.filterTypeName}>
                       <b>Event type:</b>
                     </label>
                     {["Contest", "Meeting", "Event"].map((type) => (
@@ -90,7 +90,15 @@ const Events = () => {
                     alt={event.title}
                   />
 
-                  <h5>{event.status}</h5>
+                  <h5>
+                    {event.status}
+                    {event.isSample && (
+                      <span className={EventsStyles.sampleBadge}>
+                        {" "}
+                        (sample event)
+                      </span>
+                    )}
+                  </h5>
 
                   <h3>{event.title}</h3>
                   <span>
