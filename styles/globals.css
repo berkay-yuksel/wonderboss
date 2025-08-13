@@ -12,11 +12,6 @@ body {
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
 }
-label input[type="checkbox"],
-label input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-}
 
 .loading {
   overflow: hidden;
