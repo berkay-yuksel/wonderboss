@@ -341,7 +341,7 @@
     overflow-y: hidden;
   }
   .galleryLower img {
-    filter: opacity(0.1) !important;
+    filter: opacity(0.8) !important;
 
     width: 100% !important;
     height: 100% !important;
