@@ -33,7 +33,7 @@ export default function GalleryPage() {
     { name: "GhostInTheCrypt", src: "/cards/GhostInTheCrypt.png" },
     { name: "hazzmatt33", src: "/cards/hazzmatt33.png" },
     { name: "ICEBABY_007", src: "/cards/ICEBABY_007.png" },
-    { name: "IconNick_iDAO", src: "/cards/IconNick_iDAO.png" },
+    { name: "IconNick_Sol", src: "/cards/IconNick_Sol.png" },
     { name: "idfrank_980", src: "/cards/idfrank_980.png" },
     { name: "igloo_1775", src: "/cards/igloo_1775.png" },
     { name: "ismaritagorguis", src: "/cards/ismaritagorguis.png" },
