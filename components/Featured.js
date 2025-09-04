@@ -92,7 +92,7 @@ const Featured = ({
         onMouseEnter={lockedEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/cards-gallery">
+        <Link href="/gallery">
           <Image alt="Gallery" src={menuGalleryPic} width="816" height="816" />
           <h5>Cards Gallery</h5>
         </Link>
