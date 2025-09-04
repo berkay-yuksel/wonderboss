@@ -135,6 +135,13 @@ export default function GalleryPage() {
     { name: "vicky_dyor", src: "/cards/vicky_dyor.png" },
     { name: "XiHumNft", src: "/cards/XiHumNft.png" },
     { name: "_NoFreeTime", src: "/cards/_NoFreeTime.png" },
+    { name: "BNTHCOIN", src: "/cards/BNTHCOIN.png" },
+    { name: "king_sol_omon", src: "/cards/king_sol_omon.png" },
+     { name: "Cmc_SOL_", src: "/cards/Cmc_SOL_.png" },
+    { name: "BoxingGoat_SOL", src: "/cards/BoxingGoat_SOL.png" },
+    { name: "AjiDestiny1", src: "/cards/AjiDestiny1.png" },
+    //  { name: "McNuggets_Kiss", src: "/cards/McNuggets_Kiss.png" },
+    //  { name: "Rohit2356_", src: "/cards/Rohit2356_.png" },
   ];
 
   return (
