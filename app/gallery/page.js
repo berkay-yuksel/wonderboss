@@ -646,29 +646,7 @@ function LoopingGallery({ images }) {
             }}
             title="How to get a Boss Card?"
           >
-            @the_legend_NFTs @vicky_dyor @XiHumNft @_NoFreeTime @BNTHCOIN
-            @king_sol_omon @amigoeNFT @anzaisrekt @B2radB @babyplutoc
-            @bhayo_yhomi @Big____Tom @XiHumNft @_NoFreeTime @BNTHCOIN
-            @king_sol_omon @Cmc_SOL_ @BoxingGoat_SOL @Bartmann2828 @Celeste89211
-            @ChrisGa93518537 @D_blue_Sol @JurassicLeonard @KeillahAsh @BNTHCOIN
-            @king_sol_omon @Cmc_SOL_ @BoxingGoat_SOL @AjiDestiny1
-            @0xsecretalpha7 @ChrisGa93518537 @D_blue_Sol @JurassicLeonard
-            @KeillahAsh @kratist0s @phukanhq @MrAduitore @NoHandedTripod
-            @Okechukwu____ @Parad0xWeb3 @pArtySHIP1202 @psykoin_ @0xsecretalpha7
-            @5hort5nipa.sol @amigoeNFT @anzaisrekt @B2radB @babyplutoc
-            @thechaachi @TheChang_NFT @theHAWKdiamond @TheSavageSuit @Tmac_SOL
-            @Web3Hustler @amigoeNFT @anzaisrekt @B2radB @babyplutoc @bhayo_yhomi
-            @Big____Tom @XiHumNft @_NoFreeTime @BNTHCOIN @king_sol_omon
-            @Cmc_SOL_ @BoxingGoat_SOL @Bartmann2828 @Celeste89211
-            @ChrisGa93518537 @D_blue_Sol @JurassicLeonard @KeillahAsh
-            @the_legend_NFTs @vicky_dyor @XiHumNft @_NoFreeTime @BNTHCOIN
-            @king_sol_omon @amigoeNFT @anzaisrekt @B2radB @babyplutoc
-            @bhayo_yhomi @Big____Tom @Shisha0815 @Taiwo__0 @the_legend_NFTs
-            @vicky_dyor @XiHumNft @_NoFreeTime @sguest92 @VanG0xH @WaKuWaKu_Sol
-            @AndreKCrypto @Bartmann2828 @Celeste89211 @Lapponic @leveragge_
-            @living_stone696 @MaverickPh50084 @Maxi_cp0 @mombeam
-            @ChrisGa93518537 @D_blue_Sol @JurassicLeonard @KeillahAsh @kratist0s
-            @phukanhq @Web3withCJ @web3_Adri @webzy_eth
+  
             <a href="https://blog.wonderboss.com/posts/boss-cards">?</a>
           </button>
         </div>
