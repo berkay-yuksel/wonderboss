@@ -184,7 +184,7 @@
         "id": "2",
         "title": "Tmac’s Archive",
          "short_title":"tmacs-archive",
-        "description": "The Tmac’s Archive event, a collaboration between Tmac and Wonder Boss, showcases a curated collection of open edition artworks inspired by the Solana NFT ecosystem. These unique visuals, created by Tmac, reflect the spirit of Solana’s diverse communities and embody the belief that unity across these communities strengthens Solana as a whole. \n All artworks are available for free minting on the Drip platform. \n  Minting an open edition artwork gives you a chance to qualify for the upcoming Drip-listed minting phase of the Wonder Boss NFT. \n This event celebrates and supports the vibrant Solana NFT ecosystem while helping grow the Boss family through art, collaboration, and collective energy.",
+        "description": "The Tmac’s Archive event, a collaboration between Tmac and Wonder Boss, showcases a curated collection of open edition artworks inspired by the Solana NFT ecosystem. These unique visuals, created by Tmac, reflect the spirit of Solana’s diverse communities and embody the belief that unity across these communities strengthens Solana as a whole. \n All artworks are available for free minting on the DRiP platform. \n  Minting an open edition artwork gives you a chance to qualify for the upcoming DRiP-listed minting phase of the Wonder Boss NFT. \n This event celebrates and supports the vibrant Solana NFT ecosystem while helping grow the Boss family through art, collaboration, and collective energy.",
         "type": "Event",
         "join_link":"https://drip.haus/okaybeats/set/5aff62b3-bccc-4fe8-86ab-ceac62b75218",
         
@@ -223,7 +223,7 @@
     },
     {
       "id": 2,
-      "desc": "Earn a chance to secure a Wonder Boss allowlist spot for the upcoming Drip-listed minting phase."
+      "desc": "Earn a chance to secure a Wonder Boss allowlist spot for the upcoming DRiP-listed minting phase."
     }
   ],
         "agenda": {
@@ -242,11 +242,11 @@
       },
       {
         "id": 4,
-        "line": "🏆 Winners who wish to participate have minted the Wonder Boss NFT during the upcoming Drip-listed phase"
+        "line": "🏆 Winners who wish to participate have minted the Wonder Boss NFT during the upcoming DRiP-listed phase"
       },
             {
         "id": 5,
-        "line": "🚪 Event concludes after the Wonder Boss drip-listed phase"
+        "line": "🚪 Event concludes after the Wonder Boss DRiP-listed phase"
       }
     ],
     "additional_one": {
@@ -254,7 +254,7 @@
       "lines": [
         {
           "id": 1,
-          "line": "Owning multiple open edition artworks does not increase the number of mints allowed per wallet for the Wonder Boss Drip-listed minting phase"
+          "line": "Owning multiple open edition artworks does not increase the number of mints allowed per wallet for the Wonder Boss DRiP-listed minting phase"
         }
       ]
     },
