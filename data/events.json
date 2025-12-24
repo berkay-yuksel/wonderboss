@@ -18,7 +18,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
@@ -270,7 +270,7 @@
     ]
   },
         "creator": "Wonder Boss",
-        "date": "August 20th, 2025",
+        "date": "April 20th, 2026",
         "time": "18:00 UTC",
         "location": {
           "online": true,
@@ -290,7 +290,7 @@
         "id": "3",
         "title": "Generative Art Workshop",
          "short_title":"generative-art-workshop",
-        "description": "Learn the fundamentals of creating generative NFT art.",
+        "description": "The Generative Art Workshop is an interactive event exploring generative art, NFTs, and blockchain basics. Participants will experience a live NFT minting demo, engage in discussions, and have the chance to win prizes and special rewards during the session.",
         "type": "Event",
         
   
@@ -304,15 +304,15 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
         "sponsors": [
              {
             "id": 1,
-            "name": "Freepik",
-            "image_url": "/freepik.png",
+            "name": "Wonder Boss",
+            "image_url": "/WB_logo_black.png",
             "link": "https:/freepik.com"
           },
        {
@@ -330,7 +330,7 @@
       "id": 1,
       "name": "Degenerate Ape Academy",
       "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
+      "winner": "#312",
       "amount":1,
       "value": 100
     },
@@ -338,23 +338,23 @@
       "id": 2,
       "name": "Solana Monkey Business",
       "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
+      "winner": "#555",
       "amount":1,
       "value": 50
     },
     {
       "id": 3,
-      "name": "Aurory",
+      "name": "Mid Evils",
       "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
+      "winner": "#2261",
       "amount":1,
       "value": 200
     },
     {
       "id": 4,
-      "name": "Thugbirdz",
+      "name": "Okay Bears",
      "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-      "winner": "#1231",
+      "winner": "#782",
       "amount":1,
       "value": 300
     },
@@ -362,13 +362,13 @@
       "id": 5,
       "name": "Galactic Gecko Space Garage",
       "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
-       "winner": "#1231",
+       "winner": "#1795",
        "amount":1,
       "value": 500
     },
     {
       "id": 6,
-      "name": "Sollamas",
+      "name": "Transolvania",
       "transaction": "https://solscan.io/tx/rhi8rnZoc4EAxfrdCM3k7b1RtRgdhnZ97Mf1zj4Vu2WGvcu26kofh6rQ3jfGHki5AuiLEhjpUV1iUBtTxYotkmH",
       "winner": "#1231",
       "amount":1,
@@ -400,7 +400,7 @@
     },
     {
       "id": 10,
-      "name": "Shadowy Super Coder",
+      "name": "Northlanders",
       "transaction": "coding_challenge",
       "winner": "#1231",
       "amount":1,
@@ -511,7 +511,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
@@ -719,7 +719,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
@@ -926,7 +926,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
@@ -1133,7 +1133,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
@@ -1339,7 +1339,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
@@ -1547,7 +1547,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],
@@ -1754,7 +1754,7 @@
           {
             "id": 2,
             "name": "Michael Lee",
-            "image_url": "/notfrank.png",
+            "image_url": "/johndoe.jpg",
             "twitter": "@michaeltech"
           }
         ],

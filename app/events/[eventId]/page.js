@@ -280,12 +280,12 @@ const EventPage = ({ params }) => {
                 {!eventData.location.online && (
                   <div>
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10392.707890767517!2d32.812107974614904!3d39.91526592463576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f3ea3aab92b%3A0x6edc34cbf115c92b!2zVC5DLiBLw7xsdMO8ciB2ZSBUdXJpem0gQmFrYW5sxLHEn8SxIEtZR00gTWlsbMOuIEvDvHTDvHBoYW5l!5e0!3m2!1str!2str!4v1738402421730!5m2!1str!2str"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991441031606!2d2.2919010121302876!3d48.858373600587875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEyfel%20Kulesi!5e0!3m2!1str!2str!4v1766580090265!5m2!1str!2str"
                       width="60%"
                       height="300vw"
-                      allowfullscreen=""
+                      allowFullScreen=""
                       loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
+                      referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                   </div>
                 )}
