@@ -6,7 +6,21 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["example.com", "pbs.twimg.com", "picsum.photos"], // İzin verdiğin domainleri buraya ekle
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "example.com",
+      },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+      },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+      },
+    ],
+    qualities: [10, 75], // Kullandığınız quality değerlerini ekleyin
   },
 };
 

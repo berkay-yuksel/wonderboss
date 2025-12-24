@@ -1,12 +1,15 @@
+import { use } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import FooterBottom from "../../../components/FooterBottom";
 import events from "../../../data/events.json";
 import eventPage from "../../../styles/Eventpage.module.css";
 
-const EventPage = ({ params }) => {
+const EventPage = async ({ params }) => {
+  const { eventId } = await params;
+
   const [eventData] = events.events.filter(
-    (event) => event.short_title == params.eventId
+    (event) => event.short_title == eventId
   );
 
   return (
