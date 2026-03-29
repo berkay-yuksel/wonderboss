@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bossphorus - Editorial Partnership Deck</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --beige:    #F5F0E8;
+    --cream:    #EDE6D6;
+    --sand:     #D6C9B0;
+    --warm:     #C4A882;
+    --charcoal: #2C2A25;
+    --ink:      #1A1816;
+    --muted:    #7A7268;
+    --gold:     #B8965A;
+    --gold-lt:  #D4AF78;
+    --white:    #FDFBF7;
+    --radius:   4px;
+    --transition: 0.3s ease;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--white);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+
+  /* SECTIONS */
+  section { width: 100%; height: 202.7vh; position: relative; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-left {
+    background: var(--ink);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 80px 10%;
+    position: relative; overflow: hidden;
+  }
+  .hero-left::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent, transparent 79px,
+      rgba(255,255,255,0.02) 80px
+    );
+  }
+  .hero-issue {
+    font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 32px; position: relative;
+    font-weight: 500;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(70px, 10vw, 150px);
+    font-weight: 900; line-height: 0.95;
+    color: var(--white); position: relative;
+    margin-bottom: 24px;
+  }
+  .hero-title em {
+    font-style: italic; color: var(--gold-lt);
+    display: block;
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(25px, 4vw, 35px); font-style: italic; font-weight: 300;
+    color: var(--sand); line-height: 1.5;
+    max-width: 80%; position: relative;
+  }
+  
+  .hero-right {
+    background: var(--beige);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 80px 10%;
+    position: relative;
+  }
+  .section-label {
+    font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--warm); margin-bottom: 24px; display: flex; align-items: center; gap: 16px;
+    font-weight: 500;
+  }
+  .section-label::after {
+    content: ''; flex: 0 0 40px; height: 1px; background: var(--warm);
+  }
+  .hero-right-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 5vw, 60px); font-weight: 700; line-height: 1.2; color: var(--ink);
+    margin-bottom: 32px;
+  }
+  .hero-right-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px; font-weight: 400; line-height: 1.8;
+    color: var(--charcoal); margin-bottom: 20px;
+  }
+
+  /* GENERIC SECTION LAYOUT */
+  .section-inner {
+    max-width: 1440px; margin: 0 auto;
+    padding: 120px 8%;
+  }
+  .section-header {
+    display: flex; align-items: center; justify-content: flex-start;
+    margin-bottom: 64px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--sand);
+    gap: 40px;
+  }
+  .section-num {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(80px, 10vw, 125px); font-weight: 900; line-height: 0.8;
+    color: var(--cream); letter-spacing: -0.04em;
+    user-select: none;
+  }
+  .section-title-block { flex: 1; }
+  .section-eyebrow {
+    font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--warm); margin-bottom: 12px; font-weight: 500;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 5vw, 70px); font-weight: 700; line-height: 1.1;
+    color: var(--ink);
+  }
+
+  /* EDITORIAL */
+  .editorial-grid {
+    display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px;
+    align-items: center;
+  }
+  .editorial-body p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px; line-height: 1.8; color: var(--charcoal);
+    margin-bottom: 24px;
+  }
+  .principles-col { display: flex; flex-direction: column; gap: 16px; }
+  .principle-item {
+    padding: 32px;
+    background: var(--beige);
+    border-radius: var(--radius);
+    border-left: 4px solid transparent;
+    transition: var(--transition);
+  }
+  .principle-item:hover { 
+    background: var(--cream); 
+    border-left-color: var(--gold);
+    transform: translateX(8px);
+  }
+  .principle-item h4 {
+    font-size: 15px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 12px; font-weight: 500;
+  }
+  .principle-item p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; color: var(--charcoal); line-height: 1.6;
+  }
+
+  /* EDITION */
+  .edition-bg { background: var(--ink); color: var(--white); }
+  .edition-bg .section-num { color: rgba(255,255,255,0.06); }
+  .edition-bg .section-eyebrow { color: var(--gold); }
+  .edition-bg .section-title { color: var(--white); }
+  .edition-bg .section-header { border-bottom-color: rgba(255,255,255,0.1); }
+  .edition-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px; line-height: 1.8; color: var(--sand);
+    max-width: 800px; margin-bottom: 64px;
+  }
+  .edition-cards {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 24px;
+  }
+  .ed-card {
+    padding: 48px 40px;
+    border-radius: var(--radius);
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 380px;
+    transition: var(--transition);
+  }
+  .ed-card:hover { transform: translateY(-8px); }
+  .ed-card-main { background: var(--gold); color: var(--ink); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+  .ed-card-std  { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+  .ed-card-dig  { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); }
+  .ed-card-boss { background: rgba(184,150,90,0.1); border: 1px solid rgba(184,150,90,0.3); }
+  
+  .ed-card-tag {
+    font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+    margin-bottom: 20px; font-weight: 500;
+  }
+  .ed-card-main .ed-card-tag  { color: var(--ink); }
+  .ed-card-std  .ed-card-tag  { color: var(--gold); }
+  .ed-card-dig  .ed-card-tag  { color: var(--sand); }
+  .ed-card-boss .ed-card-tag  { color: var(--gold-lt); }
+  
+  .ed-card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px; font-weight: 700; line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .ed-card-main .ed-card-name { color: var(--ink); }
+  .ed-card-std  .ed-card-name { color: var(--white); }
+  .ed-card-dig  .ed-card-name { color: rgba(255,255,255,0.8); }
+  .ed-card-boss .ed-card-name { color: var(--gold-lt); }
+  
+  .ed-card-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; line-height: 1.6;
+  }
+  .ed-card-main .ed-card-desc { color: rgba(26,24,22,0.8); }
+  .ed-card-std  .ed-card-desc { color: var(--sand); }
+  .ed-card-dig  .ed-card-desc { color: var(--muted); }
+  .ed-card-boss .ed-card-desc { color: var(--sand); }
+  
+  .ed-card-copies {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px; font-weight: 900; line-height: 1;
+    margin-top: 40px;
+  }
+  .ed-card-main .ed-card-copies { color: var(--ink); }
+  .ed-card-std  .ed-card-copies { color: rgba(255,255,255,0.15); }
+
+  /* FEATURES / TIERS */
+  .features-bg { background: var(--beige); }
+  .tiers-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px; line-height: 1.8; color: var(--charcoal);
+    max-width: 800px; margin-bottom: 64px;
+  }
+  .tier-table-wrapper {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    overflow-x: auto;
+  }
+  .tier-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+  .tier-table thead tr { border-bottom: 2px solid var(--cream); }
+  .tier-table th {
+    font-size: 14px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--warm); padding: 0 0 20px; text-align: left; font-weight: 500;
+  }
+  .tier-table th:last-child { text-align: right; }
+  .tier-table tbody tr { border-bottom: 1px solid var(--cream); transition: var(--transition); }
+  .tier-table tbody tr:hover { background: rgba(196,168,130,0.05); }
+  .tier-table td { padding: 32px 16px; vertical-align: top; }
+  .tier-table td:first-child { padding-left: 0; }
+  .tier-table td:last-child { padding-right: 0; }
+  
+  .tier-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700; color: var(--ink);
+    letter-spacing: 0.02em;
+  }
+  .tier-cover .tier-name { color: var(--gold); font-size: 25px; }
+  .tier-pages {
+    font-size: 17px; color: var(--muted); margin-top: 8px;
+    font-style: italic;
+  }
+  .tier-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; color: var(--charcoal); line-height: 1.6;
+    padding-right: 24px;
+  }
+  .tier-count {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px; font-weight: 700; color: var(--ink);
+    text-align: right; line-height: 1;
+  }
+  .tier-cover .tier-count { color: var(--gold); }
+  .tier-count small {
+    display: block; font-family: 'DM Sans', sans-serif;
+    font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); font-weight: 400; margin-top: 8px;
+  }
+  .tier-total-row td { padding-top: 40px; border-bottom: none; }
+  .tier-total-label {
+    font-size: 15px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--muted); font-weight: 500;
+  }
+  .tier-total-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; font-weight: 700; color: var(--ink); text-align: right;
+  }
+
+  /* PARTNERS (SPLIT-SCREEN LAYOUT) */
+  .partners-bg { background: var(--ink); color: var(--white); }
+  .partners-bg .section-num { color: rgba(255,255,255,0.06); }
+  .partners-bg .section-eyebrow { color: var(--gold); }
+  .partners-bg .section-title { color: var(--white); }
+  .partners-bg .section-header { border-bottom-color: rgba(255,255,255,0.1); margin-bottom: 80px; }
+
+  .partners-split {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  
+  .ps-left {
+    position: sticky;
+    top: 100px;
+  }
+
+  .ps-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    line-height: 1.6;
+    color: var(--sand);
+    padding-right: 40px;
+  }
+
+  .ps-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ps-item {
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: var(--transition);
+  }
+
+  .ps-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .ps-item:hover .ps-title {
+    color: var(--gold-lt);
+    transform: translateX(8px);
+  }
+
+  .ps-item-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .ps-icon {
+    width: 44px; height: 44px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  
+  .ps-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px; font-weight: 700; color: var(--white);
+    line-height: 1.2;
+    transition: var(--transition);
+  }
+  
+  .ps-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px; line-height: 1.7; color: rgba(255,255,255,0.85);
+  }
+
+  /* DISTRIBUTION (FLARED FADED BORDERS LAYOUT) */
+  .dist-bg { background: var(--cream); }
+  .dist-bg .section-num { color: var(--white); } 
+  
+  .dist-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px; line-height: 1.8; color: var(--charcoal);
+    max-width: 900px; margin-bottom: 60px;
+  }
+
+  .dist-corp-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 24px 0;
+  }
+
+  .dist-corp-grid::before,
+  .dist-corp-grid::after {
+    content: '';
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    height: 35px;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, transparent 100%);
+  }
+
+  .dist-corp-grid::before {
+    top: -35px;
+    border-bottom: 1.5px solid var(--warm);
+    border-radius: 50%;
+  }
+
+  .dist-corp-grid::after {
+    bottom: -35px;
+    border-top: 1.5px solid var(--warm);
+    border-radius: 50%;
+  }
+
+  .dist-corp-col {
+    padding: 32px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(to bottom, transparent 0%, var(--warm) 15%, var(--warm) 85%, transparent 100%) 1;
+  }
+
+  .dist-corp-col:last-child {
+    border-right: none;
+  }
+
+  .dist-corp-tag {
+    font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--warm); font-weight: 600; margin-bottom: 24px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .dist-corp-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px; font-weight: 700; color: var(--ink);
+    line-height: 1.2; margin-bottom: 24px;
+  }
+
+  .dist-corp-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; color: var(--charcoal); line-height: 1.6;
+  }
+
+  /* ROADMAP */
+  .roadmap-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px; line-height: 1.8; color: var(--charcoal);
+    max-width: 800px; margin-bottom: 64px;
+  }
+  .phases { display: flex; flex-direction: column; gap: 24px; }
+  .phase {
+    display: grid; grid-template-columns: 240px 1fr;
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  }
+  .phase-left {
+    background: var(--ink); padding: 48px 40px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .phase-num {
+    font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 12px; font-weight: 500;
+  }
+  .phase-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px; font-weight: 700; color: var(--white); line-height: 1.3;
+  }
+  .phase-right {
+    padding: 48px;
+    display: flex; flex-direction: column; gap: 16px; justify-content: center;
+  }
+  .phase-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; color: var(--charcoal); line-height: 1.6;
+    display: flex; align-items: flex-start; gap: 16px;
+  }
+  .phase-item::before {
+    content: '-'; color: var(--gold); flex-shrink: 0;
+    font-family: 'DM Sans', sans-serif; font-weight: 700;
+  }
+  .phase-note { font-style: italic; color: var(--muted); }
+  
+  .future-block {
+    background: var(--beige); 
+    padding: 48px;
+    margin-top: 40px;
+    border-radius: var(--radius);
+    display: grid; grid-template-columns: 240px 1fr;
+  }
+  .future-label {
+    font-size: 14px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--warm); font-weight: 500;
+  }
+  .future-items { display: flex; flex-direction: column; gap: 16px; }
+  .future-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; color: var(--charcoal); line-height: 1.6;
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+  .future-item::before {
+    content: '→'; color: var(--warm); flex-shrink: 0;
+    font-family: 'DM Sans', sans-serif; font-weight: 700;
+  }
+
+  /* GET INVOLVED */
+  .involved-bg { background: var(--ink); color: var(--white); }
+  .involved-bg .section-num { color: rgba(255,255,255,0.04); }
+  .involved-bg .section-eyebrow { color: var(--gold); }
+  .involved-bg .section-title { color: var(--white); }
+  .involved-bg .section-header { border-bottom-color: rgba(255,255,255,0.1); }
+  .involved-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px; line-height: 1.8; color: var(--sand);
+    max-width: 800px; margin-bottom: 64px;
+  }
+  .involved-grid {
+    display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px;
+  }
+  .criteria-title, .contact-title {
+    font-size: 15px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 32px; font-weight: 500;
+  }
+  .criteria-list, .contact-items { display: flex; flex-direction: column; gap: 16px; }
+  .criteria-item {
+    padding: 24px 32px;
+    background: rgba(255,255,255,0.03);
+    border-radius: var(--radius);
+    display: flex; gap: 24px; align-items: center;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: var(--transition);
+  }
+  .criteria-item:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(184,150,90,0.4);
+    transform: translateX(8px);
+  }
+  .ci-label {
+    font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gold); flex-shrink: 0; min-width: 100px; font-weight: 500;
+  }
+  .ci-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; color: var(--sand); line-height: 1.5;
+  }
+  
+  .contact-item {
+    display: flex; gap: 24px; align-items: center;
+    padding: 24px 32px;
+    background: rgba(255,255,255,0.03);
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .contact-key {
+    font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); min-width: 80px; flex-shrink: 0; font-weight: 500;
+  }
+  .contact-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px; color: var(--white);
+  }
+
+  /* FOOTER / CLOSING */
+  .closing {
+    background: #110F0E;
+    padding: 60px 8%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .closing-logo {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 500; letter-spacing: 0.2em;
+    text-transform: uppercase; color: rgba(255,255,255,0.4);
+  }
+
+  /* ANIMATIONS */
+  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; text-align: center; }
+    .hero-left, .hero-right { padding: 100px 8%; align-items: center; }
+    .hero-sub { max-width: 100%; }
+    .hero-right-title { text-align: center; }
+    .section-label { justify-content: center; }
+    
+    .editorial-grid { grid-template-columns: 1fr; gap: 40px; }
+    .involved-grid { grid-template-columns: 1fr; gap: 60px; }
+    
+    .partners-split { grid-template-columns: 1fr; gap: 40px; }
+    .ps-left { position: static; }
+    .ps-intro { padding-right: 0; }
+    
+    .dist-corp-grid { grid-template-columns: 1fr 1fr; }
+    .dist-corp-col:nth-child(2), .dist-corp-col:nth-child(4) { border-right: none; }
+    .dist-corp-col:nth-child(1), .dist-corp-col:nth-child(2) { 
+      border-bottom: 1px solid transparent; 
+      border-image: linear-gradient(to right, transparent 0%, var(--warm) 15%, var(--warm) 85%, transparent 100%) 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-inner { padding: 80px 6%; }
+    .section-header { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 40px; }
+    .section-title-block { padding-left: 0; }
+    
+    .phase { grid-template-columns: 1fr; }
+    .phase-left { padding: 32px; }
+    .phase-right { padding: 32px; }
+    
+    .future-block { grid-template-columns: 1fr; gap: 24px; padding: 32px; }
+    
+    .criteria-item, .contact-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+    
+    .tier-table-wrapper { padding: 24px 16px; }
+    
+    .dist-corp-grid { grid-template-columns: 1fr; }
+    .dist-corp-grid::before, .dist-corp-grid::after { display: none; }
+    
+    .dist-corp-col { 
+      border-right: none !important; 
+      border-bottom: 1px solid transparent !important; 
+      border-image: linear-gradient(to right, transparent 0%, var(--warm) 15%, var(--warm) 85%, transparent 100%) 1 !important; 
+      padding: 40px 0; 
+    }
+    .dist-corp-col:last-child { border-bottom: none !important; border-image: none !important; }
+  }
+
+  /* ==================================================== */
+  /* PRINT / PDF EXPORT AYARLARI (GÜNCELLENDİ)            */
+  /* ==================================================== */
+  @media print {
+    @page {
+      /* Yatay ayarı kaldırıldı. Varsayılan dikey (portrait) basılacak. */
+      size: A4 portrait; 
+      margin: 0; 
+    }
+
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .fade-in {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    /* Her section yeni sayfada başlar */
+    section {
+      page-break-before: always;
+      break-before: page;
+      /* DİKKAT: min-height: 100vh BURADAN KALDIRILDI! 
+         Böylece sayfalar gereksiz boşluk bırakmayacak 
+         ve Footer alt kısma sorunsuz eklenecek. */
+    }
+
+    /* BÖLÜMLERİN ÜSTÜNE EKSTRA PADDING (Dengelemek için) */
+    .section-inner {
+      padding-top: 150px !important;
+      padding-bottom: 50px !important;
+    }
+
+    /* İlk bölüm zaten yeni sayfada, ekstra kırma eklemesin */
+    section:first-of-type {
+      page-break-before: avoid;
+      break-before: auto;
+    }
+
+    /* Kutuların ve satırların ortadan kesilmesini engeller */
+    .ed-card, 
+    .dist-corp-col, 
+    .ps-item, 
+    .phase, 
+    .tier-table tr, 
+    .principle-item, 
+    .criteria-item, 
+    .contact-block {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* Footer'ın bölünmesini engeller ve normal akışa dahil eder */
+    .closing {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section id="manifesto" class="hero">
+  <div class="hero-left">
+    <div class="hero-issue">Editorial Partnership Deck - First Edition</div>
+    <h1 class="hero-title">Boss<em>phorus</em></h1>
+    <p class="hero-sub">Bridging Web2 and Web3 Worlds.</p>
+  </div>
+  <div class="hero-right">
+    <div class="section-label">01 - Manifesto</div>
+    <h2 class="hero-right-title">Timelines are temporary.<br>Culture should not be.</h2>
+    <p class="hero-right-body">Digital culture moves fast and often disappears before it can be remembered. This publication exists to <strong>capture what matters and turn it into a lasting archive</strong>.</p>
+    <p class="hero-right-body">Many projects live between X algorithms and closed Discord servers, rarely seen outside their communities. By giving them a physical platform, we <strong>make digital culture visible to everyone</strong>, not just insiders.</p>
+    <p class="hero-right-body">What starts as digital content becomes a <strong>collectible artifact</strong>, an object that can be held, shared, revisited, and cherished. Wonder Boss enables this vision, <strong>safeguarding editorial independence</strong> and ethos.</p>
+  </div>
+</section>
+
+<section id="editorial">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-num">02</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Approach</div>
+        <h2 class="section-title">Editorial</h2>
+      </div>
+    </div>
+    <div class="editorial-grid">
+      <div class="editorial-body fade-in">
+        <p>Our editorial approach is rooted in <strong>curation, visibility,and ecosystem influence</strong>. We focus primarily on NFT collections and the creative outputs they generate, while also highlighting ecosystem connections such as wallets, tools, and ancillary products.</p>
+        <p>Projects are selected <strong>not for utility or hype</strong>, but for the ways they <strong>contribute meaningfully</strong> to the ecosystem and tell compelling stories.</p>
+        <p>Standard editions allow for freer editorial expression, while Collector's Editions take a more curated, artful, coffee table book style approach, reflecting the <strong>collectible and archival value</strong> of the content.</p>
+      </div>
+      <div class="principles-col fade-in">
+        <div class="principle-item">
+          <h4>Originality</h4>
+          <p>Work and voices that contribute something genuinely new to the conversation.</p>
+        </div>
+        <div class="principle-item">
+          <h4>Cultural Impact</h4>
+          <p>Projects selected for their impact on the broader community, not floor price.</p>
+        </div>
+        <div class="principle-item">
+          <h4>Narrative Value</h4>
+          <p>Every subject must have a story worth telling and worth preserving in print.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="edition" class="edition-bg">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-num">03</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Format</div>
+        <h2 class="section-title">Edition</h2>
+      </div>
+    </div>
+    <p class="edition-intro fade-in"><strong>This publication is produced with careful attention to quality and design.</strong> Every decision, from paper weight to print process, reflects the care we take in documenting digital culture. Page counts range between 96 and 128 pages, balancing depth with collectibility.</p>
+    <div class="edition-cards fade-in">
+      <div class="ed-card ed-card-main">
+        <div>
+          <div class="ed-card-tag">Limited - Hardcover</div>
+          <div class="ed-card-name">Collector's Edition</div>
+          <div class="ed-card-desc">Numbered and certified. Produced to the standard of a premium art book. Strictly limited with no reprint. A permanent artifact of Solana culture. </div>
+        </div>
+        <div class="ed-card-copies">200</div>
+      </div>
+      <div class="ed-card ed-card-std">
+        <div>
+          <div class="ed-card-tag">Standard</div>
+          <div class="ed-card-name">Standard Edition</div>
+          <div class="ed-card-desc">High-quality softcover. Full editorial content with wider ecosystem scope.</div>
+        </div>
+        <div class="ed-card-copies">800</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div class="ed-card ed-card-dig" style="flex: 1; min-height: 0; padding: 32px;">
+          <div class="ed-card-tag">Digital</div>
+          <div class="ed-card-name" style="font-size: 30px;">PDF Edition</div>
+          <div class="ed-card-desc" style="font-size: 20px;">E-book distributed through online channels. Global reach beyond the print run.</div>
+        </div>
+        <div class="ed-card ed-card-boss" style="flex: 1; min-height: 0; padding: 32px;">
+          <div class="ed-card-tag">WB Holders</div>
+          <div class="ed-card-name" style="font-size: 30px;">Boss Edition</div>
+          <div class="ed-card-desc" style="font-size: 20px;">Included in the Boss Package. Wonder Boss special cover and content. NFT-gated delivery.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="features-bg">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-num">04</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Coverage</div>
+        <h2 class="section-title">Features</h2>
+      </div>
+    </div>
+    <p class="tiers-intro fade-in">Collections are presented at different scales based on their impact, activity, and cultural relevance. This layered structure showcases both established leaders and rising creators.</p>
+
+    <div class="tier-table-wrapper fade-in">
+      <table class="tier-table">
+        <thead>
+          <tr>
+            <th style="width:200px;">Format</th>
+            <th>Description</th>
+            <th style="width:120px; text-align:right;">Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tier-cover">
+            <td>
+              <div class="tier-name">Cover  Feature</div>
+              <div class="tier-pages">6 - 8 pages</div>
+            </td>
+            <td><div class="tier-desc">A collection presented with full editorial scope, detailed storytelling, and complete visual treatment. </div></td>
+            <td>
+              <div class="tier-count">1<small>collection</small></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tier-name">Extended Feature</div>
+              <div class="tier-pages">4 - 6 pages</div>
+            </td>
+            <td><div class="tier-desc">Major and culturally significant collections explored through editorial writing, interview, and imagery.</div></td>
+            <td><div class="tier-count">~14<small>collections</small></div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tier-name">Spotlight</div>
+              <div class="tier-pages">2 - 3 pages</div>
+            </td>
+            <td><div class="tier-desc">Mid-tier and notable collections, focused profiles capturing the essence of the project and its community.</div></td>
+            <td><div class="tier-count">~10<small>collections</small></div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tier-name">Notable Mention</div>
+              <div class="tier-pages">1 - 2 pages</div>
+            </td>
+            <td><div class="tier-desc">Emerging and rising collections given editorial visibility within a curated section of the issue.</div></td>
+            <td><div class="tier-count">~10<small>collections</small></div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="tier-name">Ecosystem</div>
+              <div class="tier-pages">Dedicated pages</div>
+            </td>
+            <td><div class="tier-desc">Artists, tools, wallets, marketplaces, and communities that shape the broader Solana NFT culture.</div></td>
+            <td><div class="tier-count">~10<small>builders</small></div></td>
+          </tr>
+          <tr class="tier-total-row">
+            <td><div class="tier-total-label">Total Scope</div></td>
+            <td></td>
+            <td><div class="tier-total-val">~45 projects</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="partners" class="partners-bg">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-num">05</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Collaboration</div>
+        <h2 class="section-title">Partners</h2>
+      </div>
+    </div>
+    
+    <div class="partners-split fade-in">
+      <div class="ps-left">
+        <p class="ps-intro">
+          By partnering with us, you receive <strong>professional editorial visibility</strong> and cultural prestige in a lasting format, securing a <strong>permanent archival presence</strong> that connects with a global collector audience.
+        </p>
+      </div>
+      
+      <div class="ps-right">
+        <div class="ps-item">
+          <div class="ps-item-header">
+            <svg class="ps-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="8" width="28" height="20" rx="4"/>
+              <path d="M4 14h28M14 14v14"/>
+            </svg>
+            <div class="ps-title">NFT Collections</div>
+          </div>
+          <div class="ps-desc">The core partners of the publication. <strong>Featured collections are never charged</strong>, ensuring editorial integrity and celebrating creators and their cultural impact.</div>
+        </div>
+
+        <div class="ps-item">
+          <div class="ps-item-header">
+            <svg class="ps-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="18" cy="18" r="14"/>
+              <path d="M18 4v28M4 18h28"/>
+              <ellipse cx="18" cy="18" rx="8" ry="14"/>
+            </svg>
+            <div class="ps-title">Ecosystem Builders</div>
+          </div>
+          <div class="ps-desc">Marketplaces, wallets, infrastructure providers, and influential projects may participate through collaboration or support, while <strong>maintaining editorial independence</strong>.</div>
+        </div>
+
+        <div class="ps-item">
+          <div class="ps-item-header">
+            <svg class="ps-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="6"/><circle cx="26" cy="12" r="6"/><circle cx="19" cy="26" r="6"/>
+              <line x1="17" y1="14" x2="21" y2="14"/><line x1="14" y1="17" x2="21" y2="22"/><line x1="24" y1="17" x2="17" y2="22"/>
+            </svg>
+            <div class="ps-title">Cultural Initiatives</div>
+          </div>
+          <div class="ps-desc">Active communities, DAOs, and event organizers that contribute to NFT culture are <strong>featured without fees</strong>, highlighting the social and collaborative dimensions of the ecosystem.</div>
+        </div>
+
+        <div class="ps-item">
+          <div class="ps-item-header">
+            <svg class="ps-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 4l3.9 8 8.6 1.3-6.2 6.1 1.5 8.6L18 24l-7.8 4 1.5-8.6L5.5 13.3 14.1 12z"/>
+            </svg>
+            <div class="ps-title">Sponsors & Supporters</div>
+          </div>
+          <div class="ps-desc">Certain ecosystem participants may provide financial or logistical support to sustain production. <strong>Sponsorship does not imply paid advertising</strong>, contributors are acknowledged for enabling the publication.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="distribution" class="dist-bg">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-num">06</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Reach</div>
+        <h2 class="section-title">Distribution</h2>
+      </div>
+    </div>
+    
+    <p class="dist-intro fade-in">
+      Our distribution strategy prioritizes <strong>global accessibility</strong> while honoring the premium nature of the physical archive. Physical editions cement a permanent record, and digital formats guarantee worldwide reach. Pricing is kept highly accessible, with selected participating collections receiving <strong>complimentary copies</strong>.
+    </p>
+
+    <div class="dist-corp-grid fade-in">
+      
+      <div class="dist-corp-col">
+        <div class="dist-corp-tag">800 copies</div>
+        <h3 class="dist-corp-title">Standard Edition</h3>
+        <div class="dist-corp-body">
+          Available for purchase at a reasonable price. Distributed through ecosystem events and partner channels. Repeatable print run depending on demand.
+        </div>
+      </div>
+
+      <div class="dist-corp-col">
+        <div class="dist-corp-tag">Limited · 200 copies</div>
+        <h3 class="dist-corp-title">Collector's Edition</h3>
+        <div class="dist-corp-body">
+          Premium hardcover for purchase. Limited and numbered. Strictly no reprint permanent archival object.
+        </div>
+      </div>
+
+      <div class="dist-corp-col">
+        <div class="dist-corp-tag">Digital Format</div>
+        <h3 class="dist-corp-title">Online / PDF</h3>
+        <div class="dist-corp-body">
+          Digital version of the Standard Edition. Accessible as an e-book across online channels, ensuring global reach beyond the print run.
+        </div>
+      </div>
+
+      <div class="dist-corp-col">
+        <div class="dist-corp-tag">WB Holders</div>
+        <h3 class="dist-corp-title">Boss Edition</h3>
+        <div class="dist-corp-body">
+          Accessible to Wonder Boss holders. NFT-gated and/or included in curated gift packages, delivered alongside exclusive items.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-num">07</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Timeline</div>
+        <h2 class="section-title">Roadmap</h2>
+      </div>
+    </div>
+    <p class="roadmap-intro fade-in">Our publication is designed as a <strong>cultural archive of Solana NFT collections</strong>, capturing the most impactful projects through 2026. The focus is on <strong>documenting lasting contributions</strong>, rather than producing frequent issues.</p>
+
+    <div class="phases fade-in">
+      <div class="phase">
+        <div class="phase-left">
+          <div class="phase-num">Phase 01</div>
+          <div class="phase-name">Partner Selection</div>
+        </div>
+        <div class="phase-right">
+          <div class="phase-item">Identify and confirm participating NFT collections</div>
+          <div class="phase-item">Finalize editorial partnership agreements</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-left">
+          <div class="phase-num">Phase 02</div>
+          <div class="phase-name">Editorial Production</div>
+        </div>
+        <div class="phase-right">
+          <div class="phase-item">Conduct interviews with all featured collections</div>
+          <div class="phase-item">Develop editorial content and narratives</div>
+          <div class="phase-item">Collect visual assets and finalize art direction</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-left">
+          <div class="phase-num">Phase 03</div>
+          <div class="phase-name">Print Production</div>
+        </div>
+        <div class="phase-right">
+          <div class="phase-item">Layout and design to art book standards</div>
+          <div class="phase-item">Proofing and pre-press checks</div>
+          <div class="phase-item">Print Standard Edition and Collector's Edition</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-left">
+          <div class="phase-num">Phase 04</div>
+          <div class="phase-name">Distribution</div>
+        </div>
+        <div class="phase-right">
+          <div class="phase-item">Global shipping and circulation of physical editions</div>
+          <div class="phase-item">Partner ecosystem activations and collaborations</div>
+          <div class="phase-item">Launch event and simultaneous PDF / online edition release</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="future-block fade-in">
+      <div class="future-label">Future Editions &amp; Expansion</div>
+      <div class="future-items">
+        <div class="future-item">Subsequent issues will follow after sufficient impact, typically spaced by a year or more</div>
+        <div class="future-item">Potential expansions include new physical editions, broader social media operations, and network growth</div>
+        <div class="future-item">Periodic companion releases may further document Solana culture</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="involved" class="involved-bg">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <div class="section-num">08</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Participate</div>
+        <h2 class="section-title">Get Involved</h2>
+      </div>
+    </div>
+    <p class="involved-intro fade-in">We welcome partners who help shape and celebrate Solana NFT culture. Join us in <strong>documenting and celebrating the most meaningful contributions</strong> to the Solana ecosystem.</p>
+
+    <div class="involved-grid fade-in">
+      <div>
+        <div class="criteria-title">Partner Criteria</div>
+        <div class="criteria-list">
+          <div class="criteria-item">
+            <div class="ci-label">Community</div>
+            <div class="ci-text">Vibrant, engaged community</div>
+          </div>
+          <div class="criteria-item">
+            <div class="ci-label">Approach</div>
+            <div class="ci-text">Collaborative approach to editorial storytelling</div>
+          </div>
+          <div class="criteria-item">
+            <div class="ci-label">Impact</div>
+            <div class="ci-text">Positive impact on Solana NFT culture or ecosystem</div>
+          </div>
+          <div class="criteria-item">
+            <div class="ci-label">Cost</div>
+            <div class="ci-text"><strong>NFT collections are always included free of charge</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-title">Contact</div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-key">Email</div>
+            <div class="contact-val">your-email@example.com</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-key">Website</div>
+            <div class="contact-val">[insert links]</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-key">Discord</div>
+            <div class="contact-val">discord.gg/wonderboss</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="closing">
+  <p class="closing-quote" style="font-family: 'Playfair Display', serif; font-size: 24px; color: var(--gold); margin-bottom: 12px;">"NFTs may be temporary. <em>Culture is permanent."</em></p>
+  <p class="closing-logo">BOSSPHORUS EDITORIAL PARTNERSHIP DECK 2026</p>
+</div>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

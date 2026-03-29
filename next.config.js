@@ -5,6 +5,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+
   images: {
     remotePatterns: [
       {
@@ -21,6 +22,15 @@ const nextConfig = {
       },
     ],
     qualities: [10, 75], // Kullandığınız quality değerlerini ekleyin
+  },
+
+  async rewrites() {
+    return [
+      {
+        source: "/bossphorus",
+        destination: "/bossphorus.html",
+      },
+    ];
   },
 };
 
