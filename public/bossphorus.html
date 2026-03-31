@@ -38,8 +38,8 @@
   }
 
   /* SECTIONS */
-  section { width: 100%; height: 202.7vh; position: relative; }
-
+  section { width: 100%;  position: relative; }
+/* height: 202.7vh; */
   /* HERO */
   .hero {
     min-height: 100vh;
@@ -563,6 +563,14 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px; color: var(--white);
   }
+  .contact-val a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-val a:hover {
+  text-decoration: underline;
+}
 
   /* FOOTER / CLOSING */
   .closing {
@@ -656,9 +664,7 @@
     section {
       page-break-before: always;
       break-before: page;
-      /* DİKKAT: min-height: 100vh BURADAN KALDIRILDI! 
-         Böylece sayfalar gereksiz boşluk bırakmayacak 
-         ve Footer alt kısma sorunsuz eklenecek. */
+    
     }
 
     /* BÖLÜMLERİN ÜSTÜNE EKSTRA PADDING (Dengelemek için) */
@@ -1083,30 +1089,41 @@
           </div>
         </div>
       </div>
-      <div class="contact-block">
-        <div class="contact-title">Contact</div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="contact-key">Email</div>
-            <div class="contact-val">your-email@example.com</div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-key">Website</div>
-            <div class="contact-val">[insert links]</div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-key">Discord</div>
-            <div class="contact-val">discord.gg/wonderboss</div>
-          </div>
-        </div>
+    <div class="contact-block">
+  <div class="contact-title">Contact</div>
+  <div class="contact-items">
+    <div class="contact-item">
+      <div class="contact-key">Submission</div>
+      <div class="contact-val">
+        <a href="https://forms.gle/WeM2YjiQwPtaEjRY9" target="_blank" rel="noopener noreferrer">
+          forms.gle/WeM2YjiQwPtaEjRY9
+        </a>
       </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-key">Website</div>
+      <div class="contact-val">
+        <a href="https://www.wonderboss.com/" target="_blank" rel="noopener noreferrer">
+          www.wonderboss.com
+        </a>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-key">Discord</div>
+      <div class="contact-val">
+        <a href="https://discord.com/invite/GmZzzC72as" target="_blank" rel="noopener noreferrer">
+          discord.com/invite/GmZzzC72as
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
   </div>
 </section>
 
 <div class="closing">
-  <p class="closing-quote" style="font-family: 'Playfair Display', serif; font-size: 24px; color: var(--gold); margin-bottom: 12px;">"NFTs may be temporary. <em>Culture is permanent."</em></p>
-  <p class="closing-logo">BOSSPHORUS EDITORIAL PARTNERSHIP DECK 2026</p>
+ <p class="closing-logo">BOSSPHORUS EDITORIAL PARTNERSHIP DECK 2026</p>
 </div>
 
 <script>
