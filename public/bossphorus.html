@@ -38,7 +38,7 @@
   }
 
   /* SECTIONS */
-  section { width: 100%;  position: relative; }
+  section { width: 100%; height: 177.8vh; position: relative; }
 /* height: 202.7vh; */
   /* HERO */
   .hero {
@@ -574,6 +574,9 @@
 
   /* FOOTER / CLOSING */
   .closing {
+ position: absolute;
+  bottom: 10px;
+width: 100%;
     background: #110F0E;
     padding: 60px 8%;
     text-align: center;
@@ -692,10 +695,11 @@
       break-inside: avoid;
     }
 
-    /* Footer'ın bölünmesini engeller ve normal akışa dahil eder */
+   
     .closing {
       page-break-inside: avoid;
       break-inside: avoid;
+
     }
   }
 </style>
@@ -916,7 +920,7 @@
             </svg>
             <div class="ps-title">Cultural Initiatives</div>
           </div>
-          <div class="ps-desc">Active communities, DAOs, and event organizers that contribute to NFT culture are <strong>featured without fees</strong>, highlighting the social and collaborative dimensions of the ecosystem.</div>
+          <div class="ps-desc">Active communities, DAOs, and event organizers that contribute to NFT culture are featured, highlighting the social and collaborative dimensions of the ecosystem.</div>
         </div>
 
         <div class="ps-item">
@@ -1120,11 +1124,12 @@
 </div>
     </div>
   </div>
-</section>
-
-<div class="closing">
+  <div class="closing">
  <p class="closing-logo">BOSSPHORUS EDITORIAL PARTNERSHIP DECK 2026</p>
 </div>
+</section>
+
+
 
 <script>
 const obs = new IntersectionObserver(entries => {
