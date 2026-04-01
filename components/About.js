@@ -13,25 +13,16 @@ const About = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
 
           <div>
             <p>
-              Wonder Boss is a unique story-telling PFP NFT collection
-              comprising a large number of distinct pieces. The collection's
-              primary goal is to form a well-rewarded, vibrant community on the
-              beloved Solana chain, with a focus on introducing innovative
-              technologies like DEC (Decentralized Emulated Computer) on the
-              upcoming Monad chain. Wonder Boss also offers its community
-              various events, exclusive software, and professional partnerships
-              to enhance the overall experience and provide continuous growth
+              Wonder Boss is a story-telling PFP NFT collection on Solana with a
+              core ethos of building a vibrant, rewarded community while
+              supporting other collections across the ecosystem, powered by
+              three pillars: an Events App where members attend online and IRL
+              events, earn rewards, and leave their mark on a shared timeline,
+              Bossphorus Magazine archiving NFT culture, introducing collections
+              to broader audiences, and offering a physical collectible, and a
+              long term vision of a Decentralised Emulated Computer
+              experimenting with next-gen on-chain applications.{" "}
             </p>
-            {/* <p>
-              A NFT collection featuring the stories of the Fomo Sapiens, a
-              group of pioneering individuals chosen to establish a new
-              decentral space civilization starting on Pluto. Led by the
-              groundbreaking work of scientists in the field of synthetic
-              evolution, these Fomo Sapiens have evolved human cells to
-              withstand the harsh conditions. Own a piece of this exciting new
-              chapter in human history and join the Fomo Sapien community as
-              they pave the way for a new era of space colonization.
-            </p> */}
 
             <Link href="/about-project">
               {" "}
