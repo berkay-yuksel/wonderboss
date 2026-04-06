@@ -157,3 +157,15 @@
   color: rgb(118, 117, 117);
   font-size: 14px;
 }
+.statusDot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-left: 5px; /* yazıdan biraz boşluk */
+  margin-bottom: 2px;
+}
+
+.liveDot {
+  background-color: green;
+}

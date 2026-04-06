@@ -9,7 +9,7 @@ const EventPage = async ({ params }) => {
   const { eventId } = await params;
 
   const [eventData] = events.events.filter(
-    (event) => event.short_title == eventId
+    (event) => event.short_title == eventId,
   );
 
   return (

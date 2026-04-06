@@ -11,9 +11,17 @@ export default function RootLayout({ children }) {
         <meta name="color-scheme" content="light only" />
         <title>Wonder Boss NFT</title>
         <meta property="og:title" content="Wonder Boss" key="title" />
+        {/* ------------------------------- */}
+        <meta
+          property="og:image"
+          content="https://wonderboss.com/WB_logo_black.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://wonderboss.com" />
+        {/* ------------------------------- */}
         <meta
           name="description"
-          content="Wonder Boss is a large story-telling pfp NFT collection sitting on Solana network."
+          content="Wonder Boss is a large pfp NFT collection sitting on Solana network."
           key="desc"
         />
       </head>

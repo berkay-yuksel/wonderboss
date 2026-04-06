@@ -21,7 +21,7 @@ const AboutProject = () => {
                 width="1500"
                 height="1500"
                 blurDataURL="/lunaris.webp"
-                placeholder="/lunaris.webp"
+                placeholder="blur"
               />
               <span>
                 {" "}
@@ -39,7 +39,7 @@ const AboutProject = () => {
                 width="1500"
                 height="1500"
                 blurDataURL="/mintinfo.webp"
-                placeholder="/mintinfo.webp"
+                placeholder="blur"
               />
               <Link href="https://twitter.com/ilkay_eth">
                 <h3>nac</h3>
@@ -54,7 +54,7 @@ const AboutProject = () => {
                 width="1500"
                 height="1500"
                 blurDataURL="/mintinfo.webp"
-                placeholder="/mintinfo.webp"
+                placeholder="blur"
               />
               <Link href="https://twitter.com/Tmac_SOL">
                 <h3>tmac</h3>
@@ -69,7 +69,7 @@ const AboutProject = () => {
                 width="1500"
                 height="1500"
                 blurDataURL="/mintinfo.webp"
-                placeholder="/mintinfo.webp"
+                placeholder="blur"
               />
               <Link href="https://twitter.com/anonimlesmek">
                 <h3>anonimlesmek</h3>
@@ -79,7 +79,7 @@ const AboutProject = () => {
           </div>
         </div>
         <div className={aboutProject.text_container}>
-          <h2>What is Wonder Boss?</h2>
+          {/* <h2>What is Wonder Boss?</h2>
           <p>
             Wonder Boss is a revolutionary story-driven PFP NFT collection built
             on the Solana blockchain, designed to cultivate a thriving,
@@ -96,19 +96,20 @@ const AboutProject = () => {
             fashion, gamified staking, and immersive IRL and online events,
             ensuring that the community remains engaged, rewarded, and
             constantly growing.
-          </p>
+          </p> */}
           <br />
           <h2>Mission</h2>
           <p>
-            Our mission is to build a decentralized and interconnected digital
-            ecosystem that empowers users through blockchain-based ownership,
-            innovation, and creative expression. By integrating NFTs,
-            decentralized computing, and real-world utilities, we aim to bridge
-            the gap between Web3 and everyday experiences, providing long-term
-            value to our holders.
+            Our mission is to build a lasting intellectual property anchored by
+            an active, well-rewarded community. Through cultural initiatives, we
+            highlight the true value of digital ownership and honor the
+            collections, founders, and collectors who bring this culture to
+            life. In parallel, we develop applications that turn our ecosystem
+            into a space of shared memories, driving steady innovation for the
+            experiences of tomorrow.
           </p>
           <br />
-          <h2>Vision</h2>
+          {/* <h2>Vision</h2>
           <p>
             Wonder Boss envisions a future where blockchain technology enhances
             every aspect of digital and real life, from entertainment and gaming
@@ -116,7 +117,7 @@ const AboutProject = () => {
             leading force in NFT-driven storytelling, community engagement, and
             Web3 innovation, creating a sustainable and rewarding ecosystem for
             all participants.
-          </p>
+          </p> */}
           <div className={aboutProject.first_image_container}>
             {/* <Image
               src="/story2.webp"
@@ -124,7 +125,7 @@ const AboutProject = () => {
               width="800"
               height="450"
               blurDataURL="/mintinfo.webp"
-              placeholder="/mintinfo.webp"
+              placeholder="blur"
             /> */}
           </div>
         </div>

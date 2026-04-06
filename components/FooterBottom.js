@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import footerBottom from "../styles/Footer.module.css";
 import Link, { link } from "next/link";
@@ -34,7 +35,11 @@ const FooterBottom = ({
           </Link>
           <Link href="/">
             {" "}
-            <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+            <span
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              onMouseEnter={clickableEnter}
+              onMouseLeave={justLeave}
+            >
               BACK TO TOP{" "}
             </span>
           </Link>

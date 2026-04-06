@@ -64,12 +64,12 @@ const Featured = ({
 
       <motion.div
         variants={item}
-        onMouseEnter={lockedEnter}
+        onMouseEnter={textEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/">
+        <Link href="/bossphorus">
           <Image alt="Staking" src={menuStakingPic} width="816" height="816" />
-          <h5>Staking</h5>
+          <h5>Bossphorus Editorial Partnership Deck</h5>
         </Link>
         <p>2-00</p>
       </motion.div>
@@ -81,7 +81,7 @@ const Featured = ({
       >
         <Link href="/events">
           <Image alt="Events" src={menuEventsPic} width="816" height="816" />
-          <h5>Events</h5>
+          <h5>Events App</h5>
         </Link>
         <p>3-00</p>
       </motion.div>

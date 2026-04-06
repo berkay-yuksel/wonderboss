@@ -91,7 +91,13 @@ const Events = () => {
                   />
 
                   <h5>
-                    {event.status}
+                     {event.status}
+                    <span
+                      className={`${EventsStyles.statusDot} ${
+                        event.status === "Live" ? EventsStyles.liveDot : ""
+                      }`}
+                    />
+                   
                     {event.isSample && (
                       <span className={EventsStyles.sampleBadge}>
                         {" "}

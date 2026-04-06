@@ -7,7 +7,6 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
       <h1>WONDER BOSS</h1>
       <div className={footer.inner_container}>
         <div>
-          <h5>WE WANT YOU ON THE GANG</h5>
           <h5> C'MON! HOP IN AND SAY HI TO OTHER BOSSES</h5>
 
           <Link href="https://discord.com/invite/D6JbZjxMt4">
@@ -22,19 +21,29 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
             <h5>CONTACT</h5>
             <Link href="https://forms.gle/Eeg8ysCeaXCNBbXJ9">
               {" "}
+              <p> Bossphorus Editoral Partnership Form</p>
+            </Link>
+            <Link
+              href="
+forms.gle/WeM2YjiQwPtaEjRY9"
+            >
+              {" "}
               <p> Support Form</p>
             </Link>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             <h5>MARKET PLACES</h5>
-            <Link href="https://www.magiceden.io/marketplace/wonder_boss">
+            <Link href="https://www.orbisonsol.io/marketplace/wonder_boss">
               {" "}
-              <p> magiceden.io/marketplace/wonder_boss (soon)</p>
+              <p> orbisonsol.io/marketplace/wonder_boss (soon)</p>
             </Link>
-
             <Link href="https://www.tensor.trade/trade/wonder_boss">
               {" "}
               <p>tensor.trade/trade/wonder_boss (soon)</p>
+            </Link>
+            <Link href="https://www.magiceden.io/marketplace/wonder_boss">
+              {" "}
+              <p> magiceden.io/marketplace/wonder_boss (soon)</p>
             </Link>
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
@@ -49,18 +58,21 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
             </Link> */}
           </div>
           <div onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            <h5>COLLABS AND GIVE AWAYS</h5>
+            <h5>COLLABS AND GIVEAWAYS</h5>
+            <Link href="https://atlas3.io/project/wonder-boss">
+              {" "}
+              <p>https://atlas3.io/project/wonder-boss</p>
+            </Link>
             <Link href="https://www.alphabot.app/_/wonderbossnft">
               {" "}
               <p>https://www.alphabot.app/_/wonderbossnft</p>
             </Link>
             <Link href="https://www.subber.xyz/wonderboss/allowlist/wonder-boss-allow-list">
               {" "}
-              <p>https://www.subber.xyz/wonderboss</p>
-            </Link>
-            <Link href="https://atlas3.io/project/wonder-boss">
-              {" "}
-              <p>https://atlas3.io/project/wonder-boss</p>
+              <p>
+                <s>https://www.subber.xyz/wonderboss</s>
+              </p>
+              (Please contact)
             </Link>
           </div>
         </div>
