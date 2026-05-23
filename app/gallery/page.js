@@ -141,8 +141,11 @@ export default function GalleryPage() {
     { name: "BoxingGoat_SOL", src: "/cards/BoxingGoat_SOL.png" },
     { name: "AjiDestiny1", src: "/cards/AjiDestiny1.png" },
     { name: "KeillahAsh", src: "/cards/KeillahAsh.png" },
-    //  { name: "McNuggets_Kiss", src: "/cards/McNuggets_Kiss.png" },
-    //  { name: "Rohit2356_", src: "/cards/Rohit2356_.png" },
+     { name: "McNuggets_Kiss", src: "/cards/McNuggets_Kiss.png" },
+      { name: "kauzensol", src: "/cards/kauzensol.png" },
+            { name: "KingMBB", src: "/cards/KingMBB.png" },
+                  { name: "Kirpich_9", src: "/cards/Kirpich_9.png" },
+                      { name: "PeteyTheWizard", src: "/cards/PeteyTheWizard.png" },
   ];
 
   return (

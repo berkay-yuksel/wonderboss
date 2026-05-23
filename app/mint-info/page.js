@@ -14,23 +14,23 @@ const MintInfo = () => {
           <div>
             <h5>MINT DETAILS</h5>
             <ul>
-              <li> 1 SOL</li>
+              <li> 0,55 SOL</li>
               <li> 5555 PIECE</li>
-              <li> PRE-SALE STARTING IN JUNE 19, 2024 20 PM EST</li>
-              <li> YOU CAN MINT UP TO 5 PER WALLET IN PRE-SALE</li>
-              <li> PUBLIC MINT STARTING IN JUNE 19, 2024 20 PM EST</li>
-              <li> YOU CAN MINT UP TO 10 PER WALLET IN PRE-SALE</li>
+              <li> PRE-SALE STARTING IN MAY 26th, 2026 -- EST</li>
+              {/* <li> YOU CAN MINT UP TO 5 PER WALLET IN PRE-SALE</li> */}
+              <li> PUBLIC MINT STARTING IN MAY 27th, 2026 -- EST</li>
+              {/* <li> YOU CAN MINT UP TO 10 PER WALLET IN PRE-SALE</li> */}
             </ul>
           </div>
           <div>
-            <div>
+            {/* <div>
               <h5>HOW TO GET AN ALLOW LIST SPOT?</h5>
               <p>
                 Keep an eye on collaborations (mostly on subber.xyz); use the
                 invitation app or join our giveaways both on Discord and our X
                 account!
               </p>
-            </div>
+            </div> */}
             <div>
               <span>
                 <Link href="https://discord.com/invite/GmZzzC72as">
@@ -39,19 +39,14 @@ const MintInfo = () => {
                 </Link>
               </span>
               <span>
-                <Link href="https://www.subber.xyz/fomosapienscommunity/allowlist/fomo-sapiens">
+                <Link href="https://atlas3.io/project/wonder-boss">
                   {" "}
-                  <span>SUBBER </span>
+                  <span>ATLAS3 </span>
                 </Link>
               </span>
+          
               <span>
-                <Link href="https://blog.fomosapiensnft.com/posts/fomos-invitation">
-                  {" "}
-                  <span>INVITATION APP </span>
-                </Link>
-              </span>
-              <span>
-                <Link href="https://twitter.com/fomosapiensnft_">
+                <Link href="https://twitter.com/wonderbossnft">
                   {" "}
                   <span>𝕏 ACCOUNT</span>
                 </Link>

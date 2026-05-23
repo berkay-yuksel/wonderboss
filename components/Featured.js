@@ -46,10 +46,10 @@ const Featured = ({
     >
       <motion.div
         variants={item}
-        onMouseEnter={lockedEnter}
+        onMouseEnter={textEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/">
+        <Link href="/mint-info">
           <Image
             placeholder="blur"
             alt="Allow List & Mint Information"
