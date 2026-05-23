@@ -141,11 +141,12 @@ export default function GalleryPage() {
     { name: "BoxingGoat_SOL", src: "/cards/BoxingGoat_SOL.png" },
     { name: "AjiDestiny1", src: "/cards/AjiDestiny1.png" },
     { name: "KeillahAsh", src: "/cards/KeillahAsh.png" },
-     { name: "McNuggets_Kiss", src: "/cards/McNuggets_Kiss.png" },
-      { name: "kauzensol", src: "/cards/kauzensol.png" },
-            { name: "KingMBB", src: "/cards/KingMBB.png" },
-                  { name: "Kirpich_9", src: "/cards/Kirpich_9.png" },
-                      { name: "PeteyTheWizard", src: "/cards/PeteyTheWizard.png" },
+    { name: "McNuggets_Kiss", src: "/cards/McNuggets_Kiss.png" },
+    { name: "kauzensol", src: "/cards/kauzensol.png" },
+    { name: "KingMBB", src: "/cards/KingMBB.png" },
+    { name: "Kirpich_9", src: "/cards/Kirpich_9.png" },
+    { name: "PeteyTheWizard", src: "/cards/PeteyTheWizard.png" },
+    { name: "ChopstickLife", src: "/cards/ChopstickLife.png" },
   ];
 
   return (
@@ -420,7 +421,7 @@ function LoopingGallery({ images }) {
               clearResumeTimeout();
             }}
           />
-        </div>
+        </div>,
       );
     }
   }
@@ -534,7 +535,7 @@ function LoopingGallery({ images }) {
             suggestions.length > 0 &&
             query.trim() &&
             !suggestions.some(
-              (s) => s.name.toLowerCase() === query.trim().toLowerCase()
+              (s) => s.name.toLowerCase() === query.trim().toLowerCase(),
             )
           ) {
             const pick =
@@ -579,7 +580,7 @@ function LoopingGallery({ images }) {
                   suggestions.length > 0 &&
                   query.trim() &&
                   !suggestions.some(
-                    (s) => s.name.toLowerCase() === query.trim().toLowerCase()
+                    (s) => s.name.toLowerCase() === query.trim().toLowerCase(),
                   )
                 ) {
                   e.preventDefault();
@@ -595,7 +596,7 @@ function LoopingGallery({ images }) {
                 e.preventDefault();
                 if (suggestions.length)
                   setActiveIndex((i) =>
-                    Math.min(i + 1, suggestions.length - 1)
+                    Math.min(i + 1, suggestions.length - 1),
                   );
               } else if (e.key === "ArrowUp") {
                 e.preventDefault();
