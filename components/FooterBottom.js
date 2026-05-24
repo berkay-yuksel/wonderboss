@@ -27,7 +27,7 @@ const FooterBottom = ({
               DISCORD{" "}
             </span>
           </Link>
-          <Link href="/">
+          <Link href="https://launchmynft.io/mint/wonderboss">
             {" "}
             <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
               LAUNCHPAD{" "}

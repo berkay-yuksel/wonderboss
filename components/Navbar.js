@@ -8,7 +8,7 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         WONDER BOSS
       </h1>
       <div className={navbar.nav}>
-        <Link href="/">
+        <Link href="https://launchmynft.io/mint/wonderboss">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             LAUNCHPAD
           </span>
