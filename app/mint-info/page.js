@@ -28,24 +28,23 @@ const MintInfo = () => {
               <p>
                 <Link href="wonderboss.com/wallet-check">
                   {" "}
-                  <button>Check it here!</button>
+                  <span>Click me to check your wallet!</span>
                 </Link>
               </p>
             </div>
             <div>
               <span>
-                  <span>
-                <Link href="https://launchmynft.io/mint/wonderboss">
-                  {" "}
-                  <span>MINT PAGE </span>
-                </Link>
-              </span>
+                <span>
+                  <Link href="https://launchmynft.io/mint/wonderboss">
+                    {" "}
+                    <span>MINT PAGE </span>
+                  </Link>
+                </span>
                 <Link href="https://discord.com/invite/GmZzzC72as">
                   {" "}
                   <span>DISCORD </span>
                 </Link>
               </span>
-            
 
               <span>
                 <Link href="https://twitter.com/wonderbossnft">
