@@ -15,7 +15,6 @@ export default function RewardsPage() {
           setLoading(false);
         })
         .catch(() => setLoading(false));
-
     load();
     const interval = setInterval(load, 30000);
     return () => clearInterval(interval);
@@ -57,18 +56,20 @@ export default function RewardsPage() {
         :root {
           --gold: #9945FF; --sol: #14F195;
           --bg-dark: #0A0A0F; --bg-card: #11111A; --bg-card2: #18182A;
-          --border-dim: rgba(153,69,255,0.18); --border-glow: rgba(153,69,255,0.5);
+          --border-dim: rgba(153,69,255,0.18);
           --text-main: #F0EDE0; --text-dim: #888070;
-          --locked-overlay: rgba(10,10,20,0.88);
-          --unit: 100px; --grid-cols: 16; --grid-width: 1600px;
+          --unit: 100px; --grid-width: 1600px;
         }
         body { font-family: 'Syne', sans-serif; background: var(--bg-dark); color: var(--text-main); }
 
+        /* ── HERO ── */
         .hero { text-align: center; padding: 48px 24px 0; }
-        .hero-title { font-size: clamp(28px, 4vw, 56px); font-weight: 800; color: #fff; letter-spacing: 0.04em; line-height: 1.1; font-family: 'Syne', sans-serif; }
+        .hero-title { font-size: clamp(28px, 4vw, 56px); font-weight: 800; color: #fff; letter-spacing: 0.04em; line-height: 1.1; }
         .hero-img { display: block; margin: 28px auto 0; max-width: 680px; width: 100%; border-radius: 12px; }
         .hero-desc { margin: 20px auto 0; max-width: 560px; color: var(--text-dim); font-family: 'Space Mono', monospace; font-size: 12px; line-height: 1.8; }
         .hero-desc em { color: var(--sol); font-style: normal; }
+
+        /* ── WRAP / STATS ── */
         .rewards-wrap { padding: 0 28px 60px; max-width: calc(var(--grid-width) + 56px); margin: 0 auto; }
         .stats { display: flex; justify-content: center; gap: 48px; padding: 28px 24px 24px; }
         .stat { text-align: center; }
@@ -77,6 +78,7 @@ export default function RewardsPage() {
         .section-title { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 20px; font-family: 'Space Mono', monospace; }
         #pools-grid { display: flex; flex-direction: column; gap: 12px; }
 
+        /* ── POOL CARD ── */
         .pool-card { border: 0.5px solid var(--border-dim); border-radius: 6px; background: var(--bg-card); display: flex; flex-direction: column; transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s; animation: cardIn 0.35s ease both; overflow: hidden; }
         .pool-card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(153,69,255,0.12); }
         .pool-card.active { border-color: rgba(153,69,255,0.55); }
@@ -96,9 +98,37 @@ export default function RewardsPage() {
         .pool-info { font-size: 10px; color: var(--text-dim); font-family: 'Space Mono', monospace; white-space: nowrap; }
         .pool-body { display: block; padding: 0; position: relative; }
 
+        /* ── HEADER BUTTONS ── */
         .btn-labels-toggle { background: transparent; border: 0.5px solid var(--border-dim); color: var(--text-dim); padding: 3px 10px; border-radius: 5px; cursor: pointer; font-family: 'Space Mono', monospace; font-size: 9px; transition: all 0.2s; white-space: nowrap; }
         .btn-labels-toggle:hover, .btn-labels-toggle.active { border-color: var(--gold); color: var(--gold); }
+        .btn-winners { background: transparent; border: 0.5px solid rgba(20,241,149,0.3); color: rgba(20,241,149,0.7); padding: 3px 10px; border-radius: 5px; cursor: pointer; font-family: 'Space Mono', monospace; font-size: 9px; transition: all 0.2s; white-space: nowrap; }
+        .btn-winners:hover { border-color: #14F195; color: #14F195; }
 
+        /* ── WINNERS MODAL ── */
+        .winners-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .winners-box { background: #0F0F1A; border: 0.5px solid rgba(20,241,149,0.35); border-radius: 12px; padding: 24px; width: 100%; max-width: 520px; max-height: 80vh; overflow-y: auto; }
+        .winners-box::-webkit-scrollbar { width: 4px; }
+        .winners-box::-webkit-scrollbar-thumb { background: rgba(153,69,255,0.3); border-radius: 2px; }
+        .winners-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+        .winners-title { font-size: 14px; font-weight: 700; color: #14F195; font-family: 'Space Mono', monospace; }
+        .winners-close { background: none; border: none; color: #888070; font-size: 22px; cursor: pointer; line-height: 1; padding: 0; }
+        .winners-close:hover { color: #fff; }
+        .winner-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 0.5px solid rgba(255,255,255,0.06); }
+        .winner-row:last-child { border-bottom: none; }
+        .winner-thumb { width: 48px; height: 48px; border-radius: 6px; flex-shrink: 0; background: #1A1A2E; display: flex; align-items: center; justify-content: center; color: #888070; font-size: 20px; overflow: hidden; }
+        .winner-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .winner-meta { flex: 1; min-width: 0; }
+        .winner-name { font-size: 12px; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .winner-id { font-size: 11px; color: #14F195; font-family: 'Space Mono', monospace; margin-top: 3px; font-weight: 700; }
+        .winner-tx { margin-top: 3px; }
+        .winner-tx a { font-size: 9px; color: rgba(100,180,255,0.8); text-decoration: none; font-family: 'Space Mono', monospace; }
+        .winner-tx a:hover { color: #fff; text-decoration: underline; }
+        .winner-price { font-size: 10px; color: var(--sol); font-family: 'Space Mono', monospace; flex-shrink: 0; }
+        .winners-empty { text-align: center; color: #888070; font-family: 'Space Mono', monospace; font-size: 11px; padding: 28px 0; opacity: 0.7; }
+        .winners-search { width: 100%; background: #181828; border: 0.5px solid rgba(153,69,255,0.2); color: #F0EDE0; padding: 8px 12px; border-radius: 6px; font-family: 'Space Mono', monospace; font-size: 11px; margin-bottom: 14px; outline: none; }
+        .winners-search:focus { border-color: #9945FF; }
+
+        /* ── NFT GRID ── */
         .nft-grid { display: grid; grid-template-columns: repeat(16, 100px); grid-auto-rows: 100px; grid-auto-flow: row dense; gap: 0; width: 1600px; }
         .nft-item { position: relative; background: #0a0a12; border-right: 0.5px solid var(--border-dim); border-bottom: 0.5px solid var(--border-dim); overflow: hidden; transition: filter 0.2s; }
         .nft-item:hover { filter: brightness(1.1); }
@@ -165,8 +195,8 @@ export default function RewardsPage() {
         </div>
         <div className="section-title">// reward pools</div>
         <div id="pools-grid">
-          {pools.map((pool, pi) => (
-            <PoolCard key={pool.id} pool={pool} pi={pi} />
+          {pools.map((pool) => (
+            <PoolCard key={pool.id} pool={pool} />
           ))}
         </div>
       </div>
@@ -176,6 +206,8 @@ export default function RewardsPage() {
 
 function PoolCard({ pool }) {
   const [hideLabels, setHideLabels] = useState(false);
+  const [showWinners, setShowWinners] = useState(false);
+
   const st = pool.status || (pool.locked ? "locked" : "live");
   const cardClass =
     { live: "active", next: "next", locked: "locked" }[st] || "locked";
@@ -185,7 +217,8 @@ function PoolCard({ pool }) {
     locked: <span className="pool-badge badge-locked">🔒</span>,
   };
   const totalVal = pool.nfts.reduce((s, n) => s + (n.price || 0), 0);
-  const lockMsgHtml =
+  const winners = pool.nfts.filter((n) => n.awarded && n.winId);
+  const lockMsg =
     st === "locked" ? (
       <span
         style={{
@@ -205,18 +238,33 @@ function PoolCard({ pool }) {
     <div
       className={`pool-card ${cardClass} ${hideLabels ? "hide-labels" : ""}`}
     >
+      {showWinners && (
+        <WinnersModal
+          poolLabel={pool.label}
+          winners={winners}
+          onClose={() => setShowWinners(false)}
+        />
+      )}
       <div className="pool-header">
         <div className="pool-title">
-          {pool.label} {badgeMap[st]} {lockMsgHtml}
+          {pool.label} {badgeMap[st]} {lockMsg}
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           {st !== "locked" && (
-            <button
-              className={`btn-labels-toggle ${hideLabels ? "active" : ""}`}
-              onClick={() => setHideLabels((h) => !h)}
-            >
-              {hideLabels ? "⊞ Show Labels" : "⊟ Hide Labels"}
-            </button>
+            <>
+              <button
+                className="btn-winners"
+                onClick={() => setShowWinners(true)}
+              >
+                🏆 Winners {winners.length > 0 ? `(${winners.length})` : ""}
+              </button>
+              <button
+                className={`btn-labels-toggle ${hideLabels ? "active" : ""}`}
+                onClick={() => setHideLabels((h) => !h)}
+              >
+                {hideLabels ? "⊞ Show Labels" : "⊟ Hide Labels"}
+              </button>
+            </>
           )}
           <span className="pool-info">
             {pool.nfts.length} NFT{pool.nfts.length !== 1 ? "s" : ""} ·{" "}
@@ -226,6 +274,91 @@ function PoolCard({ pool }) {
       </div>
       <div className="pool-body">
         <NftGrid nfts={pool.nfts} />
+      </div>
+    </div>
+  );
+}
+
+function WinnersModal({ poolLabel, winners, onClose }) {
+  const [search, setSearch] = useState("");
+  const filtered = winners.filter(
+    (n) =>
+      n.winId.toLowerCase().includes(search.toLowerCase()) ||
+      n.name.toLowerCase().includes(search.toLowerCase()) ||
+      (n.txHash || "").toLowerCase().includes(search.toLowerCase()),
+  );
+  const shortWallet = (w) =>
+    w.length > 16 ? w.slice(0, 8) + "..." + w.slice(-8) : w;
+
+  return (
+    <div
+      className="winners-overlay"
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div className="winners-box">
+        <div className="winners-header">
+          <div className="winners-title">🏆 {poolLabel} — Winners</div>
+          <button className="winners-close" onClick={onClose}>
+            ✕
+          </button>
+        </div>
+        <input
+          className="winners-search"
+          placeholder="Search by name, ID or wallet..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        {filtered.length === 0 ? (
+          <div className="winners-empty">
+            {winners.length === 0 ? "// no winners yet" : "// no results"}
+          </div>
+        ) : (
+          filtered.map((n, i) => (
+            <div className="winner-row" key={i}>
+              <div className="winner-thumb">
+                {n.awardImgUrl || n.imgUrl ? (
+                  <img
+                    src={n.awardImgUrl || n.imgUrl}
+                    alt={n.name}
+                    onError={(e) => {
+                      e.target.style.display = "none";
+                    }}
+                  />
+                ) : (
+                  "◈"
+                )}
+              </div>
+              <div className="winner-meta">
+                <div className="winner-name">{n.name}</div>
+                <div className="winner-id">🏆 Wonder Boss #{n.winId}</div>
+                {n.txHash && (
+                  <div className="winner-tx">
+                    <span style={{ color: "var(--text-dim)" }}>
+                      Winner Wallet:{" "}
+                    </span>
+                    <a
+                      href={`https://www.tensor.trade/portfolio?wallet=${n.txHash}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {shortWallet(n.txHash)} ↗
+                    </a>
+                  </div>
+                )}
+                {n.txUrl && (
+                  <div className="winner-tx">
+                    <a href={n.txUrl} target="_blank" rel="noreferrer">
+                      View Transaction ↗
+                    </a>
+                  </div>
+                )}
+              </div>
+              <div className="winner-price">
+                {(n.price || 0).toFixed(2)} SOL
+              </div>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
