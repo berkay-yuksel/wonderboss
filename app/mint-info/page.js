@@ -34,17 +34,18 @@ const MintInfo = () => {
             </div>
             <div>
               <span>
+                  <span>
+                <Link href="https://launchmynft.io/mint/wonderboss">
+                  {" "}
+                  <span>MINT PAGE </span>
+                </Link>
+              </span>
                 <Link href="https://discord.com/invite/GmZzzC72as">
                   {" "}
                   <span>DISCORD </span>
                 </Link>
               </span>
-              <span>
-                <Link href="https://atlas3.io/project/wonder-boss">
-                  {" "}
-                  <span>ATLAS3 </span>
-                </Link>
-              </span>
+            
 
               <span>
                 <Link href="https://twitter.com/wonderbossnft">
