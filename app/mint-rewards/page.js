@@ -330,21 +330,21 @@ function WinnersModal({ poolLabel, winners, onClose }) {
               </div>
               <div className="winner-meta">
                 <div className="winner-name">{n.name}</div>
-                <div className="winner-id">🏆 Wonder Boss #{n.winId}</div>
-                {n.txHash && (
-                  <div className="winner-tx">
-                    <span style={{ color: "var(--text-dim)" }}>
-                      Winner Wallet:{" "}
-                    </span>
-                    <a
-                      href={`https://www.tensor.trade/portfolio?wallet=${n.txHash}`}
-                      target="_blank"
-                      rel="noreferrer"
+                <div className="winner-id">
+                  🏆 Wonder Boss #{n.winId}
+                  {n.txHash && (
+                    <span
+                      style={{
+                        color: "rgba(100,180,255,0.8)",
+                        fontWeight: 400,
+                        marginLeft: 6,
+                        fontSize: 10,
+                      }}
                     >
-                      {shortWallet(n.txHash)} ↗
-                    </a>
-                  </div>
-                )}
+                      ({shortWallet(n.txHash)})
+                    </span>
+                  )}
+                </div>
                 {n.txUrl && (
                   <div className="winner-tx">
                     <a href={n.txUrl} target="_blank" rel="noreferrer">
