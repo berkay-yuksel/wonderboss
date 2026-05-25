@@ -59,7 +59,7 @@ const MintInfo = () => {
       <Image
         className={mintInfo.banner}
         src="/family16.png"
-        alt="Picture of the author"
+        alt="family pic"
         width="2816"
         height="1454"
         blurDataURL="/family16.png"
