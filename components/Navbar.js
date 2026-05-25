@@ -13,6 +13,11 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
             LAUNCHPAD
           </span>
         </Link>
+        <Link href="https://www.wonderboss.com/wallet-check">
+          <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+            WALLET-CHECK-ALLOWLIST
+          </span>
+        </Link>
         <Link href="https://twitter.com/wonderbossnft">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
             TWITTER / X

@@ -23,14 +23,15 @@ const MintInfo = () => {
             </ul>
           </div>
           <div>
-            {/* <div>
-              <h5>HOW TO GET AN ALLOW LIST SPOT?</h5>
+            <div>
+              <h5>HOW TO CHECK ELIGIBILITY FOR PRE-SALE?</h5>
               <p>
-                Keep an eye on collaborations (mostly on subber.xyz); use the
-                invitation app or join our giveaways both on Discord and our X
-                account!
+          <Link href="wonderboss.com/wallet-check">
+                  {" "}
+                  <span>wonderboss.com/wallet-check </span>
+                </Link>
               </p>
-            </div> */}
+            </div> 
             <div>
               <span>
                 <Link href="https://discord.com/invite/GmZzzC72as">
