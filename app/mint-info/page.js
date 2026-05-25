@@ -26,7 +26,7 @@ const MintInfo = () => {
             <div>
               <h5>HOW TO CHECK ELIGIBILITY FOR PRE-SALE?</h5>
               <p>
-                <Link href="wonderboss.com/wallet-check">
+                <Link href="/wallet-check">
                   {" "}
                   <span>Click me to check your wallet!</span>
                 </Link>
