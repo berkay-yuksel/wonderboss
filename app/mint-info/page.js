@@ -58,12 +58,12 @@ const MintInfo = () => {
       </div>
       <Image
         className={mintInfo.banner}
-        src="/family16.png"
+        src="/family.png"
         alt="family pic"
         width="2816"
         height="1454"
-        blurDataURL="/family16.png"
-        placeholder="/family16.png"
+        blurDataURL="/family.png"
+        placeholder="/family.png"
       />
       <FooterBottom />
     </div>
