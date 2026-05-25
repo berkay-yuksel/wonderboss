@@ -177,7 +177,9 @@
   gap: 12px;
   cursor: pointer;
 }
-
+.actionBtn span {
+  margin-bottom: -8px;
+}
 .actionBtn:hover {
   background: #1a1a1a;
   border-color: #353535;
