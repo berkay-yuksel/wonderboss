@@ -16,9 +16,9 @@ const MintInfo = () => {
             <ul>
               <li> 0,55 SOL</li>
               <li> 5555 PIECE</li>
-              <li> PRE-SALE STARTING IN MAY 26th, 2026 -- EST</li>
+              <li> PRE-SALE STARTING IN MAY 26th, 2026 , UTC: 3:00 PM</li>
               {/* <li> YOU CAN MINT UP TO 5 PER WALLET IN PRE-SALE</li> */}
-              <li> PUBLIC MINT STARTING IN MAY 27th, 2026 -- EST</li>
+              <li> PUBLIC MINT STARTING IN MAY 27th, 2026 , UTC: 3:00 PM</li>
               {/* <li> YOU CAN MINT UP TO 10 PER WALLET IN PRE-SALE</li> */}
             </ul>
           </div>
@@ -63,7 +63,6 @@ const MintInfo = () => {
         width="2816"
         height="1454"
         blurDataURL="/family.png"
-        placeholder="/family.png"
       />
       <FooterBottom />
     </div>
