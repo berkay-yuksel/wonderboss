@@ -1,0 +1,270 @@
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logoContainer {
+  margin-bottom: 16px;
+}
+
+.logoImage {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -50px;
+}
+
+.characterContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.characterImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #252525;
+  background: #151515;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #888;
+  font-weight: 400;
+}
+
+.checkerCard {
+  background: #151515;
+  border: 1px solid #252525;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.walletInput {
+  width: 100%;
+  padding: 16px;
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-family: "Courier New", monospace;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.walletInput:focus {
+  border-color: #404040;
+  background: #0d0d0d;
+}
+
+.walletInput::placeholder {
+  color: #555;
+}
+
+.checkButton {
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 16px;
+}
+
+.checkButton:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.checkButton:active {
+  transform: translateY(0);
+}
+
+.result {
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 16px;
+  animation: slideIn 0.3s ease;
+  line-height: 1.6;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result.success {
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  color: #34d399;
+}
+
+.result.error {
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  color: #f87171;
+}
+
+.result.notFound {
+  background: rgba(250, 204, 21, 0.1);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  color: #facc15;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.actionBtn {
+  width: 100%;
+  padding: 18px;
+  background: #151515;
+  border: 1px solid #252525;
+  border-radius: 12px;
+  color: #999;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.actionBtn:hover {
+  background: #1a1a1a;
+  border-color: #353535;
+  color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.actionBtn.highlight {
+  background: #fff;
+  color: transparent;
+  border-color: #fff;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.actionBtn.highlight span {
+  background: linear-gradient(
+    90deg,
+    #ff0080 0%,
+    #ff8c00 20%,
+    #40e0d0 40%,
+    #9370db 60%,
+    #ff1493 80%,
+    #ff0080 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+  font-weight: 600;
+}
+
+.actionBtn.highlight svg {
+  fill: #000;
+}
+
+.actionBtn.highlight:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px) scale(1.02);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 480px) {
+  .logoImage {
+    max-width: 160px;
+  }
+
+  .characterImage {
+    width: 160px;
+    height: 160px;
+  }
+
+  .checkerCard {
+    padding: 24px 20px;
+  }
+
+  .walletInput {
+    font-size: 13px;
+    padding: 14px;
+  }
+
+  .actionBtn {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
