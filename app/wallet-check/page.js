@@ -82,7 +82,7 @@ export default function WalletCheck() {
 
       <div className={styles.characterContainer}>
         <Image
-          src="/02.png"
+          src="/bombillaMAC.png"
           alt="Wonder Boss Character"
           width={200}
           height={200}
