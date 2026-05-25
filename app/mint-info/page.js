@@ -26,12 +26,12 @@ const MintInfo = () => {
             <div>
               <h5>HOW TO CHECK ELIGIBILITY FOR PRE-SALE?</h5>
               <p>
-          <Link href="wonderboss.com/wallet-check">
+                <Link href="wonderboss.com/wallet-check">
                   {" "}
-                  <span>wonderboss.com/wallet-check </span>
+                  <button>Check it here!</button>
                 </Link>
               </p>
-            </div> 
+            </div>
             <div>
               <span>
                 <Link href="https://discord.com/invite/GmZzzC72as">
@@ -45,7 +45,7 @@ const MintInfo = () => {
                   <span>ATLAS3 </span>
                 </Link>
               </span>
-          
+
               <span>
                 <Link href="https://twitter.com/wonderbossnft">
                   {" "}
@@ -58,12 +58,12 @@ const MintInfo = () => {
       </div>
       <Image
         className={mintInfo.banner}
-        src="/mintinfo.png"
+        src="/family16.png"
         alt="Picture of the author"
         width="2816"
         height="1454"
-        blurDataURL="/mintinfo.webp"
-        placeholder="/mintinfo.webp"
+        blurDataURL="/family16.png"
+        placeholder="/family16.png"
       />
       <FooterBottom />
     </div>
