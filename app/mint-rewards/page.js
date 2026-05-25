@@ -120,7 +120,9 @@ export default function RewardsPage() {
         .winner-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .winner-meta { flex: 1; min-width: 0; }
         .winner-name { font-size: 12px; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .winner-id { font-size: 11px; color: #14F195; font-family: 'Space Mono', monospace; margin-top: 3px; font-weight: 700; }
+        .winner-id { font-size: 11px; color: #14F195; font-family: 'Space Mono', monospace; margin-top: 3px; font-weight: 700; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+        .winner-wallet { color: #888070; font-weight: 400; font-size: 10px; }
+        @media (max-width: 767px) { .winner-id { flex-direction: column; align-items: flex-start; gap: 2px; } }
         .winner-tx { margin-top: 3px; }
         .winner-tx a { font-size: 9px; color: rgba(100,180,255,0.8); text-decoration: none; font-family: 'Space Mono', monospace; }
         .winner-tx a:hover { color: #fff; text-decoration: underline; }
@@ -251,7 +253,6 @@ export default function RewardsPage() {
 }
 
 function PoolCard({ pool }) {
-  const [hideLabels, setHideLabels] = useState(false);
   const [showWinners, setShowWinners] = useState(false);
 
   const st = pool.status || (pool.locked ? "locked" : "live");
@@ -281,9 +282,7 @@ function PoolCard({ pool }) {
     ) : null;
 
   return (
-    <div
-      className={`pool-card ${cardClass} ${hideLabels ? "hide-labels" : ""}`}
-    >
+    <div className={`pool-card ${cardClass}`}>
       {showWinners && (
         <WinnersModal
           poolLabel={pool.label}
@@ -297,20 +296,12 @@ function PoolCard({ pool }) {
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           {st !== "locked" && (
-            <>
-              <button
-                className="btn-winners"
-                onClick={() => setShowWinners(true)}
-              >
-                🏆 Winners {winners.length > 0 ? `(${winners.length})` : ""}
-              </button>
-              <button
-                className={`btn-labels-toggle ${hideLabels ? "active" : ""}`}
-                onClick={() => setHideLabels((h) => !h)}
-              >
-                {hideLabels ? "⊞ Show Labels" : "⊟ Hide Labels"}
-              </button>
-            </>
+            <button
+              className="btn-winners"
+              onClick={() => setShowWinners(true)}
+            >
+              🏆 Winners List {winners.length > 0 ? `(${winners.length})` : ""}
+            </button>
           )}
           <span className="pool-info">
             {pool.nfts.length} NFT{pool.nfts.length !== 1 ? "s" : ""} ·{" "}
@@ -379,14 +370,7 @@ function WinnersModal({ poolLabel, winners, onClose }) {
                 <div className="winner-id">
                   🏆 Wonder Boss #{n.winId}
                   {n.txHash && (
-                    <span
-                      style={{
-                        color: "rgba(100,180,255,0.8)",
-                        fontWeight: 400,
-                        marginLeft: 6,
-                        fontSize: 10,
-                      }}
-                    >
+                    <span className="winner-wallet">
                       ({shortWallet(n.txHash)})
                     </span>
                   )}
