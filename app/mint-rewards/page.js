@@ -96,7 +96,8 @@ export default function RewardsPage() {
         .badge-locked { background: rgba(255,255,255,0.05); color: var(--text-dim); border: 0.5px solid rgba(255,255,255,0.1); }
         .badge-next   { background: rgba(255,200,0,0.12); color: #FFC800; border: 0.5px solid rgba(255,200,0,0.4); }
         .pool-info { font-size: 10px; color: var(--text-dim); font-family: 'Space Mono', monospace; white-space: nowrap; }
-        .pool-body { display: block; padding: 0; position: relative; }
+        .pool-body { display: block; padding: 0; position: relative; overflow-x: auto; scrollbar-width: none; }
+        .pool-body::-webkit-scrollbar { display: none; }
 
         /* ── HEADER BUTTONS ── */
         .btn-labels-toggle { background: transparent; border: 0.5px solid var(--border-dim); color: var(--text-dim); padding: 3px 10px; border-radius: 5px; cursor: pointer; font-family: 'Space Mono', monospace; font-size: 9px; transition: all 0.2s; white-space: nowrap; }
@@ -164,6 +165,51 @@ export default function RewardsPage() {
         .nft-item.tier-3 .win-tag { font-size: 8px; top: 3px; left: 3px; padding: 1px 4px; }
 
         .pool-empty { color: var(--text-dim); font-size: 10px; font-family: 'Space Mono', monospace; padding: 24px 0; text-align: center; opacity: 0.6; }
+
+        /* ── RESPONSIVE ── */
+        /* Tablet: 6 eşit sütun */
+        @media (max-width: 1599px) {
+          .rewards-wrap { padding: 0 14px 60px; }
+          .nft-grid { display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: auto; grid-auto-flow: row; gap: 0; width: 100%; }
+          .nft-item.tier-1, .nft-item.tier-2, .nft-item.tier-3 { grid-column: span 1; grid-row: span 1; aspect-ratio: 1; }
+          .nft-item.tier-1 .nft-placeholder { font-size: 28px; }
+          .nft-item.tier-2 .nft-placeholder { font-size: 28px; }
+          .nft-item.tier-3 .nft-placeholder { font-size: 28px; }
+          .nft-item.tier-1 .nft-name,
+          .nft-item.tier-2 .nft-name,
+          .nft-item.tier-3 .nft-name  { font-size: 10px; }
+          .nft-item.tier-1 .nft-price,
+          .nft-item.tier-2 .nft-price,
+          .nft-item.tier-3 .nft-price { font-size: 9px; display: block; }
+          .nft-item.tier-1 .nft-info,
+          .nft-item.tier-2 .nft-info,
+          .nft-item.tier-3 .nft-info  { padding: 14px 6px 5px; display: flex; }
+          .nft-item.tier-1 .win-tag,
+          .nft-item.tier-2 .win-tag,
+          .nft-item.tier-3 .win-tag   { font-size: 9px; top: 5px; left: 5px; padding: 2px 5px; }
+          .awarded-badge, a.awarded-badge { font-size: 8px; }
+          .stats { gap: 32px; }
+        }
+
+        /* Mobil: 4 eşit sütun */
+        @media (max-width: 767px) {
+          .rewards-wrap { padding: 0 8px 60px; }
+          .nft-grid { grid-template-columns: repeat(4, 1fr); }
+          .nft-item.tier-1 .nft-name,
+          .nft-item.tier-2 .nft-name,
+          .nft-item.tier-3 .nft-name  { font-size: 8px; }
+          .nft-item.tier-1 .nft-price,
+          .nft-item.tier-2 .nft-price,
+          .nft-item.tier-3 .nft-price { font-size: 7px; }
+          .nft-item.tier-1 .win-tag,
+          .nft-item.tier-2 .win-tag,
+          .nft-item.tier-3 .win-tag   { font-size: 7px; top: 3px; left: 3px; padding: 1px 4px; }
+          .awarded-badge, a.awarded-badge { font-size: 7px; top: 3px; right: 3px; }
+          .stats { gap: 20px; padding: 16px 8px; }
+          .stat-val { font-size: 20px; }
+          .pool-header { flex-wrap: wrap; gap: 6px; }
+          .winners-box { padding: 14px; }
+        }
 
         @keyframes cardIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
       `}</style>
