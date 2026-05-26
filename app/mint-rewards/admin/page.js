@@ -118,7 +118,20 @@ export default function AdminPage() {
           ? p
           : {
               ...p,
-              nfts: p.nfts.map((n, j) => (j !== ni ? n : { ...n, [key]: val })),
+              nfts: p.nfts.map((n, j) =>
+                j !== ni
+                  ? n
+                  : key === "_clearWinner"
+                    ? {
+                        ...n,
+                        awarded: false,
+                        winId: "",
+                        txHash: "",
+                        txUrl: "",
+                        awardImgUrl: "",
+                      }
+                    : { ...n, [key]: val },
+              ),
             },
       ),
     );
@@ -382,6 +395,9 @@ export default function AdminPage() {
                 onChange={(key, val) => updateNft(activePool, ni, key, val)}
                 onRemove={() => removeNft(activePool, ni)}
                 onAward={() => setAwardModal({ pi: activePool, ni })}
+                onClearWinner={() =>
+                  updateNft(activePool, ni, "_clearWinner", true)
+                }
               />
             ))}
 
@@ -395,7 +411,7 @@ export default function AdminPage() {
   );
 }
 
-function NftAdminItem({ n, ni, onChange, onRemove, onAward }) {
+function NftAdminItem({ n, ni, onChange, onRemove, onAward, onClearWinner }) {
   return (
     <div style={s.nftItem}>
       <div style={s.nftHeader}>
@@ -410,6 +426,18 @@ function NftAdminItem({ n, ni, onChange, onRemove, onAward }) {
           {n.awarded ? " ✅" : ""}
         </span>
         <div style={{ display: "flex", gap: 6 }}>
+          {n.awarded && (
+            <button
+              style={{
+                ...s.btnSm,
+                borderColor: "rgba(255,150,50,0.4)",
+                color: "#FF9632",
+              }}
+              onClick={onClearWinner}
+            >
+              ✕ Clear Winner
+            </button>
+          )}
           <button
             style={{
               ...s.btnSm,
