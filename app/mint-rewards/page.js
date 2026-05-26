@@ -368,7 +368,7 @@ function WinnersModal({ poolLabel, winners, onClose }) {
               <div className="winner-meta">
                 <div className="winner-name">{n.name}</div>
                 <div className="winner-id">
-                  🏆 Wonder Boss #{n.winId}
+                  🏆 Wonder Boss {n.winId}
                   {n.txHash && (
                     <span className="winner-wallet">
                       ({shortWallet(n.txHash)})
