@@ -220,9 +220,7 @@ export default function RewardsPage() {
         <div className="hero-title">Wonder Boss Mint Rewards</div>
         <img className="hero-img" src="/mintinfo.png" alt="Mint Info" />
         <p className="hero-desc">
-          Every <em>500 mints</em> triggers a new draw — one reward pool is
-          unlocked, winners are selected, and NFTs are distributed on-chain.
-          Complete your mints to increase your chances across all pools.
+         Every 500 mints, a new pool unlocks! Random IDs are drawn, and loot drops directly into the bosses' wallets. LFG! Mint more, win more!
         </p>
       </div>
 
