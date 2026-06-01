@@ -62,10 +62,9 @@ export default function OverlayGenerator() {
   const isReadyToDownload = nftDataUrl && selectedId;
 
   // Eski Çalışan Mimariden Uyarlanan İndirme Fonksiyonu
-  const drawAndDownload = () => {
+  const drawAndDownload = async () => {
     if (!isReadyToDownload) return;
 
-    // Geçici, görünmez bir canvas oluşturuluyor
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
     const OUT_SIZE = 1500;
@@ -76,10 +75,10 @@ export default function OverlayGenerator() {
     ctx.imageSmoothingQuality = "high";
 
     const baseImg = new window.Image();
-    baseImg.crossOrigin = "anonymous"; // CORS Hatalarını Engeller
+    baseImg.crossOrigin = "anonymous";
 
-    baseImg.onload = () => {
-      // Gönderdiğin eski koddaki "resmi ortalama ve doldurma" mantığı
+    baseImg.onload = async () => {
+      // ... mevcut çizim mantığınız ...
       const bw = baseImg.naturalWidth,
         bh = baseImg.naturalHeight;
       const ratio = Math.min(OUT_SIZE / bw, OUT_SIZE / bh);
@@ -95,9 +94,35 @@ export default function OverlayGenerator() {
       if (currentOverlay) {
         const ovImg = new window.Image();
         ovImg.crossOrigin = "anonymous";
-        ovImg.onload = () => {
+        ovImg.onload = async () => {
           ctx.drawImage(ovImg, 0, 0, OUT_SIZE, OUT_SIZE);
-          triggerDownload(canvas);
+
+          // Canvas'ı Blob'a çevir
+          canvas.toBlob(async (blob) => {
+            if (!blob) return;
+
+            const file = new File([blob], "wonderboss-overlay.png", {
+              type: "image/png",
+            });
+
+            // Paylaşım özelliği destekleniyor mu?
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+              try {
+                await navigator.share({
+                  files: [file],
+                  title: "Wonder Boss Overlay",
+                  text: "İşte yeni NFT çalışmam!",
+                });
+              } catch (err) {
+                console.error("Paylaşım başarısız:", err);
+                // Hata durumunda (veya kullanıcı iptal ederse) normal indir
+                triggerDownload(canvas);
+              }
+            } else {
+              // Desteklenmiyorsa normal indirme yöntemine devam et
+              triggerDownload(canvas);
+            }
+          }, "image/png");
         };
         ovImg.src =
           activeSkin === "light" ? currentOverlay.light : currentOverlay.dark;
@@ -105,7 +130,6 @@ export default function OverlayGenerator() {
     };
     baseImg.src = nftDataUrl;
   };
-
   const triggerDownload = (canvas) => {
     const link = document.createElement("a");
     link.download = "wonderboss-overlay.png";
