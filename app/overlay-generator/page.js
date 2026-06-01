@@ -62,9 +62,10 @@ export default function OverlayGenerator() {
   const isReadyToDownload = nftDataUrl && selectedId;
 
   // Eski Çalışan Mimariden Uyarlanan İndirme Fonksiyonu
-  const drawAndDownload = async () => {
+  const drawAndDownload = () => {
     if (!isReadyToDownload) return;
 
+    // Geçici, görünmez bir canvas oluşturuluyor
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
     const OUT_SIZE = 1500;
@@ -77,8 +78,7 @@ export default function OverlayGenerator() {
     const baseImg = new window.Image();
     baseImg.crossOrigin = "anonymous";
 
-    baseImg.onload = async () => {
-      // ... mevcut çizim mantığınız ...
+    baseImg.onload = () => {
       const bw = baseImg.naturalWidth,
         bh = baseImg.naturalHeight;
       const ratio = Math.min(OUT_SIZE / bw, OUT_SIZE / bh);
@@ -94,32 +94,38 @@ export default function OverlayGenerator() {
       if (currentOverlay) {
         const ovImg = new window.Image();
         ovImg.crossOrigin = "anonymous";
-        ovImg.onload = async () => {
+        ovImg.onload = () => {
           ctx.drawImage(ovImg, 0, 0, OUT_SIZE, OUT_SIZE);
 
-          // Canvas'ı Blob'a çevir
+          // İndirme / Paylaşım Mantığı
+          const isMobile =
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+              navigator.userAgent,
+            );
+
           canvas.toBlob(async (blob) => {
             if (!blob) return;
-
             const file = new File([blob], "wonderboss-overlay.png", {
               type: "image/png",
             });
 
-            // Paylaşım özelliği destekleniyor mu?
-            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            // Eğer mobilse ve tarayıcı destekliyorsa Paylaşım Menüsü
+            if (
+              isMobile &&
+              navigator.canShare &&
+              navigator.canShare({ files: [file] })
+            ) {
               try {
                 await navigator.share({
                   files: [file],
-                  title: "Wonder Boss Overlay",
-                  text: "İşte yeni NFT çalışmam!",
+                  title: "Wonder Boss",
                 });
               } catch (err) {
-                console.error("Paylaşım başarısız:", err);
-                // Hata durumunda (veya kullanıcı iptal ederse) normal indir
+                // Kullanıcı iptal ederse normal indirmeyi tetikle
                 triggerDownload(canvas);
               }
             } else {
-              // Desteklenmiyorsa normal indirme yöntemine devam et
+              // Masaüstü veya paylaşımı desteklemeyen cihazlar için normal indirme
               triggerDownload(canvas);
             }
           }, "image/png");
