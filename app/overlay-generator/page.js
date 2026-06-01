@@ -286,6 +286,13 @@ export default function OverlayGenerator() {
           e.target.value = "";
         }}
       />
+      <button
+        className={`${styles.btnDownloadSmall} ${isReadyToDownload ? styles.btnDownloadActive : ""}`}
+        disabled={!isReadyToDownload}
+        onClick={drawAndDownload}
+      >
+        Download Output
+      </button>
     </div>
   );
 }
