@@ -1,26 +1,29 @@
-/* iOS ve Safari için kritik düzeltmeler */
+/* 1. Kural: Sayfanın en tepesindeki standart ayarlar */
 .overlayBody {
   background: #0b0b0f;
   font-family: "DM Sans", sans-serif;
   color: #e2e1e9;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
 }
 
-/* 3'lü Grid ve Küçültülmüş Kartlar */
+/* 2. Kural: Grid yapısını 'grid' ile sabitle (Flex'ten daha kararlıdır) */
 .overlayGridWrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3'lü grid */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ) !important; /* !important ile ezen kuralı yok ettik */
   gap: 6px;
   padding: 10px;
-  align-content: start;
-  overflow-y: auto;
+  width: 100%;
 }
+
 .overlayCard {
+  width: 100%; /* Sütuna tam oturur */
   border-radius: 8px;
   border: 1px solid #22222e;
   background: #141420;
@@ -29,33 +32,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4px;
   cursor: pointer;
 }
 
-/* Mobil Buton Konumlandırma */
-.mobileBtnContainer {
-  display: none;
-  padding: 10px;
-}
-@media (max-width: 415px) {
-  .overlayGridWrap {
-    grid-template-columns: repeat(3, 1fr);
+/* 3. Kural: Media Query'yi "sadece" telefonlar için özel tanımla */
+@media screen and (max-width: 480px) {
+  .desktopBtn {
+    display: none !important;
   }
   .mobileBtnContainer {
-    display: block;
+    display: block !important;
   }
-  .desktopBtn {
-    display: none;
-  } /* Üstteki butonu mobilde gizle */
+
+  /* 415px altındaki tüm cihazlarda grid'i 3'lü tut */
+  .overlayGridWrap {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 4px;
+  }
 }
 
+/* 4. Kural: Butonların ve yazıların iPhone'da sapıtmaması için */
 .btnDownload {
-  background: #ffffff;
-  color: #0f0f17;
-  border-radius: 8px;
-  padding: 12px;
-  width: 100%;
-  font-weight: bold;
+  display: inline-block;
+  appearance: none;
+  -webkit-appearance: none;
   border: none;
 }
