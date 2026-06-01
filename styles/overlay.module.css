@@ -1,3 +1,4 @@
+/* Safari / iOS Metin ve Render Düzeltmeleri */
 .overlayBody {
   background: #0b0b0f;
   font-family: "DM Sans", sans-serif;
@@ -6,6 +7,15 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 /* Header */
@@ -35,7 +45,11 @@
   height: 100%;
   object-fit: contain;
 }
-
+.noLogoImg::before {
+  content: "✦";
+  font-size: 18px;
+  color: #8a8a9e;
+}
 .logoWrap {
   display: flex;
   align-items: center;
@@ -53,7 +67,7 @@
   margin-top: 2px;
 }
 
-/* Download Button */
+/* Download Buttons (Ortak ve Cihaza Özel Stiller) */
 .btnDownload {
   background: #181822;
   border: 1px solid #262637;
@@ -64,6 +78,9 @@
   font-size: 14px;
   font-weight: 600;
   transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .btnDownloadActive {
   background: #ffffff;
@@ -73,6 +90,18 @@
 }
 .btnDownloadActive:hover {
   background: #e8e8ed;
+}
+
+/* Masaüstü Butonu Göster / Mobil Butonu Gizle */
+.desktopBtn {
+  display: inline-flex;
+}
+.mobileBtn {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 15px;
 }
 
 .layout {
@@ -189,20 +218,21 @@
   background: #a05b59;
 }
 
-/* Overlays Gallery */
+/* Overlays Gallery Section */
 .overlayGallerySection {
   display: flex;
   flex-direction: column;
   flex: 1;
   overflow: hidden;
 }
+/* Grid Küçültüldü: 4 Sütunlu Yapı */
 .overlayGridWrap {
   flex: 1;
   overflow-y: auto;
-  padding: 18px;
+  padding: 16px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
   align-content: start;
 }
 .overlayGridWrap::-webkit-scrollbar {
@@ -213,9 +243,9 @@
   border-radius: 4px;
 }
 
-/* Grid Cards */
+/* Grid Cards Küçültüldü */
 .overlayCard {
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid #22222e;
   background: #141420;
   aspect-ratio: 1 / 1;
@@ -223,7 +253,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 6px;
   cursor: pointer;
   transition: all 0.15s;
   position: relative;
@@ -239,12 +269,12 @@
   box-shadow: 0 0 0 2px rgba(106, 106, 122, 0.2);
 }
 .overlayThumb {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .overlayThumb img {
   width: 100%;
@@ -252,21 +282,23 @@
   object-fit: contain;
 }
 .overlayName {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   color: #9494a8;
   text-align: center;
   width: 100%;
-  padding: 0 4px;
+  padding: 0 2px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 /* Right Canvas Area */
 .canvasArea {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #08080c;
@@ -294,6 +326,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .previewLayer {
   position: absolute;
@@ -339,17 +372,30 @@
     width: 100%;
     height: auto;
   }
+
+  /* Mobilde kartlar çok daha sık ve küçük */
   .overlayGridWrap {
-    max-height: 380px;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    max-height: 320px;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     padding: 14px;
-    gap: 10px;
+    gap: 8px;
   }
+
   .canvasArea {
     padding: 16px;
   }
   .previewWrap {
     width: min(420px, calc(100vw - 24px));
     height: min(420px, calc(100vw - 24px));
+  }
+
+  /* Mobilde Üstteki Butonu Gizle, Alttakini Göster */
+  .desktopBtn {
+    display: none;
+  }
+  .mobileBtn {
+    display: inline-flex;
+    z-index: 5;
+    position: relative;
   }
 }
