@@ -267,7 +267,7 @@ export default function OverlayGenerator() {
               className={styles.sectionLabel}
               style={{ padding: "16px 18px 0", marginBottom: "-6px" }}
             >
-              Traits (Overlays)
+              OVERLAYS
             </div>
             <div className={styles.overlayGridWrap}>
               {overlaysList.map((ov) => {
