@@ -18,6 +18,9 @@
   background: #0f0f17;
   height: 68px;
   flex-shrink: 0;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }
 .logoIcon {
   width: 36px;
@@ -392,6 +395,20 @@
     }
     .btnDownloadmallActive:hover {
       background: #e8e8ed;
+    }
+
+    .overlayHeader {
+      border-bottom: 1px solid #22222e;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #0f0f17;
+      height: 68px;
+      flex-shrink: 0;
+      position: static;
+
+      z-index: 1;
     }
   }
 }
