@@ -201,7 +201,7 @@
 }
 .overlayGridWrap {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: visible;
   padding: 18px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -363,7 +363,7 @@
 
   .overlayGridWrap {
     grid-template-columns: repeat(3, 1fr);
-    overflow-y: auto;
+    overflow-y: visible;
     padding: 14px;
     padding-top: 30px;
     gap: 10px;
