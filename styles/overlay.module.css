@@ -3,7 +3,7 @@
   font-family: "DM Sans", sans-serif;
   color: #e2e1e9;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-shrink: 0;
 }
 .logoIcon img {
@@ -81,8 +81,8 @@
 .layout {
   display: flex;
   flex: 1;
-  overflow: hidden;
-}
+  /* overflow: hidden;
+} */
 
 /* Left Panel */
 .panel {
@@ -92,7 +92,7 @@
   background: #0f0f17;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .panelSection {
   padding: 16px 18px;
@@ -116,7 +116,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: border-color 0.2s;
   background: #141420;
   position: relative;
@@ -197,7 +197,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .overlayGridWrap {
   flex: 1;
@@ -230,7 +230,7 @@
   cursor: pointer;
   transition: all 0.15s;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .overlayCard:hover {
   border-color: #36364a;
@@ -262,7 +262,7 @@
   width: 100%;
   padding: 0 4px;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
 }
 
@@ -289,7 +289,7 @@
 .previewWrap {
   position: relative;
   border-radius: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
   width: 600px;
   height: 600px;
@@ -331,7 +331,7 @@
 
 @media (max-width: 750px) {
   .overlayBody {
-    overflow: auto;
+    /* overflow: auto; */
     height: auto;
   }
   .layout {
