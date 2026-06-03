@@ -22,7 +22,7 @@ const Footer = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
             <Link href="https://forms.gle/Eeg8ysCeaXCNBbXJ9">
               {" "}
               <p> Bossphorus Editoral Partnership Form</p>
-                 <p> --depricated--</p>
+                 <p> --deprecated--</p>
             </Link>
          
           </div>
