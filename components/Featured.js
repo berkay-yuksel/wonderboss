@@ -49,7 +49,7 @@ const Featured = ({
         onMouseEnter={textEnter}
         onMouseLeave={justLeave}
       >
-        <Link href="/mint-info">
+        <Link href="/overlays">
           <Image
             placeholder="blur"
             alt="Allow List & Mint Information"
@@ -57,7 +57,7 @@ const Featured = ({
             width="816"
             height="816"
           />
-          <h5>Allow List & Mint Information</h5>
+          <h5>Overlays</h5>
         </Link>
         <p>1-00</p>
       </motion.div>

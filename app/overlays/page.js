@@ -34,37 +34,42 @@ const overlaysList = [
     light: "/overlay/card_light.png",
     dark: "/overlay/card_dark.png",
   },
-    {
+  {
     id: "banana",
     label: "Banana",
     light: "/overlay/banana_light.png",
     dark: "/overlay/banana_dark.png",
   },
-    {
-    id: "cry",
-    label: "Cry",
-    light: "/overlay/cry_light.png",
-    dark: "/overlay/cry_dark.png",
+  {
+    id: "boss",
+    label: "Boss",
+    light: "/overlay/boss_light.png",
+    dark: "/overlay/boss_dark.png",
   },
-    {
+  {
+    id: "noboss",
+    label: "No Boss",
+    light: "/overlay/no_boss_light.png",
+    dark: "/overlay/no_boss_dark.png",
+  },
+  {
     id: "heart",
     label: "Heart",
     light: "/overlay/heart_light.png",
     dark: "/overlay/heart_dark.png",
   },
-    {
+  {
     id: "midf",
     label: "MidF",
     light: "/overlay/midf_light.png",
     dark: "/overlay/midf_dark.png",
   },
-    {
+  {
     id: "ok",
     label: "OK",
     light: "/overlay/ok_light.png",
     dark: "/overlay/ok_dark.png",
   },
-
 ];
 
 export default function OverlayGenerator() {

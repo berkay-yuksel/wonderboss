@@ -8,14 +8,19 @@ const Navbar = ({ justLeave, onMouseEnter, onMouseLeave, clickableEnter }) => {
         WONDER BOSS
       </h1>
       <div className={navbar.nav}>
-        <Link href="https://launchmynft.io/mint/wonderboss">
+        <Link href="https://magiceden.io/tr/marketplace/wonder_boss">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            LAUNCHPAD
+            MAGIC EDEN
           </span>
         </Link>
-        <Link href="https://www.wonderboss.com/wallet-check">
+        <Link href="https://www.tensor.trade/trade/wonder_boss">
           <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
-            WALLET-CHECK-ALLOWLIST
+            TENSOR
+          </span>
+        </Link>
+        <Link href="https://www.orbisonsol.io/marketplace/wonder-boss">
+          <span onMouseEnter={clickableEnter} onMouseLeave={justLeave}>
+            ORBIS
           </span>
         </Link>
         <Link href="https://twitter.com/wonderbossnft">

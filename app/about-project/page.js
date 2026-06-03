@@ -61,21 +61,6 @@ const AboutProject = () => {
                 <h5>artist</h5>
               </Link>
             </div>
-            <div>
-              <Image
-                className="{mintInfo.banner}"
-                src="/serhan.png"
-                alt="Picture of the author"
-                width="1500"
-                height="1500"
-                blurDataURL="/mintinfo.webp"
-                placeholder="blur"
-              />
-              <Link href="https://twitter.com/anonimlesmek">
-                <h3>anonimlesmek</h3>
-                <h5>technical lead</h5>
-              </Link>
-            </div>
           </div>
         </div>
         <div className={aboutProject.text_container}>
