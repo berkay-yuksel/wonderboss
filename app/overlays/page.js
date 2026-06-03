@@ -46,6 +46,12 @@ const overlaysList = [
     light: "/overlay/boss_light.png",
     dark: "/overlay/boss_dark.png",
   },
+    {
+    id: "phone",
+    label: "Phone",
+    light: "/overlay/phone_light.png",
+    dark: "/overlay/phone_dark.png",
+  },
   {
     id: "noboss",
     label: "No Boss",
