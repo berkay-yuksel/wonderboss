@@ -100,13 +100,7 @@ const overlaysList = [
     label: "OK",
     light: "/overlay/ok_light.png",
     dark: "/overlay/ok_dark.png",
-  },
-  {
-    id: "banana",
-    label: "Banana",
-    light: "/overlay/banana_light.png",
-    dark: "/overlay/banana_dark.png",
-  },
+  }
 ];
 
 export default function OverlayGenerator() {
