@@ -23,6 +23,30 @@ const overlaysList = [
     dark: "/overlay/taco_dark.png",
   },
   {
+    id: "sad",
+    label: "Sad",
+    light: "/overlay/sad_light.png",
+    dark: "/overlay/sad_dark.png",
+  },
+  {
+    id: "coin",
+    label: "Coin Toss",
+    light: "/overlay/coin_light.png",
+    dark: "/overlay/coin_dark.png",
+  },
+  {
+    id: "fingerbpard",
+    label: "Finger Board",
+    light: "/overlay/fingerb_light.png",
+    dark: "/overlay/fingerb_dark.png",
+  },
+  {
+    id: "book",
+    label: "Book",
+    light: "/overlay/book_light.png",
+    dark: "/overlay/book_dark.png",
+  },
+  {
     id: "fidget",
     label: "Fidget",
     light: "/overlay/fidget_light.png",
@@ -35,18 +59,19 @@ const overlaysList = [
     dark: "/overlay/card_dark.png",
   },
   {
-    id: "banana",
-    label: "Banana",
-    light: "/overlay/banana_light.png",
-    dark: "/overlay/banana_dark.png",
+    id: "double",
+    label: "Double Barrel",
+    light: "/overlay/double_light.png",
+    dark: "/overlay/double_dark.png",
   },
+
   {
     id: "boss",
     label: "Boss",
     light: "/overlay/boss_light.png",
     dark: "/overlay/boss_dark.png",
   },
-    {
+  {
     id: "phone",
     label: "Phone",
     light: "/overlay/phone_light.png",
@@ -75,6 +100,12 @@ const overlaysList = [
     label: "OK",
     light: "/overlay/ok_light.png",
     dark: "/overlay/ok_dark.png",
+  },
+  {
+    id: "banana",
+    label: "Banana",
+    light: "/overlay/banana_light.png",
+    dark: "/overlay/banana_dark.png",
   },
 ];
 
