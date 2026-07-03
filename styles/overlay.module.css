@@ -411,4 +411,17 @@
       z-index: 1;
     }
   }
+  @media (max-width: 376px) {
+    .overlayBody {
+      padding-bottom: 200px;
+    }
+
+    .overlayGridWrap {
+      grid-template-columns: repeat(2, 1fr);
+      overflow-y: visible;
+      padding: 14px;
+      padding-top: 30px;
+      gap: 10px;
+    }
+  }
 }
